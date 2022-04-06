@@ -1,13 +1,18 @@
 ---
 lab:
-    title: 'Laboratório: Validar ambiente de laboratório'
-    module: 'Módulo 0: Introdução ao curso'
+  title: 'Laboratório: Validar ambiente de laboratório'
+  module: 'Module 0: Course introduction'
+ms.openlocfilehash: f98bf8aee0be31934acee15f3b5668d3e6e6108a
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898794"
 ---
-
-Módulo 0: Introdução ao curso
+<a name="module-0-course-introduction"></a>Módulo 0: Introdução do curso
 =================================
 
-Cenário
+<a name="scenario"></a>Cenário
 --------
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
@@ -18,13 +23,13 @@ Ao longo deste curso, você vai criar aplicativos e fazer automações para perm
 
 Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da Power Platform e acessar o centro de administração do Power Platform. No centro de administração, você criará o seu ambiente de **Prática** no qual fará a maior parte do trabalho do laboratório.
 
-## Exercício 1 – Configuração
+## <a name="exercise-1--setup"></a>Exercício 1 – Configuração
 
-### Tarefa 1 – Adquirir o locatário de avaliação da Microsoft Power Platform
+### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tarefa 1 – Adquirir o locatário de teste do Microsoft Power Platform
 
 1. Copie as **Credenciais do Microsoft 365** do Authorized Lab Hoster.
 
-2. Navegue até <https://powerapps.microsoft.com> e clique em **Comece gratuitamente.**
+2. Navegue até <https://powerapps.microsoft.com> e clique em **Iniciar gratuitamente.**
 
 3. Em **Vamos começar**, insira o endereço de email das suas credenciais do Microsoft 365 na caixa de texto que diz **Insira seu endereço de email corporativo.**
 
@@ -34,11 +39,11 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
 6. Selecione **Sim** para permanecer conectado.
 
-7. Preencha as informações da sua conta e selecione **Introdução** para se inscrever na avaliação da Microsoft Power Platform.  
+7. Preencha as informações da sua conta e selecione **Introdução** para se inscrever em sua avaliação do Microsoft Power Platform.  
 
-### Tarefa 2 – Criar o ambiente
+### <a name="task-2--create-environment"></a>Tarefa 2 – Criar ambiente
 
-1. Acesse <https://admin.powerplatform.microsoft.com> e faça login com as suas credenciais do Microsoft 365 se for solicitado novamente.
+1. Acesse <https://admin.powerplatform.microsoft.com> e faça logon com suas credenciais do Microsoft 365, se for solicitado novamente.
 
 2. Selecione **Ambientes** e clique em **+Novo.**
 
@@ -56,13 +61,13 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
     > O ambiente pode levar alguns minutos para ser provisionado. Se necessário, atualize a página.
 
-# Exercício \#2: Provisionar um portal do Power Apps
+# <a name="exercise-2-provision-a-power-apps-portal"></a>Exercício 2: Provisionar um portal do Power Apps
 
 **Objetivo:** O provisionamento de um portal do Power Apps pode levar algum tempo. Neste exercício, você criará o portal do Power Apps no seu ambiente para que o processo de provisionamento possa ser iniciado. Você usará este portal em um laboratório posterior.
 
-## Tarefa 1: Criar o portal do Power Apps
+## <a name="task-1-create-power-apps-portal"></a>Tarefa 1: Criar o portal do Power Apps
 
-1.  Faça login em <https://make.powerapps.com>
+1.  Entre em <https://make.powerapps.com>
 
 2.  Se o **Ambiente** exibido no canto superior direito não for seu ambiente de Prática, clique para selecionar o seu Ambiente.
 
@@ -72,7 +77,7 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
 4.  Forneça novos detalhes para o portal
 
-    -   Digite **```Bellows College Visitors```** como o **Nome** do portal
+    -   Insira **```Bellows College Visitors```** como o **Nome** do portal
 
     -   Forneça um URL exclusivo; **algumacoisa**.powerappsportals.com (se o nome já estiver sendo usado, escolha outro)
 

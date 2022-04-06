@@ -1,15 +1,20 @@
 ---
 lab:
-    title: 'Laboratório 7: Como criar um painel simples'
-    module: 'Módulo 5: Introdução ao Power BI'
+  title: 'Laboratório 7: Como compilar um dashboard simples'
+  module: 'Module 5: Get Started with Power BI'
+ms.openlocfilehash: 5381acb81a59a46f6eb6aca9f2bde18de9846473
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898804"
 ---
+# <a name="module-5-get-started-with-power-bi"></a>Módulo 5: Introdução ao Power BI
+## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratório: Como compilar um dashboard simples
 
-# Módulo 5: Introdução ao Power BI
-## Laboratório: Como criar um painel simples
+# <a name="scenario"></a>Cenário
 
-# Cenário
-
-O Bellows College é uma instituição educacional com vários edifícios no campus. Atualmente as visitas ao campus são anotadas em papel. O registro das informações não é consistente e não existe nenhum recurso para coletar e analisar os dados das visitas em todo o campus. 
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
 
 A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
@@ -17,7 +22,7 @@ Ao longo deste curso, você vai criar aplicativos e fazer automações para perm
 
 Neste laboratório você vai criar um painel do Power BI que mostra dados sobre as visitas ao campus.
 
-# Macroetapas do laboratório
+# <a name="high-level-lab-steps"></a>Macroetapas do laboratório
 
 Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
@@ -28,44 +33,44 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 -   Criar uma visão do painel do Power BI para dispositivos móveis
 
 
-## Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
-* Conclusão do **Módulo 0 Laboratório 0 – Validar ambiente do laboratório**
-* Conclusão do **Módulo 2 Laboratório 1 – Introdução ao Microsoft Dataverse**
+* Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+* Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 
-## Questões importantes antes de prosseguir
+## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
 
 -   Quem é o público-alvo do relatório?
 -   Como o público-alvo usará o relatório? Qual é o dispositivo usual? Qual é o local?
 -   Existem dados suficientes para visualizar o painel?
 -   Quais são as características que você pode usar para analisar os dados sobre as visitas?
 
-# Exercício 1: criar um relatório do Power BI 
+# <a name="exercise-1-create-power-bi-report"></a>Exercício 1: criar um relatório do Power BI 
 
 **Objetivo:** Neste exercício você vai criar um relatório do Power BI com base nos dados do seu banco de dados Dataverse.
 
-## Tarefa 1: instalar o Power BI Desktop/preparar o serviço do Power BI
+## <a name="task-1-install-power-bi-desktop--prepare-power-bi-service"></a>Tarefa 1: instalar o Power BI Desktop/preparar o serviço do Power BI
 
 1. Siga as instruções abaixo para configurar o Power BI: 
 
-    - Se o Power BI Desktop **já** está instalado, prossiga para a [Tarefa 2](#task-2-prepare-data).
+    - Se o Power BI Desktop **já** está instalado, prossiga para a [Tarefa \#2](#task-2-prepare-data).
     
     - Se você ainda não instalou o Power BI Desktop, conclua a **Etapa 2**.
     
     - Se você não tem as permissões necessárias ou não consegue executar o Power BI Desktop, prossiga para a **Etapa 4**.
 
-2. Acesse [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) para baixar e instalar o Power BI Desktop.
+2. Navegue até [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) para baixar e instalar Power BI Desktop.
 
-    > [!IMPORTANTE]
+    > [!IMPORTANT]
     > Se você não conseguir instalar o Power BI Desktop usando o Microsoft Store, tente o instalador autônomo que pode ser baixado em [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
 
-3. Se você conseguiu instalar o Power BI Desktop, vá para a [Tarefa 2](#task-2-prepare-data); caso contrário, execute para a próxima etapa.
+3. Se você conseguiu instalar o Power BI Desktop, vá para a [Tarefa \#2](#task-2-prepare-data); caso contrário, execute para a próxima etapa.
 
     > Se você não tiver as permissões necessárias para instalar aplicativos para desktop ou tiver dificuldades para executar ou configurar o Power BI Desktop, conclua as etapas da tarefa abaixo.
 
 4. Baixe o [visits.pbix](../../Allfiles/visits.pbix) e salve no computador.
 
-5. Acesse [https://app.powerbi.com/](https://app.powerbi.com/) e clique em **Entrar**. 
+5. Navegue até [https://app.powerbi.com/](https://app.powerbi.com/) e clique em **Entrar**. 
 
 6. Clique em **Meu espaço de trabalho**. 
 
@@ -73,10 +78,10 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
 8. Expanda **+Novo** e selecione **Fazer upload de arquivo**.
 
-    > [!IMPORTANTE]
+    > [!IMPORTANT]
     > Se você não encontrar **+Novo**, ative a nova aparência do Power BI. Confira se você alterou a opção **Nova aparência** para **Ativado** no topo da tela.
 
-9. Selecione **Arquivo local**.
+9. Selecione **Arquivo Local**.
 
 10. Localize e selecione o arquivo **visits.pbix** que você baixou anteriormente.
 
@@ -84,13 +89,13 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
 12. Clique em **Editar**. Se o item de menu **Editar** não estiver visível, clique em **...** e selecione **Editar**.
 
-13. Você concluiu a configuração do serviço do Power BI para usar em seus laboratórios. Prossiga para a [Tarefa 3](#task-3-create-chart-and-time-visualizations), mas use o serviço online do Power BI em [https://app.powerbi.com](https://app.powerbi.com) em vez do Power BI Desktop para todo o laboratório.
+13. Você concluiu a configuração do serviço do Power BI para usar em seus laboratórios. Prossiga para a [Tarefa \#3](#task-3-create-chart-and-time-visualizations), mas use o serviço online do Power BI em [https://app.powerbi.com](https://app.powerbi.com) em vez do Power BI Desktop para todo o laboratório.
 
-## Tarefa 2: preparar os dados
+## <a name="task-2-prepare-data"></a>Tarefa \#2: Preparar dados
 
 1.  Encontre o URL de sua empresa.
 
-    * Abra uma guia nova e acesse o Centro de administração do Power Platform em <https://admin.powerplatform.com>.
+    * Em uma nova guia, navegue até Power Platform Admin Center em <https://admin.powerplatform.com>
     
     * Na página de navegação à esquerda, selecione Ambientes e abra seu ambiente de Prática.
     
@@ -98,9 +103,9 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
     
 2. Abra o Power BI Desktop e entre com suas credenciais quando solicitado.
 
-3. Selecione **Obter dados** e selecione **mais...**.
+3. Selecione **Obter dados** e selecione **mais...** .
 
-4. Selecione **Power Platform** à esquerda, depois selecione **Common Data Service (herdado)** e pressione **Conectar**. Se for solicitado, entre com as credenciais fornecidas e clique em **Conectar**.
+4. Selecione **Power Platform** à esquerda, e selecione **Common Data Service (Legado)** e pressione **Conectar**. Se solicitado, entre com suas credenciais fornecidas e clique em **Conectar**.
 
 5. Cole o URL do ambiente que você copiou anteriormente dentro do campo **URL do servidor** e pressione **OK**.
 
@@ -114,7 +119,7 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
 10. Expanda o nó **bc_Visit** do painel **Campos**.
 
-11. Clique em **...** ao lado do **bc_Visit** e selecione **Nova coluna**.
+11. Clique em **...** ao lado de **bc_Visit** e selecione **Nova Coluna**.
 
 12. Preencha a fórmula da seguinte forma:
 
@@ -130,9 +135,9 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
 15. Clique em **...** ao lado do campo **bc_scheduledstart** e selecione **Renomear**. Digite **Início** como o nome do campo.
 
-16. Para salvar o trabalho em andamento, clique em **Arquivo \| Salvar** e escolha um nome para o arquivo.
+16. Salve o trabalho em andamento pressionando **Arquivo \| Salvar** e inserindo um nome de arquivo de sua escolha.
 
-## Tarefa 3: criar gráficos e visualizações de tempo
+## <a name="task-3-create-chart-and-time-visualizations"></a>Tarefa 3: criar gráficos e visualizações de tempo
 
 1. Pressione o ícone de pizza no painel **Visualizações** para inserir um gráfico.
 
@@ -156,23 +161,23 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
     * Selecione várias partes do gráfico de pizza dos prédios e observe as mudanças no relatório de tempo.
     
-    * Clique no gráfico de colunas. Pressione a seta para baixo para ativar o modo **Drill down** e pressione a coluna para detalhar o próximo nível (meses). Outra forma de fazer isso é clicar em **Dados/Drill \| Expandir próximo nível** na faixa de opções.
+    * Clique no gráfico de colunas. Pressione a seta para baixo para ativar o modo **Drill down** e pressione a coluna para detalhar o próximo nível (meses). Outra maneira de fazer isso é clicar em **Dados/Detalhar \| Expandir próximo nível** na faixa de opções.
     
     * Faça pesquisas detalhadas ou agrupadas e selecione várias barras no gráfico de colunas de tempo para observar as mudanças no relatório de pizza.
     
 11. Para salvar o trabalho em andamento, clique em **Arquivo \| Salvar**.
 
-# Exercício 2: criar um painel do Power BI
+# <a name="exercise-2-create-power-bi-dashboard"></a>Exercício 2: criar um painel do Power BI
 
-## Tarefa 1: publicar um relatório do Power BI
+## <a name="task-1-publish-power-bi-report"></a>Tarefa 1: publicar um relatório do Power BI
 
 1. Pressione o botão **Publicar** na guia Início da faixa de opões.
 
 2. Selecione **Meu espaço de trabalho** como destino, e depois pressione **Selecionar**.
 
-3. Espere a conclusão da publicação e clique em **Abrir \<nome do relatório\>.pbix no Power BI**.
+3. Espere a conclusão da publicação e clique em **Abrir \<name of your report\>.pbix no Power BI**.
 
-## Tarefa 2: criar um painel do Power BI
+## <a name="task-2-create-power-bi-dashboard"></a>Tarefa 2: criar um painel do Power BI
 
 1. Abra o relatório criado na tarefa anterior.
 
@@ -182,11 +187,11 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
 4. Digite **Gerenciamento do campus [Seu sobrenome]** como o **Nome do painel**, pressione **Fixar dinâmico**.
 
-5. Selecione **Meu espaço de trabalho** no topo, depois selecione o painel **Gerenciamento do campus [Seu sobrenome]**.
+5. Selecione **Meu espaço de trabalho** no topo, depois selecione o painel **Gerenciamento do campus [Seu sobrenome]** .
 
 6. Teste a interatividade dos gráficos de pizza e barras exibidos.
 
-## Tarefa 3: adicionar visualizações usando linguagem natural
+## <a name="task-3-add-visualizations-using-natural-language"></a>Tarefa 3: adicionar visualizações usando linguagem natural
 
 1. No painel **Gerenciamento do campus**, selecione a barra **Faça uma pergunta sobre os dados** no topo.
 
@@ -198,27 +203,27 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
 
 5. Clique em **Sair de P e R**.
 
-O painel **[Gerenciamento do campus [Seu sobrenome]** é exibido. Role a tela para baixo para ver o novo visual de P e R. 
+O painel **Gerenciamento do campus [Seu sobrenome]** é exibido. Role a tela para baixo para ver o novo visual de P e R. 
 
 Seu painel deve se parecer com o seguinte:
 
 ![Painel do Power BI](media/5-powerbi-result.png)
 
-## Tarefa 4: criar uma visualização para celular e compartilhar um relatório com código QR
+## <a name="task-4-build-mobile-phone-view-and-share-a-report-with-a-qr-code"></a>Tarefa 4: criar uma visualização para celular e compartilhar um relatório com código QR
 
-1. No painel, selecione **Editar \| Visualização para dispositivos móveis**.
+1. No Painel, selecione **Editar \| Layout Móvel**.
 
 2. Reorganize os blocos conforme desejado.
 
-3. Clique em **Visualização para celular** na parte superior direita e altere a Visualização para **Visualização para Web**.
+3. Clique em **Layout móvel** no canto superior direito e altere a Exibição para **Layout da Web**.
 
 4. Selecione **Meu espaço de trabalho** na parte superior direita e selecione seu **Relatório**.
 
-5. Selecione **Editar** e depois selecione **... \| Gerar o Código QR**.
+5. Selecione **Editar** e depois selecione **... \| Gerar um código QR**.
 
 6. *Opcional:* Se você tiver um dispositivo móvel, digitalize o código usando um aplicativo de scanner QR disponível para as plataformas iOS e Android, ou um aplicativo de câmera se o seu telefone for compatível. Faça login na sua conta quando solicitado. Navegue e explore o relatório no dispositivo móvel
 
-# Desafios
+# <a name="challenges"></a>Desafios
 
 * Crie painéis e relatórios para incluir as plantas de construção do campus e dos prédios
 * Crie relatório e analise padrões e tendências das visitas

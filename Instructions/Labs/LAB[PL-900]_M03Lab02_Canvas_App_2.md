@@ -1,13 +1,18 @@
 ---
 lab:
-    title: 'Laboratório 3: Como criar um aplicativo de tela, parte 2'
-    module: 'Módulo 3: Introdução ao Power Apps'
+  title: 'Laboratório 3: Como criar um aplicativo de tela, parte 2'
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: c26f032744e228dc6632d254ad127f39cdbdef02
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898806"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Módulo 3: Introdução ao Power Apps
+## <a name="lab-2-how-to-build-a-canvas-app-part-2"></a>Laboratório 2: Como criar um aplicativo de tela, parte 2
 
-# Módulo 3: Introdução ao Power Apps
-## Laboratório 2: Como criar um aplicativo de tela, parte 2
-
-# Cenário
+# <a name="scenario"></a>Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
 
@@ -17,7 +22,7 @@ Ao longo deste curso, você vai criar aplicativos e fazer automações para perm
 
 Na parte 2 deste laboratório, você desenvolverá e criará um aplicativo de tela no Power Apps que a equipe de segurança usará nas entradas do edifício para confirmar e registrar os visitantes com rapidez.
 
-# Macroetapas do laboratório
+# <a name="high-level-lab-steps"></a>Macroetapas do laboratório
 
 Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 
@@ -28,26 +33,26 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 -   Utilize uma visualização do Dataverse para preencher a galeria
 -   Controle o processo de entrada e saída de um visitante
 
-## Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 * Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 * Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 
-## Considerações antes de começar
+## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
 
 -   A quais informações um agente de segurança precisa ter rápido acesso?
 -   O que deve acontecer caso o código do visitante seja inválido?
 -   O que deve acontecer caso o visitante chegue fora do horário programado?
 
-# Exercício \#1: Criar o aplicativo de tela de segurança
+# <a name="exercise-1-create-security-canvas-app"></a>Exercício 1: Criar o aplicativo de tela de segurança
 
 **Objetivo:** Neste exercício, você criará um Aplicativo de tela.
 
-## Tarefa 1: Criar aplicativo de tela
+## <a name="task-1-create-canvas-app"></a>Tarefa 1: Criar aplicativo de tela
 
 1.  Abra a solução Gerenciamento de Campus.
 
-    -   Faça login em <https://make.powerapps.com>
+    -   Entre em <https://make.powerapps.com>
 
     -   Se o Ambiente exibido no canto superior direito não for o seu ambiente de Prática, selecione o **Ambiente**. 
 
@@ -57,11 +62,11 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
     
 2.  Criar um novo aplicativo de tela
 
-    -   Clique em **Novo** e selecione **Aplicativo \| Aplicativo de Tela**.
+    -   Clique em **Novo** e selecione **Aplicativo \| Aplicativo Canvas**.
 
-    -   No aplicativo de tela de uma janela em branco, insira **[Seu Sobrenome] Segurança do Campus** no campo de nome do aplicativo.
+    -   Na janela em branco do aplicativo Canvas, insira  **Segurança do campus de [seu sobrenome]** no campo de nome do aplicativo.
 
-    -   Selecione **Telefone** no campo de formato.
+    -   Selecione **Telefone** no campo Formato.
 
     -   Clique em **Criar**.
         O Editor de Aplicativos será aberto em uma Nova janela. Clique em **Pular** caso apareça a caixa de diálogo Bem-vindo ao Power Apps Studio.
@@ -70,15 +75,15 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 
     -   Clique em **Arquivo** e selecione **Salvar como**.
     
-    -   Verifique se **A nuvem** está selecionada clique em **Salvar**.
+    -   Verifique se **A nuvem** está selecionada e clique em **Salvar**.
 
-    -   Verifique **[Seu Sobrenome] Segurança do Campus** para Nome e clique em **Salvar**.
+    - Verifique **Segurança do Campus de [seu sobrenome]** para Nome e clique em **Salvar**.
         
     -   Clique na seta **Voltar** no canto superior esquerdo (abaixo de Power Apps) para retornar ao aplicativo.
 
 3.  Conectar às fontes de dados (Visitas)
 
-    -   Clique em **Visualizar \| Fontes de dados**
+    -   Clique em **Exibir\| Fontes de dados**
     
     -   Clique em **+ Adicionar dados**
 
@@ -88,7 +93,7 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
     
 4.  Para preservar o trabalho em andamento, clique em **Arquivo** e depois clique em **Salvar**. Use a seta voltar para retornar ao aplicativo.
 
-## Tarefa 2: Exibir informações do Visitante
+## <a name="task-2-display-visitor-information"></a>Tarefa \#2: Exibir informações do Visitante
 
 1.  Adicionar caixa de pesquisa
 
@@ -104,9 +109,9 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 
     -   Enquanto seleciona o objeto de entrada de Texto, escolha o texto na propriedade **Padrão** e limpe o valor.
     
-    -   Selecione a propriedade **Dica de Texto** e digite `"Enter visitor code"` como o valor (incluindo as aspas)
+    -   Selecione a propriedade **Dica de Texto** e insira `"Enter visitor code"` como o valor (incluindo as aspas)
     
-    -   Clique em **[...]** ao lado do nome do controle na visualização em árvore (TextInput1), selecione **Renomear** e altere o nome para `textCode`
+    -   Clique em **...** ao lado do nome do controle na visualização em árvore (TextInput1), selecione **Rename** e altere o nome para `textCode`
     
 3.  Adicionar um modo de exibição Formulário
 
@@ -162,7 +167,7 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
    
 10.  Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa 3: Adicionar Botões de Check-In e Check-Out
+## <a name="task-3-add-check-in-and-check-out-buttons"></a>Tarefa \#3: Adicionar Botões de Check-In e Check-Out
 
 Nesta tarefa, criaremos botões para o usuário fazer check-in e check-out das visitas. 
 
@@ -172,7 +177,7 @@ Nesta tarefa, criaremos botões para o usuário fazer check-in e check-out das v
    
     * No painel de propriedades, selecione a guia **Avançado** e selecione a propriedade **OnChange**
    
-    * Insira a seguinte expressão `Set(Visit, LookUp(Visits, Code = textCode.Text))`
+    * Insira a expressão a seguir `Set(Visit, LookUp(Visits, Code = textCode.Text))`
     
     > A visita será salva em uma variável geral quando um usuário pesquisar na caixa de pesquisa textCode. Agora podemos usar a variável *Visita* em todo o aplicativo sem a necessidade de inserir novamente toda a expressão de pesquisa.
 
@@ -184,19 +189,19 @@ Nesta tarefa, criaremos botões para o usuário fazer check-in e check-out das v
    
    * No painel de propriedades, altere a propriedade **Texto** do botão para "`Check In`" (você pode digitar dentro das aspas existentes)
    
-   * Clique em **[...]** próximo ao nome do botão na visualização em árvore (Button1), selecione **Renomear** e altere o nome para `CheckInButton`
+   * Clique em **...** próximo ao nome do botão na visualização em árvore (Button1), selecione **Rename** e altere o nome para `CheckInButton`
 
 3. Adicionar Botão de Check-Out   
 
    * Clique em **Botão** na guia Inserir para adicionar outro botão
    
-   * No painel de propriedades, altere a propriedade **Texto** do botão para "`Check Out`" (é possível digitar dentro das aspas existentes)
+   * No painel de propriedades, altere a propriedade **Texto** do botão para "`Check Out`" (você pode digitar dentro das aspas existentes)
    
-   * Renomeie o botão para `CheckOutButton`
+   * Renomear o botão como `CheckOutButton`
    
    * Posicione os botões abaixo da caixa de pesquisa, com **Check In** acima de **Check Out** 
    
-## Tarefa 4: Ativar e desativar botões de acordo com os dados da visita
+## <a name="task-4-enable-and-disable-buttons-depending-on-visit-data"></a>Tarefa \#4: Ativar e desativar botões de acordo com os dados da visita
 
 Depois que os usuários pesquisarem o código da visita, use o botão Check-in para fazer a verificação de entrada dessa visita. Habilitar o botão **Check In** quando o registro da visita for localizado (não estiver em branco), o status do registro estiver ativo e a visita ainda não tiver começado, ou seja, quando o valor do início real estiver em branco.
 
@@ -215,11 +220,11 @@ Depois que os usuários pesquisarem o código da visita, use o botão Check-in p
 
    A expressão pode ser dividida da seguinte forma:
 
-   * **!IsBlank(Visit)** - registro da visita foi encontrado
-   * **&&** - lógico E operador
+   * **!IsBlank(Visit)** — o registro da visita foi encontrado
+   * **&&** — operador lógico AND
    * **Visit.Status = 'Status (Visits)'.Active** o status do registro está *Ativo*
-   * **IsBlank(Visit.'Actual Start')** - O campo Início Ativo não contém nenhuma informação
-   * **DisplayMode.Edit, DisplayMode.Disabled** - Se as condições acima forem atendidas, o botão poderá ser editado. Caso contrário, o botão permanecerá desabilitado.
+   * **IsBlank(Visit.'Actual Start')** — o campo Início Ativo não contém nenhuma informação
+   * **DisplayMode.Edit, DisplayMode.Disabled** — se as condições acima forem atendidas, o botão poderá ser editado. Caso contrário, o botão permanecerá desabilitado.
 
 Habilitar o botão **Check Out** quando o registro da visita for localizado (não estiver em branco), o status do registro estiver ativo e a visita já tiver começado, ou seja, o valor do início real não estiver em branco.
 
@@ -246,7 +251,7 @@ Habilitar o botão **Check Out** quando o registro da visita for localizado (nã
 
 9. Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa 5: Concluir o Processo de Entrada (Check-in) e Saída (Check-out)
+## <a name="task-5-complete-check-in-and-check-out-process"></a>Tarefa \#5: Concluir o Processo de Entrada (Check-in) e Saída (Check-out)
 
 Para realizar o processo de check-in e check-out, é necessário atualizar os dados de visita do Dataverse da seguinte forma:
 
@@ -270,8 +275,8 @@ Para realizar o processo de check-in e check-out, é necessário atualizar os da
 
    Esta expressão contém as seguintes partes:
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. O método *Patch* atualiza a tabela **Visitas**, a linha identificada pela variável **Visita** (que faz referência à visita atual). A expressão define o valor da coluna *Início Real* para a data e hora atuais (*Now()* method).
-   * **Refresh([@Visits]);**. Esta expressão atualiza as linhas de visita, pois os valores subjacentes mudaram
+   * **Patch(Visits, Visit, {'Actual Start': Now()});** . O método *Patch* atualiza a tabela **Visitas**, a linha identificada pela variável **Visita** (que faz referência à visita atual). A expressão define o valor da coluna *Início Real* para a data e hora atuais (método *Now()* ).
+   * **Refresh([@Visits]);** . Esta expressão atualiza as linhas de visita, pois os valores subjacentes mudaram
    * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Essa expressão atualiza a variável *Visita* com dados atualizados do Dataverse.
    
    > Quando um usuário clica neste botão, o Início Real da visita é definido como a data e hora atual e os dados serão atualizados.
@@ -317,13 +322,13 @@ Para realizar o processo de check-in e check-out, é necessário atualizar os da
 
 10. Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa 6: Adicionar indicadores visuais
+## <a name="task-6-add-visual-indicators"></a>Tarefa \#6: Adicionar indicadores visuais
 
 A usabilidade de um aplicativo móvel melhora bastante quando indicadores visuais são fornecidos. Nesta tarefa, adicionaremos um ícone indicando se um visitante pode fazer check-in ou check-out.
 
 1. Selecione a guia **Inserir**
 
-2. Selecione **Ícones \| Adicionar**. Selecione um ícone. Neste ponto, não importa qual ícone selecionamos, pois queremos que o valor seja dinâmico.
+2. Select **Ícones \| Adicionar**. Selecione um ícone. Neste ponto, não importa qual ícone selecionamos, pois queremos que o valor seja dinâmico.
 
 3. Redimensione e coloque o ícone à esquerda dos botões
 
@@ -352,15 +357,15 @@ O aplicativo em execução deve ser parecido com o seguinte:
 
 8. Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa 7: Publicar o aplicativo
+## <a name="task-7-publish-the-app"></a>Tarefa 7: Publicar o aplicativo
 
 1. O aplicativo Segurança do Campus ainda deve estar aberto no navegador. Caso não esteja, selecione o aplicativo **Segurança do Campus** e clique em **Editar**.
 
-2. Selecione **Arquivo \| Publicar** 
+2. Selecionar **Arquivo \| Publicar** 
 
 3. Selecione **Publicar essa versão**
 
-# Desafios
+# <a name="challenges"></a>Desafios
 
 * Evitar a entrada manual do código de visita
 * Adicionar validação de edifício para a visita

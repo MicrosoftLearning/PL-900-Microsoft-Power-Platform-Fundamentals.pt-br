@@ -1,19 +1,24 @@
 ---
 lab:
-    title: 'Laboratório 8: Como criar um chatbot básico'
-    module: 'Módulo 6: Introdução ao Power Virtual Agents'
+  title: 'Laboratório 8: Como criar um chatbot básico'
+  module: 'Module 6: Intro to Power Virtual Agents'
+ms.openlocfilehash: ed1611f4b1450093a6e95cbb9df7ad7fdc040e86
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898802"
 ---
+# <a name="module-6-intro-to-power-virtual-agents"></a>Módulo 6: Introdução ao Power Virtual Agents
+## <a name="lab-how-to-build-a-basic-chatbot"></a>Laboratório: Como criar um chatbot básico
 
-# Módulo 6: Introdução ao Power Virtual Agents
-## Laboratório: Como criar um chatbot básico
-
-# Cenário
+# <a name="scenario"></a>Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
 Como a maioria das organizações, o Bellows College está atuando rapidamente contra a desinformação acerca da COVID-19, ratificando práticas recomendadas e cronogramas, dentre outras medidas. Neste laboratório será criado um chatbot do Power Virtual Agent que redirecionará à página do Center for Disease Control (CDC) com perguntas e respostas sobre o status atual da pandemia. Essa configuração é interessante para a faculdade, que pode incorporá-la ao seu site de portal, bem como disponibilizá-la ad hoc à medida que os departamentos forem reabrindo conforme o planejamento.
 
-## Etapas gerais
+## <a name="high-level-steps"></a>Etapas de alto nível
 
 Seguiremos as estruturas de tópicos abaixo para construir nosso Power Virtual Agent:
 
@@ -21,15 +26,15 @@ Seguiremos as estruturas de tópicos abaixo para construir nosso Power Virtual A
 
   - Construa um bot usando as FAQs
 
-  - Teste o bot
+  - Testar o bot
 
   - Mude a saudação padrão
 
-  - Publique o bot
+  - Publicar o bot
 
   - **Desafio extra:** Incorporar o bot em seu portal
 
-## Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Os pré-requisitos seguintes foram identificados para que o projeto seja concluído:
 
@@ -39,11 +44,11 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
   - Apenas exercícios bônus: Conclusão do **Módulo 6 Laboratório 4 - Introdução aos portais do Power Apps** 
 
-## Considerações antes de começar
+## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
 
 Os bots podem ser muito úteis em diversas situações. Com base no que você sabe até agora sobre o Bellows College, pense onde mais um bot poderia ser útil no campus.
 
-# Exercício \#1: Inscrever-se no PVA e Criar um novo bot
+# <a name="exercise-1-sign-up-for-pva-and-create-a-new-bot"></a>Exercício 1: Inscrever-se no PVA e Criar um novo bot
 
 Neste exercício, você se inscreverá para obter uma versão de avaliação do Power Virtual Agents.
 
@@ -63,17 +68,17 @@ Neste exercício, você se inscreverá para obter uma versão de avaliação do 
 
 8. Feche o **Chat**.
 
-9. Selecione **Tópicos**. O bot vem com algumas amostras de tópicos de usuários e alguns tópicos de sistema. A saudação padrão vem dos tópicos de sistema.
+9. Selecionar **Tópicos**. O bot vem com algumas amostras de tópicos de usuários e alguns tópicos de sistema. A saudação padrão vem dos tópicos de sistema.
 
 > No próximo exercício, você vai gerar seus próprios tópicos a partir do site de FAQ do CDC. Não saia desta janela do navegador.
 
-# Exercício \#2: Criar tópicos
+# <a name="exercise-2-create-topics"></a>Exercício 2: Criar tópicos
 
 Neste exercício, você vai gerar seus próprios tópicos a partir do site de FAQ do CDC.
 
 1.  Na nova aba, acesse o site [CDC FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html) e examine seu conteúdo. Você vai gerar seus tópicos a partir dessas FAQs.
 
-2.  Copie o URL.
+2.  Copie a URL.
 
 3.  Volte para o Power Virtual Agents e verifique se **Tópicos** ainda está selecionado.
 
@@ -81,7 +86,7 @@ Neste exercício, você vai gerar seus próprios tópicos a partir do site de FA
 
 5.  Clique em **Iniciar.**
 
-6. Cole o URL que você copiou na caixa de texto **Link para conteúdo online** e clique em **Adicionar**. Se você copiou a URL completa, https:// estará listado duas vezes. Certifique-se de que o URL liste o protocolo apenas uma vez.
+6. Cole o URL que você copiou na caixa de texto **Link para conteúdo online** e clique em **Adicionar**. Observe que, se você copiou a URL completa, https:// será listado duas vezes. A URL apenas deve listar o protocolo uma vez.
 
 7.  Clique em **Iniciar** e aguarde. Isso pode levar alguns minutos.
 
@@ -101,13 +106,13 @@ Neste exercício, você vai gerar seus próprios tópicos a partir do site de FA
 
 > Não saia desta janela do navegador.
 
-# Exercício \#3: Testar tópicos
+# <a name="exercise-3-test-topics"></a>Exercício 3: Testar tópicos
 
 Nesta tarefa, você testará os tópicos que adicionou.
 
 1.  Clique em **Teste o bot** no canto inferior esquerdo.
 
-2.  Clique em **Redefinir**.
+2.  Clique em **redefinir**.
 
 3.  Digite a frase de gatilho que você copiou na tarefa anterior e clique em **Enviar**.
 
@@ -121,9 +126,9 @@ Nesta tarefa, você testará os tópicos que adicionou.
 
 8.  Digite **olá** e clique em **Enviar**.
 
-9.  O bot deve cumprimentá-lo e informá-lo sobre o que ele pode fazer. Seu bot agora pode ajudar os usuários com as perguntas frequentes sobre a COVID-19, então será necessário alterar a mensagem de saudação na próxima tarefa. Não saia desta janela do navegador.
+9.  O bot deve cumprimentá-lo e informá-lo sobre o que ele pode fazer. O bot agora pode ajudar os usuários com perguntas frequentes sobre a COVID-19; portanto, você precisará alterar a mensagem de saudação na próxima tarefa. Não saia desta janela do navegador.
 
-# Exercício \#4: Alterar a saudação
+# <a name="exercise-4-change-the-greeting"></a>Exercício 4: Alterar a saudação
 
 Nesta tarefa, você irá alterar a saudação específica para COVID-19.
 
@@ -145,11 +150,11 @@ Nesta tarefa, você irá alterar a saudação específica para COVID-19.
 
 9.  O bot agora deve responder com a nova saudação.
 
-# Exercício \#5: Publicar o bot
+# <a name="exercise-5-publish-the-bot"></a>Exercício 5: Publicar o bot
 
 Neste exercício, você publicará o bot.
 
-1.  No painel de navegação esquerdo, selecione **Publicar**.
+1.  No painel de navegação esquerdo, selecione  **Publicar**.
 
 2.  Clique em **Publicar**.
 
@@ -159,7 +164,7 @@ Neste exercício, você publicará o bot.
 
 5.  Você receberá uma lista de canais disponíveis nos quais você pode publicar o bot. Selecione **Site de demonstração**.
 
-6.  Altere a mensagem de boas-vindas para `Try my COVID-19 FAQ bot`.
+6.  Altere a mensagem de boas-vindas para `Try my COVID-19 FAQ bot.`
 
 7.  Insira o seguinte **Iniciador de conversa**:
     ```
@@ -182,5 +187,5 @@ Quando concluído, seu bot publicado deve ser semelhante a este:
 
 ![Site de demonstração do bot - captura de tela](./media/8-image1.png)
 
-# Desafios 
-* Incorpore seu chatbot ao seu portal de visitantes do Bellows College (mais informações sobre como fazer isso em **Adicionar bot ao Power Apps** [aqui](https://docs.microsoft.com/pt-br/power-virtual-agents/publication-connect-bot-to-web-channels).)
+# <a name="challenges"></a>Desafios 
+* Incorpore seu chatbot ao seu portal de visitantes do Bellows College (mais informações sobre como fazer isso em **Adicionar bot ao Power Apps** [aqui](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).)
