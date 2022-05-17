@@ -1,16 +1,16 @@
 ---
 lab:
-  title: 'Laboratório 2: Como criar um aplicativo baseado em modelo'
+  title: 'Laboratório 3: Como criar um aplicativo baseado em modelo'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 94c418ce7aaf35f5b31ff2c7bc42d57e8d13c5b4
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 56a807c49479c245f95e3af9566450651bcc3ebb
+ms.sourcegitcommit: 99acd470de1164d438d7c4794faa28d6489c39db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424662"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144812443"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Módulo 3: Introdução ao Power Apps
-## <a name="lab-2-how-to-build-a-model-driven-app"></a>Laboratório 2: Como criar um aplicativo baseado em modelo
+## <a name="lab-how-to-build-a-model-driven-app"></a>Laboratório: Como criar um aplicativo baseado em modelo
 
 # <a name="scenario"></a>Cenário
 
@@ -42,9 +42,11 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+-   Conclusão do **Módulo de Laboratório 0 – Validar ambiente de laboratório**
 
--   Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de dados**
+-   Conclusão do **Módulo de Laboratório 2 – Modelagem de dados**
+
+-   Conclusão do **Módulo de Laboratório 3 – Como criar um aplicativo de tela**
 
 ## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
 
@@ -54,25 +56,24 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
 -   Quais personalizações podem ser feitas no mapa do site de um aplicativo baseado em modelo?
 
-# <a name="exercise-1-customize-views-and-forms"></a>Exercício \#1: Personalizar exibições e formulários
+# <a name="exercise-1-customize-views-and-forms"></a>Exercício 1: Personalizar exibições e formulários
 
 **Objetivo:** Neste exercício, você vai personalizar as exibições e os formulários das tabelas personalizadas que serão usadas no aplicativo baseado em modelo.
 
-## <a name="task-1-edit-visit-form"></a>Tarefa \#1: Editar o formulário de visitas
+## <a name="task-1-edit-visit-form"></a>Tarefa 1: Editar o formulário de visitas
 
 1.  Entre para <https://make.powerapps.com> se você ainda não tiver entrado.
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
 3.  Usando a navegação à esquerda, expanda **Dataverse**, selecione **Tabelas** e clique para abrir a tabela **Visita**.
+>   Se você não vir a tabela Visitas, verifique se está no ambiente correto (etapa 2).
 
 4.  Selecione a guia **Formulários** e clique para abrir o formulário Informações com o tipo de formulário **Principal**.
+>   **IMPORTANTE:** *Como, por padrão, todos os formulários são denominados Informações, verifique se o formulário selecionado tem um Tipo de formulário* **Principal** *e não outro.*
+Por padrão, o formulário tem dois campos: Nome (campo principal) e proprietário.
 
->   **IMPORTANTE:** *Por padrão, todos os formulários têm o nome Informações. Verifique se o formulário que você selecionou tem o Tipo de formulário* **Principal,** *e não outro tipo.*
-
->   Por padrão, o formulário tem dois campos: Nome (campo principal) e proprietário.
-
-5.  No lado direito da tela, em propriedades, selecione o campo **Nome de Exibição** e altere-o para **Informações Principais**.
+5.  No lado direito da tela no painel Propriedades, selecione o campo **Nome de Exibição** e altere-o para **Informações Principais**.
 
 6.  Usando o menu na parte superior da tela, selecione **+ Campo de formulário** e adicione os seguintes campos abaixo do campo **Proprietário** arrastando as colunas para o formulário ou apenas clicando nos nomes das colunas:
 
@@ -88,17 +89,17 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
 7.  Arraste a coluna **Código** e solte-a no cabeçalho do formulário.
 
->   O cabeçalho é a área superior direita do formulário. Pode ser necessário minimizar o painel Propriedades do lado direito da tela para ver o campo no formulário.
+    >   O cabeçalho é a área superior direita do formulário. Pode ser necessário recolher o painel Propriedades do lado direito da tela para ver o campo no formulário.
 
 8.  Com o campo **Código** ainda selecionado, marque a caixa de seleção **Somente leitura** no painel Propriedades no lado direito da tela.
 
-9.  Selecione o campo **Proprietário**. No painel Propriedades, altere o **Rótulo do campo** para **Anfitrião**
+9.  Selecione o campo **Proprietário**. No painel Propriedades, altere o **Rótulo** para **Anfitrião**
 
 10.  Clique em **Salvar** na parte superior direita e espere salvar para concluir.
 
 11.  Clique em **Publicar** na parte superior direita e espere publicar para concluir.
 
-12.  Se a exibição de edição estiver aberta em uma nova guia, feche a guia. Caso contrário, clique em **Voltar** na parte superior esquerda da tela. Agora você deve voltar para a guia Visitar formulários de entidade.
+12.  Se a visualização de edição foi aberta em uma nova guia ou janela do navegador, feche-a. Caso contrário, clique em **Voltar** na parte superior esquerda da tela. Agora você deve estar de volta à guia Formulários das tabelas de Visitas.
 
 ## <a name="task-2-edit-active-visits-view"></a>Tarefa \#2: Editar a exibição Visitas ativas
 
@@ -128,7 +129,11 @@ Nesta tarefa, vamos modificar a exibição Visitas ativas e criar uma nova exibi
 
 Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
-1.  Clique no link **Editar filtros** no painel Propriedades.
+1.  Clique na **seta da lista suspensa** ao lado do botão Salvar (cuidado para não pressionar o botão) e selecione **Salvar como**.
+
+2.  Altere o nome para **Visitas de hoje** e pressione **Salvar**.
+
+3.  Clique no link **Editar filtros** no painel Propriedades.
 
 2.  Clique em **Adicionar** e selecione **Incluir linha**.
 
@@ -142,19 +147,17 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 > **Observação:** como não filtramos mais no status de exibição, obteremos todas as visitas de hoje incluindo as concluídas. Esses campos ajudarão a diferenciar as visitas concluídas e as visitas em andamento.
 
-7.  Clique na **seta da lista suspensa** ao lado do botão Salvar (cuidado para não pressionar o botão) e selecione **Salvar como**.
+7.  Clique em **Salvar**.
 
-8.  Altere o nome para **Visitas de hoje** e pressione **Salvar**.
+8.  Clique em **Publicar** e espere a conclusão da publicação.
 
-9.  Clique em **Publicar** e espere a conclusão da publicação.
-
-# <a name="exercise-2-create-model-driven-application"></a>Exercício \#2: Criar aplicativo baseado em modelo
+# <a name="exercise-2-create-model-driven-application"></a>Exercício 2: Criar aplicativo baseado em modelo
 
 **Objetivo:** Neste exercício, você vai criar o aplicativo baseado em modelo, personalizar o mapa do site e testar o aplicativo.
 
 >   Para simplificar e economizar tempo, não abordaremos algumas das colunas de Visita neste laboratório. 
 
-## <a name="task-1-create-application"></a>Tarefa \#1: Criar aplicativo
+## <a name="task-1-create-application"></a>Tarefa 1: Criar aplicativo
 
 1.  Entre em <https://make.powerapps.com> (se ainda não tiver entrado).
 
@@ -186,11 +189,11 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 8.  Usando os ícones de navegação no lado esquerdo da tela, selecione **Navegação**.
 
-9.  No Painel de Navegação, selecione o texto **Grupo 1** abaixo, onde está escrito Barra de navegação.
+9.  No painel de navegação, selecione **Grupo 1** abaixo, na Barra de navegação.
 
-10.  No lado direito da tela, na seção **Opções de Exibição**, altere o **Título** para **Segurança**.
+10.  No lado direito da tela, na seção **Exibir Opções**, altere a propriedade **Título** para **Segurança**.
 
-## <a name="task-1-edit-your-app"></a>Tarefa \#1: Editar o aplicativo
+## <a name="task-2-edit-your-app"></a>Tarefa \#2: Editar o aplicativo
 Agora que todos os componentes necessários foram adicionados ao aplicativo baseado em modelo, organizaremos os itens.
 
 1.  No Painel de Navegação, no grupo de segurança, selecione **SubArea1**.
@@ -199,7 +202,7 @@ Agora que todos os componentes necessários foram adicionados ao aplicativo base
 
 3.  Use a navegação à esquerda da tela e selecione **Páginas**.
 
-4.  Localize e expanda a tabela **Visita** no painel Páginas.
+4.  Localize e expanda **Visitas** no painel Páginas.
 
 5.  Selecione **Formulário de visita**.
 
@@ -207,17 +210,17 @@ Agora que todos os componentes necessários foram adicionados ao aplicativo base
 
 7.  Selecione o formulário **Informações principais** e clique em **Salvar**.
 
-8.  Na tabela **Visita** à esquerda, selecione **Exibição de visita**.
+8.  Em **Visitas** no painel de Páginas, selecione **Visualizar visita**.
 
 9.  No lado direito da tela, selecione **Gerenciar exibições**.
 
 10. Selecione os formulários **Visitas de hoje** e **Visitas ativas** e selecione **Salvar**.
 
-11. Na parte superior do aplicativo, no lado esquerdo da tela, selecione **Salvar**.
+11. Selecione **Salvar**.
 
 12. Depois de **Salvar**, selecione o botão **Publicar** para publicar as alterações.
 
-## <a name="task-2-test-application"></a>Tarefa \#2: Testar o aplicativo
+## <a name="task-3-test-application"></a>Tarefa \#3: Testar o aplicativo
 
 1.  Iniciar o aplicativo
 
@@ -225,13 +228,13 @@ Agora que todos os componentes necessários foram adicionados ao aplicativo base
 
 2.  Criar um novo contato
 
-    1.  O aplicativo abrirá a exibição **Meus contatos vivos**
+    1.  O aplicativo abrirá a exibição **Meus Contatos Ativos** Se isso não acontecer, selecione Visitas à esquerda. 
 
     2.  Clique em **Novo** no menu superior.
 
     3.  Informe o **Nome** como `John` e **Sobrenome** como `Doe`.
 
-    4.  Informe seu email pessoal como **e-mail**. Ele será usado em um próximo laboratório.
+    4.  Informe seu email pessoal como **e-mail**. Isso será usado em um laboratório futuro em que você receberá um email. 
 
     5.  Clique em **Salvar e Fechar**.
 
@@ -262,6 +265,8 @@ Agora que todos os componentes necessários foram adicionados ao aplicativo base
     O aplicativo em execução deve ser parecido com o seguinte:
 
 ![](media/3-model-driven-app.png)
+
+Parabéns! Você criou e configurou seu primeiro aplicativo controlado por modelos.
 
 # <a name="challenges"></a>Desafios
 

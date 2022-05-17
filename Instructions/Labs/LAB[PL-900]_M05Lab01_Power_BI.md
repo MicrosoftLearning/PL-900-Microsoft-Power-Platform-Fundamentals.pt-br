@@ -1,13 +1,13 @@
 ---
 lab:
-  title: 'Laboratório 7: Como compilar um dashboard simples'
+  title: 'Laboratório 5: Como compilar um dashboard simples'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: b707cbf6b60af3b6d6a166565ccdeaeec844cb4a
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
+ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424649"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "144812929"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Módulo 5: Introdução ao Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratório: Como compilar um dashboard simples
@@ -52,13 +52,13 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 -   Quais são as características que você pode usar para analisar os dados sobre as visitas?
 
-# <a name="exercise-1-create-power-bi-report"></a>Exercício \#1: criar um relatório do Power BI
+# <a name="exercise-1-create-power-bi-report"></a>Exercício 1: criar um relatório do Power BI
 
 **Objetivo:** neste exercício, você criará um relatório do Power BI com base nos dados da planilha do Excel que aproveitamos em um exercício anterior.
 
 ## <a name="task-1-prepare-power-bi-service"></a>Tarefa \#1: Preparar o serviço do Power BI
 
-1.  Baixe o [visits.pbix](../../Allfiles/visits.pbix) e salve no computador.
+1.  Baixe o [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salve no computador.
 
 2.  Navegue até <https://app.powerbi.com/> e entre se necessário.
 
@@ -80,7 +80,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1.  Pressione o ícone de **Gráfico de pizza** no painel **Visualizações** para inserir um gráfico.
 
-2.  Pressione a seta ao lado de **bc_Building** no painel Campos. Arraste o campo **Prédio** e solte dentro da caixa **Legenda**.
+2.  Pressione a seta suspensa ao lado de **bc_name** no painel de Campos. Arraste o campo **Prédio** e solte dentro da caixa **Legenda**.
 
 3.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa **Valores**.
 
@@ -100,7 +100,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
     1.  Selecione várias partes do gráfico de pizza dos prédios e observe as mudanças no relatório de tempo.
 
-    2.  Clique no gráfico de colunas. Pressione a seta para baixo para ativar o modo de **Busca detalhada** e clique em uma coluna para fazer uma busca detalhada do próximo nível (duas). 
+    2.  Clique no gráfico de colunas. Pressione a seta para baixo para ativar o modo de **Fazer busca detalhada** (ou clique com o botão direito do mouse no gráfico e selecione **Fazer busca detalhada**) e clique na coluna a ser detalhada até o próximo nível (dias). 
     
     3.  Faça pesquisas detalhadas ou agrupadas e selecione várias barras no gráfico de colunas de tempo para observar as mudanças no relatório de pizza.
 

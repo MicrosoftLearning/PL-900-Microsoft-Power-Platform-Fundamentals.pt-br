@@ -2,12 +2,12 @@
 lab:
   title: 'Laboratório 1: Modelagem de dados'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 9e26f2eb6b2e6003510c25b5f66e4f43b30a0640
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: c3ea362eebf9156f069a9ab8635859e6186c1626
+ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424685"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144810903"
 ---
 # <a name="module-2-introduction-to-microsoft-dataverse"></a>Módulo 2: Introdução ao Microsoft Dataverse
 
@@ -21,7 +21,7 @@ Ao longo deste curso, você vai criar aplicativos e fazer automações para perm
 
 Neste laboratório, você acessará seu ambiente, criará um banco de dados do Microsoft Dataverse e desenvolverá uma solução para rastrear suas alterações. Você também criará um modelo de dados para oferecer suporte aos seguintes requisitos:
 
--   R1 – Rastrear os locais (edifícios) das visitas ao campus
+-   R1 – Rastrear informações para visitas agendadas no campus
 
 -   R2 – Registrar informações básicas para identificar e monitorar os visitantes
 
@@ -35,7 +35,7 @@ Para preparar seus ambientes de aprendizagem, você irá:
 
 * criar uma solução e um editor
 * adicionar componentes novos e existentes, necessários para atender aos requisitos do aplicativo. Consulte o [documento de modelagem de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) para ver a descrição dos metadados (tabelas e relacionamentos). Você pode pressionar CTRL+clique ou clicar com o botão direito do mouse no link para abrir o documento de modelagem de dados em uma nova janela.
-* criar tabelas de Edifício e Visita
+* Criar a tabela de Visitas
 * importar dados de Visita usando uma planilha do Excel
 
 ## <a name="prerequisites"></a>Pré-requisitos:
@@ -52,7 +52,7 @@ Para preparar seus ambientes de aprendizagem, você irá:
 
 ## <a name="task--1-create-visit-table-and-columns"></a>Tarefa \# 1: Criar a tabela Visita e Colunas
 
-A tabela **Visita** conterá informações sobre as visitas ao campus, incluindo o edifício, o visitante, o horário agendado e real de cada visita.
+A tabela de **Visitas** conterá informações sobre as visitas ao campus, incluindo o visitante, horários agendados e horários reais de cada visita.
 
 Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilmente inserido e interpretado por um visitante quando solicitado durante o processo de check-in da visita.
 
@@ -158,9 +158,13 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
     4.  Selecione **Contato** para a **Tabela relacionada**.
 
-    5.  Clique em **Concluído**.
+    5.  Expanda a seção **Opções avançadas**.
+    
+    6.  Insira **identificação_visitante** em **Nome da relação**.
+    
+    7.  Clique em **Concluído**.
 
-13. Clique em **Salvar tabela**
+13. Clique em **Salvar Tabela** na parte inferior direita.
 
 # <a name="exercise-2-import-data"></a>Exercício \#2: Importar dados
 
@@ -168,29 +172,28 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 ## <a name="task-1-import-the-visitsxls-file"></a>Tarefa \#1: Importar o arquivo Visits.xls.
 
-Nesta tarefa, você importará uma solução que contém o fluxo do Power Automate necessário para concluir a importação de dados.
+Nesta tarefa, você importará dados de Visita de um arquivo do Excel. 
 
-1.  Você deve ter o arquivo **Visits.xls** armazenado em seu desktop. Baixe [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/majorupdate_april2022/Allfiles/Visits.xlsx) se não tiver.
+1.  Você deve ter o arquivo **Visits.xls** armazenado em seu desktop. Baixe [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
 
 2.  Se ainda não tiver feito isso, entre em <https://make.powerapps.com>.
 
 3.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
 4.  Usando a navegação à esquerda, expanda o **Dataverse** e selecione Tabelas.
+    >   Você poderá ver essa opção em Dados \> Tabelas na tela. 
 
-5.  Localize e abra a tabela **Visita** criada no exercício anterior.
+5.  Localize e abra a tabela **Visitar** criada no exercício anterior.
 
 6.  Usando o menu na parte superior, selecione a seta ao lado de **Dados**, a seta ao lado de **Obter dados** e **Obter dados do Excel**.
 
-7.  No menu exibido, selecione **Obter dados** e, depois, **Obter dados do Excel**.
+7.  No menu exibido, selecione o botão **Carregar**.
 
-8.  No menu exibido, selecione o botão **Carregar**.
+8.  Localize e selecione o arquivo **Visits.xls** baixado anteriormente. *(Observe que poderão ser necessários um ou dois minutos para que o arquivo seja carregado. Não se preocupe se você receber uma mensagem indicando que há erros de mapeamento, pois nós os corrigiremos a seguir.)*
 
-9.  Localize e selecione o arquivo **Visits.xls** baixado anteriormente. *(Observe que poderão ser necessários um ou dois minutos para que o arquivo seja carregado. Não se preocupe se você receber uma mensagem indicando que há erros de mapeamento, pois nós os corrigiremos a seguir.)*
+9. Selecione **Mapear colunas**.
 
-10. Selecione **Mapear colunas**.
-
-11. Mapeie as colunas conforme indicado abaixo:
+10. Mapeie as colunas conforme indicado abaixo:
 
     | Colunas no BD Visitas | Valores de origem   |
     |------------------|-----------------|
@@ -201,11 +204,13 @@ Nesta tarefa, você importará uma solução que contém o fluxo do Power Automa
     | Fim agendado    | Término agendado   |
     | Início Agendado  | Início agendado |
 
-12. Deixe todo o restante dos campos como **Não definido**.
+11. Deixe todo o restante dos campos como **Não definido**.
 
-13. No canto superior direito da tela, selecione **Salvar alterações**.
+12. No canto superior direito da tela, selecione **Salvar alterações**.
 
-14. Na tela **Importar dados**, verifique se o status do mapeamento indica que ele foi bem-sucedido e selecione o botão **Importar**.
+13. Na tela **Importar dados**, verifique se o status do mapeamento indica "Mapeamento bem-sucedido".
+
+14. Selecione **Importar** no canto superior direito para concluir a importação de dados.
 
 **Observação:** *Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.*
 
@@ -213,8 +218,10 @@ Nesta tarefa, você importará uma solução que contém o fluxo do Power Automa
 
 1.  Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar a tabela **Visita** novamente.
 
-2.  Usando as guias na parte superior, selecione a guia Dados.
+2.  Observe que há muitas guias para a tabela Visitas. Isso inclui Cikynns, Relações, Regras de negócios, Exibições e muito mais. 
 
-3.  Verifique se há registros na tabela.
+3.  Selecione a guia **Dados** da tabela Visitas. Essa opção está em **Tabelas** \> **Visitas**.
 
-Parabéns, você criou tabelas e importou dados com êxito.
+3.  Verifique se há registros na tabela. Você pode alterar o modo de exibição selecionando o nome da visualização no canto superior direito e alterando-o para **Todas as Colunas**. 
+
+Parabéns, você criou com sucesso uma nova tabela e importou dados.
