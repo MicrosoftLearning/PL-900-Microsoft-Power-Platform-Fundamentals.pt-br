@@ -1,13 +1,13 @@
 ---
 lab:
-  title: 'Laboratório 6: Saiba como construir uma solução automatizada'
+  title: '‘Laboratório 4: Saiba como construir uma solução automatizada'
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: c37bbf2975aa1964493e93716d0b3aeb32030c99
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 9b07c81fad82867bb54c2889687075fa7a463b81
+ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424626"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "144812941"
 ---
 # <a name="module-4-get-started-with-power-automate"></a>Módulo 4: Introdução ao Power Automate
 ## <a name="lab-how-to-build-an-automated-solution"></a>Laboratório: Saiba como construir uma solução automatizada
@@ -20,13 +20,13 @@ A administração do campus quer modernizar o sistema de registro de visitantes,
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-Neste laboratório, você criará fluxos do Power Automate para automatizar várias partes do gerenciamento do campus.
+Neste laboratório, você criará um fluxo do Power Automate para enviar um email a um visitante quando uma visita for agendada.
 
 # <a name="high-level-lab-steps"></a>Macroetapas do laboratório
 
 Os pré-requisitos seguintes foram identificados para que o projeto seja concluído:
 
--   A equipe de segurança precisa receber notificações de visitantes que ultrapassam os horários programados.
+-   Os contatos precisam ser notificados por email quando uma visita for agendada.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -34,15 +34,11 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 -   Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 
--   Contato John Doe criado com um endereço de email pessoal
+-   Contato de Davi Barros criado com um endereço de email pessoal preenchido
 
-## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
+# <a name="exercise-1-create-visit-notification-flow"></a>Exercício 1: Criar fluxo de Notificação de visita
 
--   Como medir o tempo de permanência excedente e aplicar políticas rígidas?
-
-# <a name="exercise-1-create-visit-notification-flow"></a>Exercício \#1: Criar fluxo de Notificação de visita
-
-**Objetivo:** Neste exercício será criado um fluxo no Power Automate que implementa o requisito. O visitante deverá receber um email com o código exclusivo atribuído à visita.
+**Objetivo:** Neste exercício será criado um fluxo no Power Automate que implementa o requisito. O visitante deve receber um email incluindo o código exclusivo atribuído à visita quando ela é criada.
 
 ## <a name="task-1-create-a-flow"></a>Tarefa \#1: Criar um fluxo
 
@@ -56,11 +52,13 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 5.  Clique em **Novo fluxo** e selecione **Fluxo de nuvem automatizado**.
 
-6.  Em **Escolher o gatilho do fluxo**, pesquise por **Dataverse**.
+6.  Insira "Notificação de Visita" em **Nome do fluxo**.
 
-7.  Selecione o gatilho **Quando uma linha for adicionada, modificada ou excluída** e, em seguida, clique em **Criar**.
+7.  Em **Escolher o gatilho do fluxo**, pesquise por **Dataverse**.
 
-8.  Preencha as condições de gatilho do fluxo:
+8.  Selecione o gatilho **Quando uma linha for adicionada, modificada ou excluída** e, em seguida, clique em **Criar**.
+
+9.  Preencha as condições de gatilho do fluxo:
 
     1.  Selecionar **Adicionado** para **Alterar tipo**
 
@@ -81,14 +79,16 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 4.  Selecione **Contatos** em **Nome da tabela**
 
-5.  No campo **ID da linha**, selecione **Visitante (Valor)** na lista de conteúdo dinâmico.
+5.  Selecione o campo **ID da Linha**. Observe que uma janela para selecionar conteúdo dinâmico ou expressões será exibida. 
 
-6.  Neste momento, clique nas reticências ( **...** ) e clique em **Renomear**.
+6.  No campo **ID de linha**, selecione **Visitante (Valor)** na Lista de conteúdo dinâmico. Nesta etapa, busque o contato da linha de Visita que foi criada para acionar esse fluxo. Como o endereço de email faz parte da tabela de Contato, você precisará dessas informações para enviar o email ao visitante. 
+
+7.  Neste momento, clique nas reticências ( **...** ) e clique em **Renomear**.
         Renomeie esta ação **"Criar visitante"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
 
 ## <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tarefa \#3: Criar uma etapa para enviar um email ao visitante
 
-1.  Clique em **Nova etapa**. Essa é a etapa que criará e enviará o email ao visitante.
+1.  Clique em **Nova etapa**. É nessa a etapa que um email será enviado para o visitante.
 
 2.  Pesquise por *email*, selecione o conector do **Office 365 Outlook** e a ação **Enviar um email (V2)** .
 
@@ -101,9 +101,9 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
         are selecting the Email that is related to the Visitor that you looked
         up in the previous step.
 
-5.  Insira **Sua visita agendada ao Bellows College** no campo **Assunto**.
+6.  Insira **Sua visita agendada ao Bellows College** no campo **Assunto**.
 
-6.  Insira o seguinte texto no **Corpo do email**:
+7.  Insira o seguinte texto no **Corpo do email**:
 
 >   O conteúdo dinâmico precisa ser inserido onde os campos são nomeados entre colchetes. É recomendado copiar e colar todo o texto primeiro e, em seguida, adicionar o conteúdo dinâmico nos locais corretos.
 
@@ -118,14 +118,11 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-7.  Realce o texto **{Nome}** . Substitua-o pelo campo **Nome** da etapa **Obter o visitante**.
+8.  Realce o texto **{First Name}** . Substitua-o pelo campo **Nome** da etapa **Obter o visitante**.
 
-8.  Realce o texto **{Início agendado}** . Substitua-o pelo campo **Início agendado** da etapa **Obter o visitante**.
+9.  Realce o texto **{Scheduled Start}** . Substitua-o pelo campo **Início do agendamento** na etapa **Quando a visita será adicionada**.
 
-9.  Realce o texto **{Término agendado}** . Substitua-o pelo campo **Término agendado** da etapa **Obter o visitante**.
-
-10.  Selecione o nome do fluxo na parte superior e renomeie-o como `Visit
-        Notification`.
+10.  Realce o texto **{Scheduled End}** . Substitua-o pelo campo **Final do agendamento** na etapa **Quando uma visita será adicionada**.
 
 11.  Clique em **Salvar**.
 
@@ -133,7 +130,7 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 ![Exemplo de etapas de fluxo.](media/4-Flow.png)
 
-## <a name="task-2-validate-and-test-the-flow"></a>Tarefa \#2: Validar e testar o fluxo
+## <a name="task-4-validate-and-test-the-flow"></a>Tarefa \#4: Validar e testar o fluxo
 
 1.  Abra uma nova guia no navegador e navegue para <https://make.powerapps.com>.
 
@@ -141,11 +138,13 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 3.  Clique em **Aplicativos** e selecione o aplicativo **Baseado em modelo de Administração de campus** criado anteriormente.
 
-3.  Deixe esta guia aberta, volte para a guia anterior com o fluxo.
+3.  Deixando essa guia do navegador aberta, navegue de volta para a guia anterior de seu fluxo.
 
-4.  Na barra de comandos, clique em **Testar**. Selecione **Manualmente** e, em seguida, **Salvar e Testar**.
+4.  Na barra de comandos, clique em **Testar**. Selecione **Manualmente** e clique em **Testar**.
 
-5.  Usando a navegação à esquerda, selecione **Visitas**
+5.  Navegue até a guia do navegador com seu aplicativo baseado em modelo aberto. 
+
+6.  Usando a navegação à esquerda, selecione **Visitas**
 
 6. Pressione o botão **+ Novo** para adicionar um novo registro de **Visita**.
 
@@ -161,7 +160,9 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 8. Selecione o botão **Salvar e Fechar (Save and Close)** .
 
-Após um pequeno atraso, você deverá ver um email em sua caixa de entrada, uma vez que preencheu o email de John Doe com seu email pessoal. 
+9. Navegue até a guia do navegador com o fluxo de teste em execução. Após um momento, você deverá ver o fluxo em execução. É aqui que você pode detectar quaisquer problemas no fluxo ou confirmar se ele foi executado com êxito. 
+
+Após um pequeno atraso, você deverá ver um email em sua caixa de entrada, uma vez que preencheu o email de John Doe com seu email pessoal. Observe que ele pode ir para sua pasta de lixo eletrônico.
 
 # <a name="challenges"></a>Desafios
 
