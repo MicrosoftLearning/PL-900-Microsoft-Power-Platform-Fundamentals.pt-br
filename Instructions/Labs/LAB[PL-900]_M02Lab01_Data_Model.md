@@ -2,12 +2,12 @@
 lab:
   title: 'Laboratório 1: Modelagem de dados'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: c3ea362eebf9156f069a9ab8635859e6186c1626
-ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
+ms.openlocfilehash: 9edefbdf214d5a0f2e0693ffdf024dfc05c032c5
+ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "144810903"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "146458357"
 ---
 # <a name="module-2-introduction-to-microsoft-dataverse"></a>Módulo 2: Introdução ao Microsoft Dataverse
 
@@ -58,151 +58,151 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 >   Usamos o comportamento **Independente de fuso horário** para registrar informações de data e hora porque o horário de uma visita sempre é local em relação à localização do edifício e não deve mudar quando visualizado em um fuso horário diferente.
 
-1.  Entre em <https://make.powerapps.com> (se ainda não tiver entrado)
+1. Entre em [https://make.powerapps.com](https://make.powerapps.com/) (se ainda não tiver entrado)
 
-2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+2. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-3.  Usando a navegação à esquerda, expanda o Dataverse e selecione Tabelas.
+3. Usando a navegação à esquerda, expanda o Dataverse e selecione Tabelas.
 
-4.  Clique em **Nova tabela**.
+4. Clique em **Nova tabela**.
 
-5.  Digite **Visita** no **Nome de exibição**.
+5. Digite **Visita** no **Nome de exibição**.
 
-6.  Clique em **Criar**. O provisionamento da tabela será iniciado em segundo plano e você pode começar a adicionar outras colunas.
+6. Clique em **Salvar**. O provisionamento da tabela será iniciado em segundo plano e você pode começar a adicionar outras colunas.
 
-7.  Criar a coluna Início agendado
+7. Depois que a tabela for criada, na seção **Esquema**, selecione **Colunas**. 
 
-    1.  Você deve estar na página de colunas da tabela Visita.
+8. Selecione **Nova coluna** e a configure da seguinte maneira: 
 
-    2.  Verifique se a guia **Colunas** está selecionada e clique em **Adicionar coluna**.
+    - Digite **Início agendado** como **Nome de exibição**.
 
-    3.  Digite **Início agendado** como **Nome de exibição**.
+    - Selecione **Data e hora** como **Tipo de dados**.
 
-    4.  Selecione **Data e hora** como **Tipo de dados**.
+    - Em **Obrigatório**, selecione **Negócio obrigatório**.
 
-    5.  Em **Obrigatório**, selecione **Obrigatório**.
+    - Expanda a seção **Opções avançadas**.
 
-    6.  Expanda a seção **Opções avançadas**.
+    - Em **Comportamento**, selecione **Independente de fuso horário**.
 
-    7.  Em **Comportamento**, selecione **Independente de fuso horário**.
+    - Clique em **Save** (Salvar).
 
-    8.  Clique em **Concluído**.
+9. Criar coluna Término agendado 
 
-8.  Criar coluna Término agendado
+    - Clique em **Adicionar coluna**.
 
-    1.  Clique em **Adicionar coluna**.
+    - Digite **Término agendado** para o **Nome de exibição**.
 
-    2.  Digite **Término agendado** para o **Nome de exibição**.
+    - Selecione **Data e hora** como **Tipo de dados**.
 
-    3.  Selecione **Data e hora** como **Tipo de dados**.
+    - Em **Obrigatório**, selecione **Negócio obrigatório**.
 
-    4.  Em **Obrigatório**, selecione **Obrigatório**.
+    - Expanda a seção **Opções avançadas**.
 
-    5.  Expanda a seção **Opções avançadas**.
+    - Em **Comportamento**, selecione **Independente de fuso horário**.
 
-    6.  Em **Comportamento**, selecione **Independente de fuso horário**.
+    - Clique em **Save** (Salvar).
 
-    7.  Clique em **Concluído**.
+10. Criar coluna Início real
 
-9.  Criar coluna Início real
+    - Clique em **Adicionar coluna**.
 
-    1.  Clique em **Adicionar coluna**.
+    - Digite **Início real** para o **Nome de exibição**.
 
-    2.  Digite **Início real** para o **Nome de exibição**.
+    - Selecione **Data e hora** como **Tipo de dados**.
 
-    3.  Selecione **Data e hora** como **Tipo de dados**.
+    - Em **Obrigatório**, deixe marcado como **Opcional**.
 
-    4.  Em **Obrigatório**, deixe marcado como **Opcional**.
+    - Expanda a seção **Opções avançadas**.
 
-    5.  Expanda a seção **Opções avançadas**.
+    - Em **Comportamento**, selecione **Independente de fuso horário**.
 
-    6.  Em **Comportamento**, selecione **Independente de fuso horário**.
+    - Clique em **Save** (Salvar).
 
-    7.  Clique em **Concluído**.
+11. Criar coluna Término real
 
-10. Criar coluna Término real
+    - Clique em **Adicionar coluna**.
 
-    1.  Clique em **Adicionar coluna**.
+    - Digite **Término real** para o **Nome de exibição**.
 
-    2.  Digite **Término real** para o **Nome de exibição**.
+    - Selecione **Data e hora** como **Tipo de dados**.
 
-    3.  Selecione **Data e hora** como **Tipo de dados**.
+    - Em **Obrigatório**, deixe marcado como **Opcional**.
 
-    4.  Em **Obrigatório**, deixe marcado como **Opcional**.
+    - Expanda a seção **Opções avançadas**.
 
-    5.  Expanda a seção **Opções avançadas**.
+    - Em **Comportamento**, selecione **Independente de fuso horário**.
 
-    6.  Em **Comportamento**, selecione **Independente de fuso horário**.
+    - Clique em **Save** (Salvar).
 
-    7.  Clique em **Concluído**.
+12. Criar a coluna Código
 
-11. Criar a coluna Código
+    - Clique em **Adicionar coluna**.
 
-    1.  Clique em **Adicionar coluna**.
+    - Digite **Código** para o **Nome de exibição**.
 
-    2.  Digite **Código** para o **Nome de exibição**.
+    - Selecione **Numeração automática** como o **Tipo de dados**.
 
-    3.  Selecione **Numeração automática** como o **Tipo de dados**.
-    
-    4.  Selecione **Número prefixado de data** no campo **Tipo de numeração automática**.
+    - Selecione **Número prefixado de data** no campo **Tipo de numeração automática**.
 
-    5.  Clique em **Concluído**.
+    - Clique em **Save** (Salvar).
 
-12. Criar coluna de pesquisa de Visitante
+13. Criar coluna de pesquisa de Visitante
 
-    1.  Clique em **Adicionar coluna**.
+    - Clique em **Adicionar coluna**.
 
-    2.  Digite **Visitante** para o **Nome de exibição**.
+    - Digite **Visitante** para o **Nome de exibição**.
 
-    3.  Selecione **Pesquisar** para **Tipo de dados**.
+    - Selecione **Pesquisar** para **Tipo de dados**.
 
-    4.  Selecione **Contato** para a **Tabela relacionada**.
+    - Selecione **Contato** para a **Tabela relacionada**.
 
-    5.  Expanda a seção **Opções avançadas**.
-    
-    6.  Insira **identificação_visitante** em **Nome da relação**.
-    
-    7.  Clique em **Concluído**.
+    - Expanda a seção **Opções avançadas**.
 
-13. Clique em **Salvar Tabela** na parte inferior direita.
+    - Insira **identificação_visitante** em **Nome da relação**.
 
-# <a name="exercise-2-import-data"></a>Exercício \#2: Importar dados
+    - Clique em **Save** (Salvar).
+
+ 
+
+Exercício 2: Importar dados
 
 **Objetivo:** Neste exercício, você importará dados de amostra para o banco de dados do Dataverse.
 
-## <a name="task-1-import-the-visitsxls-file"></a>Tarefa \#1: Importar o arquivo Visits.xls.
+Tarefa 1: Importar o arquivo Visits.xls.
 
-Nesta tarefa, você importará dados de Visita de um arquivo do Excel. 
+Nesta tarefa, você importará dados de Visita de um arquivo do Excel.
 
-1.  Você deve ter o arquivo **Visits.xls** armazenado em seu desktop. Baixe [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
+1. Você deve ter o arquivo **Visits.xls** armazenado em seu desktop. Baixe [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
 
-2.  Se ainda não tiver feito isso, entre em <https://make.powerapps.com>.
+2. Se ainda não tiver feito isso, entre em [https://make.powerapps.com](https://make.powerapps.com/).
 
-3.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+3. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-4.  Usando a navegação à esquerda, expanda o **Dataverse** e selecione Tabelas.
-    >   Você poderá ver essa opção em Dados \> Tabelas na tela. 
+4. Usando a navegação à esquerda, expanda o **Dataverse** e selecione Tabelas.
 
-5.  Localize e abra a tabela **Visitar** criada no exercício anterior.
+Você poderá ver essa opção em Dados > Tabelas na tela.
 
-6.  Usando o menu na parte superior, selecione a seta ao lado de **Dados**, a seta ao lado de **Obter dados** e **Obter dados do Excel**.
+5. Localize e abra a tabela **Visitar** criada no exercício anterior.
 
-7.  No menu exibido, selecione o botão **Carregar**.
+6. Usando o menu na parte superior, selecione a seta suspensa ao lado de **Importar** e **Importar dados do Excel**.
 
-8.  Localize e selecione o arquivo **Visits.xls** baixado anteriormente. *(Observe que poderão ser necessários um ou dois minutos para que o arquivo seja carregado. Não se preocupe se você receber uma mensagem indicando que há erros de mapeamento, pois nós os corrigiremos a seguir.)*
+7. No menu exibido, selecione o botão **Carregar**.
+
+8. Localize e selecione o arquivo **Visits.xls** baixado anteriormente. Observe que poderão ser necessários um ou dois minutos para que o arquivo seja carregado. Não se preocupe se você receber uma mensagem indicando que há erros de mapeamento, pois nós os corrigiremos a seguir.
 
 9. Selecione **Mapear colunas**.
 
 10. Mapeie as colunas conforme indicado abaixo:
 
-    | Colunas no BD Visitas | Valores de origem   |
-    |------------------|-----------------|
-    | Término Real       | Término real      |
-    | Início Real     | Término real    |
-    | Código             | Código            |
-    | Nome             | Nome            |
-    | Fim agendado    | Término agendado   |
-    | Início Agendado  | Início agendado |
+| Colunas no BD Visitas| Valores de origem |
+| - |
+| Término Real| Término real |
+| Início Real| Término real |
+| Código| Código |
+| Nome| Nome |
+| Fim agendado| Término agendado |
+| Início Agendado| Início agendado |
+
 
 11. Deixe todo o restante dos campos como **Não definido**.
 
@@ -212,16 +212,12 @@ Nesta tarefa, você importará dados de Visita de um arquivo do Excel.
 
 14. Selecione **Importar** no canto superior direito para concluir a importação de dados.
 
-**Observação:** *Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.*
+**Observação:** Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.
 
-## <a name="task-2-verify-data-import"></a>Tarefa \#2: Verificar importação de dados
+Tarefa 2: Verificar importação de dados
 
-1.  Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar a tabela **Visita** novamente.
+1. Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar a tabela **Visita** novamente.
 
-2.  Observe que há muitas guias para a tabela Visitas. Isso inclui Cikynns, Relações, Regras de negócios, Exibições e muito mais. 
-
-3.  Selecione a guia **Dados** da tabela Visitas. Essa opção está em **Tabelas** \> **Visitas**.
-
-3.  Verifique se há registros na tabela. Você pode alterar o modo de exibição selecionando o nome da visualização no canto superior direito e alterando-o para **Todas as Colunas**. 
+2. Verifique se você vê os dados importados na seção **Colunas e dados de visita**. 
 
 Parabéns, você criou com sucesso uma nova tabela e importou dados.
