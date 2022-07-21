@@ -2,12 +2,12 @@
 lab:
   title: 'Laboratório 5: Como compilar um dashboard simples'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812929"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125732"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Módulo 5: Introdução ao Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratório: Como compilar um dashboard simples
@@ -88,9 +88,9 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 5.  Clique fora do gráfico de pizza para desmarcá-lo e selecione o gráfico de colunas no painel **Visualizações**.
 
-6.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa **Valores**.
+6.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa de destino **Eixo y**.
 
-7.  Arraste o campo **Início** e solte dentro da caixa **Eixo**.
+7.  Arraste o campo **Início** e solte-o na caixa de destino **Eixo x**.
 
 8.  No painel Visualizações, clique em **x** ao lado de **Ano** e **Trimestre** para deixar somente os totais de **Mês** e **Dia** no Eixo.
 
