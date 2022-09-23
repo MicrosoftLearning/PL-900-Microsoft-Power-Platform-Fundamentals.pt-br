@@ -1,15 +1,15 @@
 ---
 lab:
-  title: 'Laboratório: Validar ambiente de laboratório'
+  title: 'Laboratório 0: Validar ambiente de laboratório'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: e69074549dddd4494db53a9ccb9ebfb3ae198d48
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424697"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154390"
 ---
-# <a name="module-0-course-introduction"></a>Módulo 0: Introdução do curso
+# <a name="lab-0-validate-lab-environment"></a>Laboratório 0: Validar ambiente de laboratório
 
 ## <a name="scenario"></a>Cenário
 
@@ -19,42 +19,52 @@ A administração do campus quer modernizar o sistema de registro de visitantes,
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da Power Platform e acessar o centro de administração do Power Platform. No centro de administração, você criará o seu ambiente de **Prática** no qual fará a maior parte do trabalho do laboratório.
+Neste laboratório do Módulo 0, você adquirirá uma avaliação do Power Platform e acesso ao centro de administração do Power Platform. No centro de administração, você criará um ambiente de **Prática** no qual fará a maior parte do trabalho do laboratório.
 
 ## <a name="exercise-1--setup"></a>Exercício 1 – Configuração
 
-### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tarefa 1 – Adquirir o locatário de teste do Microsoft Power Platform
+### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tarefa \#1 – Adquirir o locatário de teste do Microsoft Power Platform
 
-1.  Copie as **Credenciais do Microsoft 365** do Authorized Lab Hoster.
+1. Copie as **Credenciais do Microsoft 365** do Authorized Lab Hoster.
 
-2.  Navegue até <https://powerapps.microsoft.com> e clique em **Iniciar gratuitamente.**
+1. Navegue até <https://powerapps.microsoft.com> e clique em **Iniciar gratuitamente**.
 
-3.  Em **Vamos começar**, insira o endereço de email das suas credenciais do Microsoft 365 na caixa de texto que diz **Insira seu endereço de email corporativo.**
+1. Em **Vamos começar**, insira o endereço de email das suas credenciais do Microsoft 365 na caixa de texto que diz **Insira seu endereço de email corporativo** e clique em **Avançar**.
 
-4.  Será exibido um aviso informando que você tem uma conta na Microsoft. Selecione **Entrar.**
+1. Se encontrar um prompt informando que você tem uma conta Microsoft existente. Selecione **Entrar**.
 
-5.  Digite a senha fornecida pelo Authorized Lab Hoster e entre.
+1. Digite a senha fornecida pelo Authorized Lab Hoster e entre.
 
-6.  Selecione **Sim** para permanecer conectado.
+1. Selecione **Sim** para permanecer conectado.
 
-7.  Preencha as informações da sua conta e selecione **Introdução** para se inscrever em sua avaliação do Microsoft Power Platform.
+1. Não altere o país.
+
+1. Para **Número de telefone**, insira 01234567890.
+
+1. Preencha as informações da sua conta e selecione **Introdução** para se inscrever em sua avaliação do Microsoft Power Platform.
+
+1. Na tela de confirmação, clique em **Introdução**.
+
+1. Se você vir um prompt para inserir detalhes de contato, clique em **X** para fechar a janela pop-up.
 
 ### <a name="task-2--create-environment"></a>Tarefa 2 – Criar ambiente
 
-1.  Acesse <https://admin.powerplatform.microsoft.com> e faça logon com suas credenciais do Microsoft 365 se for solicitado.
+1. Navegue para <https://admin.powerplatform.microsoft.com> e faça logon com suas credenciais do Microsoft 365 se for solicitado.
 
-2.  Selecione **Ambientes** e clique em **+Novo.**
+1. Se você vir um pop-up de boas-vindas, clique em **Introdução**.
 
-    1.  Em **Nome**, insira **Prática [Minhas iniciais].** (Exemplo: Prática AJ.)
+1. Selecione **Ambientes** e clique em **+ Novo**.
 
-    2.  Em **Tipo**, selecione **Teste** (não selecione a opção Teste (com base em assinatura)).
+    1. Para **Nome**, insira **Prática [Minhas Iniciais]** (por exemplo: Prática AJ).
 
-    3.  Altere o botão **Criar um banco de dados para este ambiente?** para **Sim.**
+    1. Em **Tipo**, selecione **Avaliação** (não selecione a opção Avaliação [baseado em assinatura]).
 
-    4.  Deixe todas as outras seleções como padrão e clique em **Avançar.**
+    1. Altere o botão **Criar um banco de dados para este ambiente?** para **Sim**.
 
-    5.  Na próxima guia, deixe todas as seleções como padrão e clique em **Salvar.**
+    1. Deixe todas as outras seleções como padrão e clique em **Avançar**.
 
-3.  Seu ambiente de **Prática** agora deve aparecer na lista Ambientes.
+    1. Na próxima guia, deixe todas as seleções como padrão e clique em **Salvar**.
 
->   O ambiente pode levar alguns minutos para ser provisionado. Se necessário, atualize a página.
+1. Seu ambiente de **Prática** agora deve aparecer na lista Ambientes.
+
+> O ambiente pode levar alguns minutos para ser provisionado. Se necessário, atualize a página.

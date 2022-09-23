@@ -2,17 +2,16 @@
 lab:
   title: 'Laboratório 2: Como criar um aplicativo de tela'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 24d99d14079d40f74a43ed0de64dd6ae5d7046c7
-ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
+ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "144810915"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154426"
 ---
-# <a name="module-3-get-started-with-power-apps"></a>Módulo 3: Introdução ao Power Apps
-## <a name="lab-how-to-build-a-canvas-app"></a>Laboratório: Como criar um aplicativo de tela
+# <a name="lab-2-how-to-build-a-canvas-app"></a>Laboratório 2: Como criar um aplicativo de tela
 
-# <a name="scenario"></a>Cenário
+## <a name="scenario"></a>Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
@@ -20,27 +19,28 @@ Atualmente, a administração do campus está usando uma planilha do Excel para 
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-# <a name="high-level-lab-steps"></a>Macroetapas do laboratório
+## <a name="high-level-lab-steps"></a>Macroetapas do laboratório
 
 Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
--   Criar um aplicativo de tela com base nos dados na tabela Visita
+- Criar um aplicativo de tela com base nos dados na tabela Visita
 
--   Configurar como as visitas são mostradas na tela de navegação
+- Configurar como as visitas são mostradas na tela de navegação
 
--   Fazer algumas alterações básicas no aplicativo
+- Fazer algumas alterações básicas no aplicativo
 
--   Testar a funcionalidade do aplicativo
+- Testar a funcionalidade do aplicativo
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
 
-# <a name="exercise-1-create-visits-app"></a>Exercício \#1: Criar Aplicativo de Visitas
+## <a name="exercise-1-create-visits-canvas-app"></a>Exercício 1: Criar aplicativo Tela de Visitas
 
-**Objetivo:** Neste exercício, você criará um aplicativo de tela conectando a tabela Inicial das Visitas criada anteriormente.
+**Objetivo:** neste exercício, você criará um aplicativo de tela conectando a tabela Visitas criada anteriormente.
 
-## <a name="task-1-create-a-visits-app"></a>Tarefa \#1: Criar um Aplicativo de Visitas
+### <a name="task-1-create-the-visits-app"></a>Tarefa \#1: Criar o aplicativo Visitas
 
 1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
 
@@ -48,12 +48,12 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 3.  Se necessário, clique no ícone **Página Inicial** no lado esquerdo da tela. Na seção **Iniciar em**, selecione **Dataverse**.
 
-4.  Selecione a conexão do Dataverse. 
+4.  Selecione a conexão do Dataverse.
 
-    >   **Observação:** *Se não houver uma conexão do Dataverse:*
-    >   -   Selecione **Nova Conexão**
-    >   -   Localize o **Microsoft Dataverse**
-    >   -   Clique em **Criar**
+    > **Observação:** *Se não houver uma conexão do Dataverse:*
+    > - Selecione **Nova Conexão**
+    > - Localize o **Microsoft Dataverse**
+    > - Clique em **Criar**
 
 5.  Localize e selecione a tabela **Visitas** criada no laboratório anterior.
 
@@ -71,39 +71,39 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 Parabéns, você criou com êxito um Power App usando uma tabela do Dataverse. A próxima etapa do processo é personalizar o aplicativo para que ele corresponda à identidade visual da faculdade. A próxima série de etapas ajudará você a fazer personalizações extra no aplicativo.
 
-## <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tarefa \#2: Modificar e criar um tema para o aplicativo recém-criado
+### <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tarefa \#2: Modificar e criar um tema para o aplicativo recém-criado
 
 Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três telas do aplicativo (Procurar, Detalhes e Editar) e alterará o tema do aplicativo.
 
 1.  Você está na tela Procurar. Selecione o rótulo **Visitas** na tela.
 
-3.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para **"Visitas a Bellows College"** .
+1.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para **"Visitas a Bellows College"** .
 
-4. Nas propriedades, altere o **Tamanho da fonte** para **24**.
+1. Nas propriedades, altere o **Tamanho da fonte** para **24**.
 
-4.  Clique no fundo em branco para ver o texto atualizado na tela de navegação.
+1.  Clique no fundo em branco da tela para ver o texto atualizado na tela de navegação.
 
-5.  Usando a navegação à esquerda, selecione **DetailScreen1**.
+1.  Usando o modo de exibição de árvore na navegação esquerda, selecione **DetailScreen1**.
 
-5.  Selecione o rótulo **Visitas** na tela.
+1.  Selecione o rótulo **Visitas** na tela.
 
-6.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para **"Detalhes da visita"** .
+1.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para **"Detalhes da visita"** .
 
-7.  Clique no fundo em branco para ver o texto atualizado na tela Detalhes.
+1.  Clique no fundo em branco da tela para ver o texto atualizado na tela Detalhes.
 
-8.  Usando a navegação à esquerda, selecione **EditScreen1** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
+1.  Usando o modo de exibição de árvore esquerdo, selecione **EditScreen1** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
 
-9.  Selecione o rótulo **Visitas** na tela.
+1.  Selecione o rótulo **Visitas** na tela.
 
-10.  No lado direito da tela, na guia Propriedades, substitua o texto Table1 na propriedade de controle **Texto** por **"Editar detalhes"** .
+1.  No lado direito da tela, na guia Propriedades, substitua o texto Table1 na propriedade de controle **Texto** por **"Editar detalhes"** .
 
-11.  Clique no fundo em branco para ver o texto atualizado na tela Editar.
+1.  Clique no fundo em branco da tela para ver o texto atualizado na tela Editar.
 
-12. Usando a navegação à esquerda, selecione **BrowseScreen1**.
+1. Usando o modo de exibição de árvore na navegação esquerda, selecione **BrowseScreen1**.
 
-13. Na barra de ferramentas de comando, selecione o botão **Tema** e, na lista exibida, selecione a cor do tema **Vermelho**.
+1. Na barra de ferramentas de comando, selecione o botão **Tema** e, na lista exibida, selecione a cor do tema **Vermelho**.
 
-## <a name="task-3-test-your-visits-app"></a>Tarefa \#3: Testar o aplicativo de Visitas
+### <a name="task-3-test-your-visits-app"></a>Tarefa \#3: Testar o aplicativo de Visitas
 
 Nesta tarefa, você testará seu novo aplicativo.
 
@@ -128,6 +128,6 @@ Nesta tarefa, você testará seu novo aplicativo.
 
 Parabéns! Você criou e configurou seu primeiro aplicativo de tela.
 
-# <a name="challenges"></a>Desafios
+## <a name="challenges"></a>Desafios
 
--   Adicione as seguintes colunas aos formulários em DetailScreen1 e EditScreen1: Início real, Término real, Código, Início agendado e Término agendado
+- Adicione as seguintes colunas aos formulários em DetailScreen1 e EditScreen1: Início real, Término real, Código, Início agendado e Término agendado

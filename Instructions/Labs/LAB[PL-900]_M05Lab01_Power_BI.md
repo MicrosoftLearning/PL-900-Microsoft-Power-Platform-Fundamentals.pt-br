@@ -2,17 +2,16 @@
 lab:
   title: 'Laboratório 5: Como compilar um dashboard simples'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812929"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154438"
 ---
-# <a name="module-5-get-started-with-power-bi"></a>Módulo 5: Introdução ao Power BI
-## <a name="lab-how-to-build-a-simple-dashboard"></a>Laboratório: Como compilar um dashboard simples
+## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Laboratório 5: Como compilar um dashboard simples
 
-# <a name="scenario"></a>Cenário
+## <a name="scenario"></a>Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
@@ -20,43 +19,33 @@ A administração do campus quer modernizar o sistema de registro de visitantes,
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-Neste laboratório você vai criar um painel do Power BI que mostra dados sobre as visitas ao campus.
+Neste laboratório você criará um painel e relatório do Power BI que mostra dados sobre as visitas ao campus.
 
-# <a name="high-level-lab-steps"></a>Macroetapas do laboratório
+## <a name="high-level-lab-steps"></a>Macroetapas do laboratório
 
 Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
--   Conectar ao Dataverse
-
--   Alterar os dados para incluir descrições amigáveis nas linhas relacionadas (pesquisas)
-
--   Criar e publicar um relatório com várias visualizações das informações de visitas ao campus
+-   Criar um relatório com várias visualizações das informações de visitas ao campus
 
 -   Usar uma linguagem de consulta natural ao usuário para criar visualizações adicionais
 
--   Criar uma visão do painel do Power BI para dispositivos móveis
-
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
-
--   Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
+- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
 
 ## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
 
 -   Quem é o público-alvo do relatório?
-
 -   Como o público-alvo usará o relatório? Qual é o dispositivo usual? Qual é o local?
-
 -   Existem dados suficientes para visualizar o painel?
-
 -   Quais são as características que você pode usar para analisar os dados sobre as visitas?
 
-# <a name="exercise-1-create-power-bi-report"></a>Exercício 1: criar um relatório do Power BI
+## <a name="exercise-1-create-power-bi-report"></a>Exercício 1: criar um relatório do Power BI
 
 **Objetivo:** neste exercício, você criará um relatório do Power BI com base nos dados da planilha do Excel que aproveitamos em um exercício anterior.
 
-## <a name="task-1-prepare-power-bi-service"></a>Tarefa \#1: Preparar o serviço do Power BI
+### <a name="task-1-prepare-power-bi-service"></a>Tarefa \#1: Preparar o serviço do Power BI
 
 1.  Baixe o [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salve no computador.
 
@@ -70,17 +59,17 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 6.  Localize e selecione o arquivo **visits.pbix** que você baixou anteriormente.
 
-7.  Depois de carregar os dados, selecione o relatório **visitas** (observe que Tipo está definido como **Relatório**).
+7.  Depois de carregar os dados, expanda **Meu workspace** e selecione o relatório de **visitas** (o Tipo está definido para **Relatório**).
 
 8.  Clique em **Editar**. Se o item de menu **Editar** não estiver visível, clique em **...** e selecione **Editar**.
 
-Você concluiu a configuração do serviço do Power BI para usar em seus laboratórios. 
+Você concluiu a configuração do serviço do Power BI para usar em seus laboratórios.
 
-## <a name="task-2-create-chart-and-time-visualizations"></a>Tarefa \#2: criar gráficos e visualizações de tempo
+### <a name="task-2-create-chart-and-time-visualizations"></a>Tarefa \#2: criar gráficos e visualizações de tempo
 
 1.  Pressione o ícone de **Gráfico de pizza** no painel **Visualizações** para inserir um gráfico.
 
-2.  Pressione a seta suspensa ao lado de **bc_name** no painel de Campos. Arraste o campo **Prédio** e solte dentro da caixa **Legenda**.
+2.  Pressione a seta ao lado de **bc_building** no painel Campos. Arraste o campo **Prédio** e solte dentro da caixa **Legenda**.
 
 3.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa **Valores**.
 
@@ -88,9 +77,9 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 5.  Clique fora do gráfico de pizza para desmarcá-lo e selecione o gráfico de colunas no painel **Visualizações**.
 
-6.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa **Valores**.
+6.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa de destino **Eixo y**.
 
-7.  Arraste o campo **Início** e solte dentro da caixa **Eixo**.
+7.  Arraste o campo **Início** e solte-o na caixa de destino **Eixo x**.
 
 8.  No painel Visualizações, clique em **x** ao lado de **Ano** e **Trimestre** para deixar somente os totais de **Mês** e **Dia** no Eixo.
 
@@ -100,15 +89,15 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
     1.  Selecione várias partes do gráfico de pizza dos prédios e observe as mudanças no relatório de tempo.
 
-    2.  Clique no gráfico de colunas. Pressione a seta para baixo para ativar o modo de **Fazer busca detalhada** (ou clique com o botão direito do mouse no gráfico e selecione **Fazer busca detalhada**) e clique na coluna a ser detalhada até o próximo nível (dias). 
-    
+    2.  Clique no gráfico de colunas. Pressione a seta para baixo para ativar o modo de **Fazer busca detalhada** (ou clique com o botão direito do mouse no gráfico e selecione **Fazer busca detalhada**) e clique na coluna a ser detalhada até o próximo nível (dias).
+
     3.  Faça pesquisas detalhadas ou agrupadas e selecione várias barras no gráfico de colunas de tempo para observar as mudanças no relatório de pizza.
 
 11. Salve o trabalho em andamento pressionando **Salvar**.
 
-# <a name="exercise-2-create-power-bi-dashboard"></a>Exercício \#2: criar um painel do Power BI
+## <a name="exercise-2-create-power-bi-dashboard"></a>Exercício 2: criar um painel do Power BI
 
-## <a name="task-1-create-power-bi-dashboard"></a>Tarefa \#1: criar um painel do Power BI
+### <a name="task-1-create-power-bi-dashboard"></a>Tarefa \#1: criar um painel do Power BI
 
 1.  Abra o relatório criado na tarefa anterior.
 
@@ -118,13 +107,11 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 4.  Digite **Administração do campus** como **Nome do dashboard** e pressione **Fixar em tempo real**.
 
-5.  Selecione **Meu espaço de trabalho** no topo, depois selecione o painel **Gerenciamento do campus [Seu sobrenome]** .
+5.  Um pop-up informará que o painel foi criado. Selecione **Ir para o dashboard**.
 
-6.  Um pop-up informará que o painel foi criado. Selecione **Ir para o dashboard**.
+6.  Teste a interatividade dos gráficos de pizza e barras exibidos.
 
-7.  Teste a interatividade dos gráficos de pizza e barras exibidos.
-
-## <a name="task-2-add-visualizations-using-natural-language"></a>Tarefa \#2: adicionar visualizações usando linguagem natural
+### <a name="task-2-add-visualizations-using-natural-language"></a>Tarefa \#2: adicionar visualizações usando linguagem natural
 
 1.  No painel **Gerenciamento do campus**, selecione a barra **Faça uma pergunta sobre os dados** no topo.
 

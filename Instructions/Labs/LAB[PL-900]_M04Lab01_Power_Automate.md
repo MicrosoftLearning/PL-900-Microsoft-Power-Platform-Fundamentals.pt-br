@@ -2,15 +2,14 @@
 lab:
   title: '‘Laboratório 4: Saiba como construir uma solução automatizada'
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: 9b07c81fad82867bb54c2889687075fa7a463b81
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 35d4b6940f31e1a2aef5e8b43d8ca7007e1b72f2
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812941"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154318"
 ---
-# <a name="module-4-get-started-with-power-automate"></a>Módulo 4: Introdução ao Power Automate
-## <a name="lab-how-to-build-an-automated-solution"></a>Laboratório: Saiba como construir uma solução automatizada
+# <a name="lab-4-how-to-build-an-automated-solution"></a>‘Laboratório 4: Saiba como construir uma solução automatizada
 
 ## <a name="scenario"></a>Cenário
 
@@ -22,31 +21,30 @@ Ao longo deste curso, você vai criar aplicativos e fazer automações para perm
 
 Neste laboratório, você criará um fluxo do Power Automate para enviar um email a um visitante quando uma visita for agendada.
 
-# <a name="high-level-lab-steps"></a>Macroetapas do laboratório
+## <a name="high-level-lab-steps"></a>Macroetapas do laboratório
 
 Os pré-requisitos seguintes foram identificados para que o projeto seja concluído:
 
--   Os contatos precisam ser notificados por email quando uma visita for agendada.
+- Os contatos precisam ser notificados por email quando uma visita for agendada.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
+- Conclusão do **Laboratório 3 do Módulo 2 – Como criar um aplicativo controlado por modelo**
+- Contato de Davi Barros criado com um endereço de email pessoal preenchido
 
--   Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
-
--   Contato de Davi Barros criado com um endereço de email pessoal preenchido
-
-# <a name="exercise-1-create-visit-notification-flow"></a>Exercício 1: Criar fluxo de Notificação de visita
+## <a name="exercise-1-create-visit-notification-flow"></a>Exercício 1: Criar fluxo de Notificação de visita
 
 **Objetivo:** Neste exercício será criado um fluxo no Power Automate que implementa o requisito. O visitante deve receber um email incluindo o código exclusivo atribuído à visita quando ela é criada.
 
-## <a name="task-1-create-a-flow"></a>Tarefa \#1: Criar um fluxo
+### <a name="task-1-create-a-flow"></a>Tarefa \#1: Criar um fluxo
 
 1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-2.  Na barra de navegação à esquerda, selecione **Fluxos**.
+3.  Na barra de navegação à esquerda, selecione **Fluxos**.
 
 4.  Se solicitado, selecione **Começar**.
 
@@ -66,12 +64,11 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
     3.  Selecione **Organização** em **Escopo**
 
-    4.  Na etapa de ativação, clique nas reticências ( **...** ) e clique em **Renomear**.
-        Renomeie esse gatilho **"Quando uma visita é criada"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
+    4.  Na etapa de ativação, clique nas reticências ( **...** ) e clique em **Renomear**. Renomeie esse gatilho **"Quando uma visita é criada"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
 
-## <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tarefa \#2: Criar uma etapa para obter a linha de visitantes
+### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tarefa \#2: Criar uma etapa para obter a linha de visitantes
 
-1.  Selecione **Nova Etapa**. Esta etapa é necessária para recuperar as informações dos visitantes, inclusive o endereço de email.
+1.  Selecione **+ Nova Etapa**. Esta etapa é necessária para recuperar as informações dos visitantes, inclusive o endereço de email.
 
 2.  Pesquise por **Dataverse**.
 
@@ -79,16 +76,16 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 4.  Selecione **Contatos** em **Nome da tabela**
 
-5.  Selecione o campo **ID da Linha**. Observe que uma janela para selecionar conteúdo dinâmico ou expressões será exibida. 
+5.  Selecione o campo **ID da Linha**. Observe que uma janela para selecionar conteúdo dinâmico ou expressões será exibida.
 
-6.  No campo **ID de linha**, selecione **Visitante (Valor)** na Lista de conteúdo dinâmico. Nesta etapa, busque o contato da linha de Visita que foi criada para acionar esse fluxo. Como o endereço de email faz parte da tabela de Contato, você precisará dessas informações para enviar o email ao visitante. 
+6.  No campo **ID de linha**, selecione **Visitante (Valor)** na Lista de conteúdo dinâmico. Nesta etapa, busque o contato da linha de Visita que foi criada para acionar esse fluxo. Como o endereço de email faz parte da tabela de Contato, você precisará dessas informações para enviar o email ao visitante.
 
 7.  Neste momento, clique nas reticências ( **...** ) e clique em **Renomear**.
         Renomeie esta ação **"Criar visitante"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
 
-## <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tarefa \#3: Criar uma etapa para enviar um email ao visitante
+### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tarefa \#3: Criar uma etapa para enviar um email ao visitante
 
-1.  Clique em **Nova etapa**. É nessa a etapa que um email será enviado para o visitante.
+1.  Clique em **+ Nova etapa**. É nessa a etapa que um email será enviado para o visitante.
 
 2.  Pesquise por *email*, selecione o conector do **Office 365 Outlook** e a ação **Enviar um email (V2)** .
 
@@ -130,13 +127,13 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 ![Exemplo de etapas de fluxo.](media/4-Flow.png)
 
-## <a name="task-4-validate-and-test-the-flow"></a>Tarefa \#4: Validar e testar o fluxo
+### <a name="task-4-validate-and-test-the-flow"></a>Tarefa \#4: Validar e testar o fluxo
 
 1.  Abra uma nova guia no navegador e navegue para <https://make.powerapps.com>.
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-3.  Clique em **Aplicativos** e selecione o aplicativo **Baseado em modelo de Administração de campus** criado anteriormente.
+3.  Clique em **Aplicativos** e selecione o aplicativo baseado em modelo **Administração de campus Bellows** criado anteriormente.
 
 3.  Deixando essa guia do navegador aberta, navegue de volta para a guia anterior de seu fluxo.
 
@@ -160,10 +157,10 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 8. Selecione o botão **Salvar e Fechar (Save and Close)** .
 
-9. Navegue até a guia do navegador com o fluxo de teste em execução. Após um momento, você deverá ver o fluxo em execução. É aqui que você pode detectar quaisquer problemas no fluxo ou confirmar se ele foi executado com êxito. 
+9. Navegue até a guia do navegador com o fluxo de teste em execução. Após um momento, você deverá ver o fluxo em execução. É aqui que você pode detectar quaisquer problemas no fluxo ou confirmar se ele foi executado com êxito.
 
 Após um pequeno atraso, você deverá ver um email em sua caixa de entrada, uma vez que preencheu o email de John Doe com seu email pessoal. Observe que ele pode ir para sua pasta de lixo eletrônico.
 
-# <a name="challenges"></a>Desafios
+## <a name="challenges"></a>Desafios
 
--   Brincar com a formatação no email. Como você pode torná-lo mais profissional? 
+- Brincar com a formatação no email. Como você pode torná-lo mais profissional?
