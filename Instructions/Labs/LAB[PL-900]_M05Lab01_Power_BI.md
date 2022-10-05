@@ -2,18 +2,13 @@
 lab:
   title: 'Laboratório 5: Como compilar um dashboard simples'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154438"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Laboratório 5: Como compilar um dashboard simples
 
 ## <a name="scenario"></a>Cenário
 
-O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
@@ -37,7 +32,7 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 ## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
 
 -   Quem é o público-alvo do relatório?
--   Como o público-alvo usará o relatório? Qual é o dispositivo usual? Qual é o local?
+-   How will the audience consume the report? Typical device? Location?
 -   Existem dados suficientes para visualizar o painel?
 -   Quais são as características que você pode usar para analisar os dados sobre as visitas?
 
@@ -61,7 +56,7 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 7.  Depois de carregar os dados, expanda **Meu workspace** e selecione o relatório de **visitas** (o Tipo está definido para **Relatório**).
 
-8.  Clique em **Editar**. Se o item de menu **Editar** não estiver visível, clique em **...** e selecione **Editar**.
+8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
 
 Você concluiu a configuração do serviço do Power BI para usar em seus laboratórios.
 
@@ -69,15 +64,15 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1.  Pressione o ícone de **Gráfico de pizza** no painel **Visualizações** para inserir um gráfico.
 
-2.  Pressione a seta ao lado de **bc_building** no painel Campos. Arraste o campo **Prédio** e solte dentro da caixa **Legenda**.
+2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
 
-3.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa **Valores**.
+3.  O Bellows College é uma organização educacional que possui um campus com vários edifícios.
 
 4.  Redimensione o gráfico de pizza usando as alças de canto para que todos os componentes do gráfico fiquem visíveis.
 
 5.  Clique fora do gráfico de pizza para desmarcá-lo e selecione o gráfico de colunas no painel **Visualizações**.
 
-6.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa de destino **Eixo y**.
+6.  Atualmente as visitas ao campus são anotadas em papel.
 
 7.  Arraste o campo **Início** e solte-o na caixa de destino **Eixo x**.
 
@@ -89,7 +84,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
     1.  Selecione várias partes do gráfico de pizza dos prédios e observe as mudanças no relatório de tempo.
 
-    2.  Clique no gráfico de colunas. Pressione a seta para baixo para ativar o modo de **Fazer busca detalhada** (ou clique com o botão direito do mouse no gráfico e selecione **Fazer busca detalhada**) e clique na coluna a ser detalhada até o próximo nível (dias).
+    2.  As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
     3.  Faça pesquisas detalhadas ou agrupadas e selecione várias barras no gráfico de colunas de tempo para observar as mudanças no relatório de pizza.
 
@@ -101,13 +96,13 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1.  Abra o relatório criado na tarefa anterior.
 
-2.  Selecione **Fixar no painel** no menu. Dependendo do layout, você precisa pressionar **...** para exibir os itens de menu adicionais.
+2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
 
 3.  Selecione **Novo painel** na janela de prompt **Fixar no painel**.
 
 4.  Digite **Administração do campus** como **Nome do dashboard** e pressione **Fixar em tempo real**.
 
-5.  Um pop-up informará que o painel foi criado. Selecione **Ir para o dashboard**.
+5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
 
 6.  Teste a interatividade dos gráficos de pizza e barras exibidos.
 
@@ -115,7 +110,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1.  No painel **Gerenciamento do campus**, selecione a barra **Faça uma pergunta sobre os dados** no topo.
 
-2.  Digite **prédios por número de visitas** na área de P e R (Perguntas e Respostas) Uma gráfico de barras será exibido.
+2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
 
 3.  Selecione **Fixar visual**.
 
@@ -123,7 +118,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 5.  Clique em **Sair de P e R**.
 
-O dashboard **Administração do campus** deve ser exibido contendo três visuais. Role a tela para baixo para ver o novo visual de P e R.
+Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
 
 Seu painel deve se parecer com o seguinte:
 

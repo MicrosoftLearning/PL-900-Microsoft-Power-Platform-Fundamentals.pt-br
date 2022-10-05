@@ -2,24 +2,19 @@
 lab:
   title: 'Laboratório 0: Validar ambiente de laboratório'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154390"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>Laboratório 0: Validar ambiente de laboratório
 
 ## <a name="scenario"></a>Cenário
 
-O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-Neste laboratório do Módulo 0, você adquirirá uma avaliação do Power Platform e acesso ao centro de administração do Power Platform. No centro de administração, você criará um ambiente de **Prática** no qual fará a maior parte do trabalho do laboratório.
+In this Module 0 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a <bpt id="p1">**</bpt>Practice<ept id="p1">**</ept> environment that you will perform the majority of your lab work in.
 
 ## <a name="exercise-1--setup"></a>Exercício 1 – Configuração
 
@@ -31,7 +26,7 @@ Neste laboratório do Módulo 0, você adquirirá uma avaliação do Power Platf
 
 1. Em **Vamos começar**, insira o endereço de email das suas credenciais do Microsoft 365 na caixa de texto que diz **Insira seu endereço de email corporativo** e clique em **Avançar**.
 
-1. Se encontrar um prompt informando que você tem uma conta Microsoft existente. Selecione **Entrar**.
+1. If you see a prompt that you have an existing account with Microsoft. Select <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept>.
 
 1. Digite a senha fornecida pelo Authorized Lab Hoster e entre.
 
@@ -67,4 +62,4 @@ Neste laboratório do Módulo 0, você adquirirá uma avaliação do Power Platf
 
 1. Seu ambiente de **Prática** agora deve aparecer na lista Ambientes.
 
-> O ambiente pode levar alguns minutos para ser provisionado. Se necessário, atualize a página.
+> Your environment may take a few minutes to provision. Refresh the page if needed.

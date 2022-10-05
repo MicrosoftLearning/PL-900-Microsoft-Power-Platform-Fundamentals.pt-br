@@ -2,13 +2,8 @@
 lab:
   title: 'Laboratório 3: Como criar um aplicativo baseado em modelo'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154414"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>Laboratório 3: Como criar um aplicativo baseado em modelo
 
 ## <a name="scenario"></a>Cenário
@@ -146,9 +141,9 @@ IMPORTANTE: Verifique se você não fechou a exibição Visitas Ativas, pois vam
 
 **Observação:** como não filtramos mais no status de exibição, obteremos todas as visitas de hoje incluindo as concluídas. Esses campos ajudarão a diferenciar as visitas concluídas e as visitas em andamento.
 
-1. Clique em **Salvar**.
+9. Clique em **Salvar**.
 
-2. Clique em **Publicar** e espere a conclusão da publicação.
+10. Clique em **Publicar** e espere a conclusão da publicação.
 
 ## <a name="exercise-2-create-model-driven-app"></a>Exercício 2: Criar aplicativo baseado em modelo
 
@@ -186,7 +181,7 @@ Para simplificar e economizar tempo, não abordaremos algumas das colunas Visita
 
 8. Usando os ícones de navegação no lado esquerdo da tela, selecione **Navegação**.
 
-9. No painel de navegação, selecione **Grupo 1** abaixo, na Barra de navegação.
+9. No painel de navegação, selecione **Grupo 1** abaixo, na Barra de navegação. Talvez seja necessário expandir o menu à esquerda.
 
 10. No lado direito da tela, na seção **Exibir Opções**, altere a propriedade **Título** para **Segurança**.
 
@@ -260,7 +255,7 @@ Agora que todos os componentes necessários foram adicionados ao aplicativo base
 
 - Clique em **Salvar e Fechar**. A visita será criada e você poderá vê-la na Exibição de visitas ativas.
 
-- Altere a exibição para **Visitas de Hoje**. Você não verá mais a nova visita na exibição, pois ela foi agendada para amanhã.
+- Altere o modo de exibição para **visitas de hoje** usando a lista suspensa ao lado das **Visitas Ativas**. Você não verá mais a nova visita na exibição, pois ela foi agendada para amanhã.
 
 4. Você pode adicionar mais registros de teste.
 

@@ -2,20 +2,15 @@
 lab:
   title: 'Laboratório 2: Como criar um aplicativo de tela'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154426"
 ---
+
 # <a name="lab-2-how-to-build-a-canvas-app"></a>Laboratório 2: Como criar um aplicativo de tela
 
 ## <a name="scenario"></a>Cenário
 
-O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
-Atualmente, a administração do campus está usando uma planilha do Excel para acompanhar o registro de visitantes. Eles querem modernizar o sistema de registro de visitantes, em que o controle de acesso aos edifícios é feito pelo pessoal de segurança e todas as visitas precisam ser registradas previamente e gravadas pelos anfitriões.
+Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
@@ -42,11 +37,11 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 ### <a name="task-1-create-the-visits-app"></a>Tarefa \#1: Criar o aplicativo Visitas
 
-1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
+1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-3.  Se necessário, clique no ícone **Página Inicial** no lado esquerdo da tela. Na seção **Iniciar em**, selecione **Dataverse**.
+3.  If necessary, click the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> icon on the left side of the screen. Under the <bpt id="p1">**</bpt>Start from<ept id="p1">**</ept> section, select <bpt id="p2">**</bpt>Dataverse<ept id="p2">**</ept>.
 
 4.  Selecione a conexão do Dataverse.
 
@@ -65,17 +60,17 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 ![Aplicativo de tela criado com base nos dados de Visita.](media/2-canvas-app-from-data.png)
 
-9. No designer de aplicativo, selecione o botão **visualizar aplicativo** (ícone Executar) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5 no teclado.)* Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
+9. O Bellows College é uma organização educacional que possui um campus com vários edifícios.
 
 10. Feche a visualização do aplicativo clicando em **X** no canto superior direito da tela.
 
-Parabéns, você criou com êxito um Power App usando uma tabela do Dataverse. A próxima etapa do processo é personalizar o aplicativo para que ele corresponda à identidade visual da faculdade. A próxima série de etapas ajudará você a fazer personalizações extra no aplicativo.
+Atualmente, as visitas ao campus são registradas em diários de papel.
 
 ### <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tarefa \#2: Modificar e criar um tema para o aplicativo recém-criado
 
 Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três telas do aplicativo (Procurar, Detalhes e Editar) e alterará o tema do aplicativo.
 
-1.  Você está na tela Procurar. Selecione o rótulo **Visitas** na tela.
+1.  As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
 1.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para **"Visitas a Bellows College"** .
 
@@ -113,12 +108,12 @@ Nesta tarefa, você testará seu novo aplicativo.
 
 3.  Usando a navegação à esquerda, selecione **BrowseScreen1**.
 
-4.  No designer de aplicativo, selecione o botão **visualizar aplicativo** (ícone Executar) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5 no teclado.)*
+4.  In the app designer, select the <bpt id="p1">**</bpt>preview the app<ept id="p1">**</ept> button (Play icon) on the command bar. <bpt id="p1">*</bpt>(You can also preview the app by pressing F5 on your keyboard.)<ept id="p1">*</ept>
 
 4.  Quando o aplicativo for aberto, no campo **Pesquisar Itens**, insira o texto **Maria**
-     *(observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).*
+    * (observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).*
 
-5.  Assim que o registro **Contoso Suites** para **Clara Barbosa** for exibido, clique na linha do navegador para abrir os detalhes dessa visita. (**Observação**: *se mais de um registro de Maria Campbell do Contoso Suites for exibido, selecione qualquer um deles*)
+5.  Atualmente, a administração do campus está usando uma planilha do Excel para acompanhar o registro de visitantes.
 
 6.  Para editar o registro, selecione o **Ícone de lápis** no canto superior direito do aplicativo.
 
@@ -126,7 +121,7 @@ Nesta tarefa, você testará seu novo aplicativo.
 
 8.  No canto superior direito da tela, clique no ícone **X** para retornar ao editor do aplicativo de tela.
 
-Parabéns! Você criou e configurou seu primeiro aplicativo de tela.
+Eles querem modernizar o sistema de registro de visitantes, em que o controle de acesso aos edifícios é feito pelo pessoal de segurança e todas as visitas precisam ser registradas previamente e gravadas pelos anfitriões.
 
 ## <a name="challenges"></a>Desafios
 
