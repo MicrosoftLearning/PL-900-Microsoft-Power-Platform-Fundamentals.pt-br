@@ -2,13 +2,8 @@
 lab:
   title: 'Laboratório 0: Validar ambiente de laboratório'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154390"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>Laboratório 0: Validar ambiente de laboratório
 
 ## <a name="scenario"></a>Cenário
@@ -39,7 +34,7 @@ Neste laboratório do Módulo 0, você adquirirá uma avaliação do Power Platf
 
 1. Não altere o país.
 
-1. Para **Número de telefone**, insira 01234567890.
+1. Para **número de telefone**, insira 0123456789.
 
 1. Preencha as informações da sua conta e selecione **Introdução** para se inscrever em sua avaliação do Microsoft Power Platform.
 

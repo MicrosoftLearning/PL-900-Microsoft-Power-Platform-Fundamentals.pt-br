@@ -2,13 +2,8 @@
 lab:
   title: 'Laboratório 5: Como compilar um dashboard simples'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154438"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Laboratório 5: Como compilar um dashboard simples
 
 ## <a name="scenario"></a>Cenário
@@ -69,9 +64,9 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1.  Pressione o ícone de **Gráfico de pizza** no painel **Visualizações** para inserir um gráfico.
 
-2.  Pressione a seta ao lado de **bc_building** no painel Campos. Arraste o campo **Prédio** e solte dentro da caixa **Legenda**.
+2.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Prédio** e solte dentro da caixa **Legenda**.
 
-3.  Pressione a seta ao lado de **bc_Visit** no painel Campos. Arraste o campo **Visita** e solte-o na caixa **Valores**.
+3.  Arraste o campo **Visita** e solte-o na caixa **Valores**.
 
 4.  Redimensione o gráfico de pizza usando as alças de canto para que todos os componentes do gráfico fiquem visíveis.
 

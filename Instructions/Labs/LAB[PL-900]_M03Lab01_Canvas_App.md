@@ -2,13 +2,8 @@
 lab:
   title: 'Laboratório 2: Como criar um aplicativo de tela'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154426"
 ---
+
 # <a name="lab-2-how-to-build-a-canvas-app"></a>Laboratório 2: Como criar um aplicativo de tela
 
 ## <a name="scenario"></a>Cenário
@@ -107,7 +102,7 @@ Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três t
 
 Nesta tarefa, você testará seu novo aplicativo.
 
-1.  Com o aplicativo aberto no Designer de Aplicativo, selecione **Arquivo**, atualize o nome do aplicativo para **Aplicativo de Visitas** e selecione **Salvar**.
+1.  Com seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações**, na seção **Geral** , atualize o nome do aplicativo para **o Aplicativo Visitas**, clique no **X** para fechar a tela de configurações e selecione **Salvar**.
 
 2.  Selecione a seta **voltar** para retornar ao seu aplicativo.
 
@@ -116,7 +111,7 @@ Nesta tarefa, você testará seu novo aplicativo.
 4.  No designer de aplicativo, selecione o botão **visualizar aplicativo** (ícone Executar) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5 no teclado.)*
 
 4.  Quando o aplicativo for aberto, no campo **Pesquisar Itens**, insira o texto **Maria**
-     *(observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).*
+    * (observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).*
 
 5.  Assim que o registro **Contoso Suites** para **Clara Barbosa** for exibido, clique na linha do navegador para abrir os detalhes dessa visita. (**Observação**: *se mais de um registro de Maria Campbell do Contoso Suites for exibido, selecione qualquer um deles*)
 
