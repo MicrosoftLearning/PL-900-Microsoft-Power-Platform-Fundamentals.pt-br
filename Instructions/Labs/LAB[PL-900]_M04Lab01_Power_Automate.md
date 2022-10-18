@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>Cenário
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
 A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
@@ -31,11 +31,11 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 ## <a name="exercise-1-create-visit-notification-flow"></a>Exercício 1: Criar fluxo de Notificação de visita
 
-<bpt id="p1">**</bpt>Objective:<ept id="p1">**</ept> In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit when a visit is created.
+**Objetivo:** Neste exercício será criado um fluxo no Power Automate que implementa o requisito. O visitante deve receber um email incluindo o código exclusivo atribuído à visita quando ela é criada.
 
 ### <a name="task-1-create-a-flow"></a>Tarefa \#1: Criar um fluxo
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
@@ -59,11 +59,11 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
     3.  Selecione **Organização** em **Escopo**
 
-    4.  On the trigger step, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>. Rename this trigger <bpt id="p1">**</bpt>"When a visit is added"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+    4.  Na etapa de ativação, clique nas reticências ( **...** ) e clique em **Renomear**. Renomeie esse gatilho **"Quando uma visita é criada"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
 
 ### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tarefa \#2: Criar uma etapa para obter a linha de visitantes
 
-1.  O Bellows College é uma organização educacional que possui um campus com vários edifícios.
+1.  Selecione **+ Nova Etapa**. Esta etapa é necessária para recuperar as informações dos visitantes, inclusive o endereço de email.
 
 2.  Pesquise por **Dataverse**.
 
@@ -71,16 +71,16 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 4.  Selecione **Contatos** em **Nome da tabela**
 
-5.  Atualmente as visitas ao campus são anotadas em papel.
+5.  Selecione o campo **ID da Linha**. Observe que uma janela para selecionar conteúdo dinâmico ou expressões será exibida.
 
-6.  As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
+6.  No campo **ID de linha**, selecione **Visitante (Valor)** na Lista de conteúdo dinâmico. Nesta etapa, busque o contato da linha de Visita que foi criada para acionar esse fluxo. Como o endereço de email faz parte da tabela de Contato, você precisará dessas informações para enviar o email ao visitante.
 
-7.  On this action, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.
-        Rename this action <bpt id="p1">**</bpt>"Get the Visitor"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+7.  Neste momento, clique nas reticências ( **...** ) e clique em **Renomear**.
+        Renomeie esta ação **"Criar visitante"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
 
 ### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tarefa \#3: Criar uma etapa para enviar um email ao visitante
 
-1.  Click <bpt id="p1">**</bpt>+ New step<ept id="p1">**</ept>. This is the step that will send an email to the visitor.
+1.  Clique em **+ Nova etapa**. É nessa a etapa que um email será enviado para o visitante.
 
 2.  Pesquise por *email*, selecione o conector do **Office 365 Outlook** e a ação **Enviar um email (V2)** .
 
@@ -97,7 +97,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 7.  Insira o seguinte texto no **Corpo do email**:
 
->   Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy &amp; paste all text first and then add dynamic content in the correct places.
+>   O conteúdo dinâmico precisa ser inserido onde os campos são nomeados entre colchetes. É recomendado copiar e colar todo o texto primeiro e, em seguida, adicionar o conteúdo dinâmico nos locais corretos.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Dear {First Name},
@@ -110,15 +110,15 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-8.  Highlight the <bpt id="p1">**</bpt>{First Name}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>First Name<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>Get the Visitor<ept id="p2">**</ept> step.
+8.  Realce o texto **{First Name}** . Substitua-o pelo campo **Nome** da etapa **Obter o visitante**.
 
-9.  Highlight the <bpt id="p1">**</bpt>{Scheduled Start}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled Start<ept id="p1">**</ept> field <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+9.  Realce o texto **{Scheduled Start}** . Substitua-o pelo campo **Início do agendamento** na etapa **Quando a visita será adicionada**.
 
-10.  Highlight the <bpt id="p1">**</bpt>{Scheduled End}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled End<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+10.  Realce o texto **{Scheduled End}** . Substitua-o pelo campo **Final do agendamento** na etapa **Quando uma visita será adicionada**.
 
 11.  Clique em **Salvar**.
 
-Leave this flow tab open for the next task. You flow should look approximately like the following:
+Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parecido com o seguinte:
 
 ![Exemplo de etapas de fluxo.](media/4-Flow.png)
 
@@ -132,7 +132,7 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 3.  Deixando essa guia do navegador aberta, navegue de volta para a guia anterior de seu fluxo.
 
-4.  On the command bar, click <bpt id="p1">**</bpt>Test<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>Manually<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>Test<ept id="p2">**</ept>.
+4.  Na barra de comandos, clique em **Testar**. Selecione **Manualmente** e clique em **Testar**.
 
 5.  Navegue até a guia do navegador com seu aplicativo baseado em modelo aberto. 
 
@@ -152,10 +152,10 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 8. Selecione o botão **Salvar e Fechar (Save and Close)** .
 
-9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
+9. Navegue até a guia do navegador com o fluxo de teste em execução. Após um momento, você deverá ver o fluxo em execução. É aqui que você pode detectar quaisquer problemas no fluxo ou confirmar se ele foi executado com êxito.
 
-After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
+Após um pequeno atraso, você deverá ver um email em sua caixa de entrada, uma vez que preencheu o email de John Doe com seu email pessoal. Observe que ele pode ir para sua pasta de lixo eletrônico.
 
 ## <a name="challenges"></a>Desafios
 
-- Play around with the formatting on the email. How can you make it more professional looking?
+- Brincar com a formatação no email. Como você pode torná-lo mais profissional?
