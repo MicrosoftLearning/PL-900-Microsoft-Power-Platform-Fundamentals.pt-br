@@ -162,9 +162,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 **Objetivo:** Neste exercício, você importará dados de amostra para o banco de dados do Dataverse.
 
-### <a name="task-1-import-the-visitsxlsx-file"></a>Tarefa \#1: Importar o arquivo Visits.xlsx
-
-Nesta tarefa, você importará dados de Visita de um arquivo do Excel.
+### <a name="task-11-load-excel-file-to-onedrive"></a>Tarefa \#1.1: Carregar o arquivo do Excel no OneDrive
 
 1. Você deve ter o arquivo **Visits.xlsx** armazenado em seu desktop. Baixe [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
 
@@ -172,42 +170,64 @@ Nesta tarefa, você importará dados de Visita de um arquivo do Excel.
 
 3. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-4. Usando a navegação à esquerda, expanda o **Dataverse** e selecione **Tabelas**.
+4. Clique no botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. A opção Clique no OneDrive estará pronta quando aparecer na tela.)
 
-5. Localize e abra a tabela **Visitar** criada no exercício anterior.
+5. Clique em **Carregar** no menu superior e selecione **Arquivos**.
 
-6. Usando o menu na parte superior, selecione a seta suspensa ao lado de **Importar** e **Importar dados do Excel**.
+6. Localize e selecione o arquivo **Visits.xlsx** e clique em **Abrir**.
 
-7. No menu exibido, selecione o botão **Carregar**.
+ **Observação:** esse arquivo está localizado na pasta **Todos os Arquivos** no computador.
+ 
+### <a name="task-12-create-a-dataflow"></a>Tarefa \#1.2: Criar um fluxo de dados
 
-8. Localize e selecione o arquivo **Visits.xlsx** baixado anteriormente. Observe que poderão ser necessários um ou dois minutos para que o arquivo seja carregado. Não se preocupe se você receber uma mensagem indicando que há erros de mapeamento, pois nós os corrigiremos a seguir.
+1. Se ainda não tiver feito isso, entre em [https://make.powerapps.com](https://make.powerapps.com/).
 
-9. Clique em **Colunas do mapa** (talvez seja necessário rolar para a direita para ver a opção Colunas do mapa).
+2. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-10. Mapeie as colunas conforme indicado abaixo:
+3. Usando a navegação à esquerda, expanda o **Dataverse** e selecione **Tabelas**.
 
-| Colunas da visita| Valores de origem |
+4. Localize e abra a tabela **Visitar** criada no exercício anterior.
+
+5. Usando o menu na parte superior, selecione a seta suspensa ao lado de **Importar** e clique em **Importar dados**.
+
+6. Na caixa de diálogo **Escolher fonte de dados**, selecione **Pasta de trabalho do Excel**.
+
+7. Selecione a opção **Vincular ao Arquivo**. Clique em **Procurar no OneDrive**. Se solicitado, entre com suas credenciais do Microsoft 365.
+
+8. Escolha o arquivo **Visits.xlsx** que foi carregado no OneDrive e clique em **Selecionar**.
+
+9. Clique em **Próximo**.
+
+10. Em **Escolher Dados**, marque a caixa ao lado da pasta de trabalho **Visitas** do Excel.
+
+11. Clique em **Próximo**. Não saia desta página.
+
+12. Clique em **Próximo**.
+
+13. Na seção **Mapear tabelas**, selecione **Carregar em tabela existente** nas **Configurações de carregamento**.
+
+14. No menu suspenso **Tabela de destino**, selecione o nome da tabela que começa com **crXXX_visit** (em que XXX é um conjunto aleatório de letras e números)
+
+15. No **Mapeamento de Colunas**. Mapeie as Colunas para as colunas de destino correspondentes.
+
+| Colunas de destino| Valores de origem |
 | - | - |
-| Término Real| término real |
-| Início Real| início real |
-| Código| code |
-| Nome| name |
-| Fim agendado| fim agendado |
-| Início Agendado| início agendado |
+| crxxx_ActualEnd| término real |
+| crxxx_ActualStart| início real |
+| crxxx_Code| code |
+| crxxx_Name| name |
+| crxxx_ScheduledEnd| fim agendado |
+| crxxx_ScheduledStart| início agendado |
 
-11. Deixe todo o restante dos campos como **Não definido**.
+16. Clique em **Próximo**.
 
-12. No canto superior direito da tela, clique em **Salvar alterações**.
+17. Selecione **Atualizar manualmente**.
 
-13. Na tela **Importar dados**, verifique se o status do mapeamento indica "Mapeamento bem-sucedido".
-
-14. Clique em **Importar** no canto superior direito para concluir a importação de dados.
+18. Clique em **Publicar**.
 
 **Observação:** Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.
 
-15. Clique em **X** para fechar o painel de importação de dados.
-
-### <a name="task-2-verify-data-import"></a>Tarefa \#2: Verificar importação de dados
+### <a name="task-3-verify-data-import"></a>Tarefa \#3: Verificar a importação de dados
 
 1. Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar a tabela **Visita** novamente.
 

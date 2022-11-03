@@ -20,7 +20,7 @@ Macroetapas do laboratório
 
 Você fará o seguinte para criar o aplicativo baseado em modelo:
 
-- Crie um novo aplicativo baseado em modelo denominado Gerenciamento de campus
+- Crie um novo aplicativo baseado em modelo denominado Gerenciamento de Campus do Bellows
 
 - Editar a navegação do aplicativo para fazer referência às tabelas necessárias
 
@@ -65,7 +65,7 @@ Se você não vir a tabela Visitas, verifique se está no ambiente correto (etap
 
 5. No lado direito da tela no painel Propriedades, selecione o campo **Nome de Exibição** e altere-o para **Informações Principais**.
 
-6. Usando o menu na parte superior da tela, selecione **+ Campo de formulário** e adicione os seguintes campos abaixo do campo **Proprietário** arrastando as colunas para o formulário ou apenas clicando nos nomes das colunas:
+6. Selecione **Colunas da Tabela** no painel de navegação à esquerda e adicione os seguintes campos abaixo do campo **Proprietário** arrastando as colunas para o formulário ou simplesmente clicando nos nomes das colunas:
 
     1. **Visitante**
 
@@ -255,7 +255,7 @@ Agora que todos os componentes necessários foram adicionados ao aplicativo base
 
 - Clique em **Salvar e Fechar**. A visita será criada e você poderá vê-la na Exibição de visitas ativas.
 
-- Altere o modo de exibição para **visitas de hoje** usando a lista suspensa ao lado das **Visitas Ativas**. Você não verá mais a nova visita na exibição, pois ela foi agendada para amanhã.
+- Altere o modo de exibição para **Visitas de Hoje** usando a lista suspensa ao lado de **Visitas Ativas**. Você não verá mais a nova visita na exibição, pois ela foi agendada para amanhã.
 
 4. Você pode adicionar mais registros de teste.
 
