@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 4ed3e8f1b4b97a760aeb60cff93ad06b89fedd6a
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137898814"
----
 # <a name="pl-900-power-platform-fundamentals"></a>PL-900: Conceitos básicos do Power Platform
 
 - **[Faça o download do manual mais recente do aluno e do conteúdo AllFiles](../../releases/latest)**

@@ -34,7 +34,7 @@ Neste laboratório do Módulo 0, você adquirirá uma avaliação do Power Platf
 
 1. Não altere o país.
 
-1. Para **número de telefone**, insira 0123456789.
+1. Para **Número de telefone**, insira 0123456789.
 
 1. Preencha as informações da sua conta e selecione **Introdução** para se inscrever em sua avaliação do Microsoft Power Platform.
 
