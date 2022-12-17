@@ -102,7 +102,7 @@ Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três t
 
 Nesta tarefa, você testará seu novo aplicativo.
 
-1.  Com seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações**, na seção **Geral** , atualize o nome do aplicativo para **o Aplicativo Visitas**, clique no **X** para fechar a tela de configurações e selecione **Salvar**.
+1.  Com seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** e, na seção **Geral**, atualize o nome do aplicativo para **Aplicativo de Visitas**, clique no **X** para fechar a tela de configurações e selecione **Salvar**.
 
 2.  Selecione a seta **voltar** para retornar ao seu aplicativo.
 
