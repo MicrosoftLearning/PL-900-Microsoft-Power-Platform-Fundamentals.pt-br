@@ -14,7 +14,7 @@ A administração do campus quer modernizar o sistema de registro de visitantes,
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-Neste laboratório, você acessará seu ambiente, criará um banco de dados do Microsoft Dataverse e desenvolverá uma solução para rastrear suas alterações. Você também criará um modelo de dados para oferecer suporte aos seguintes requisitos:
+Neste laboratório, você acessará seu ambiente, criará um banco de dados do Microsoft Dataverse. Você também criará um modelo de dados para oferecer suporte aos seguintes requisitos:
 
 - R1 – Rastrear informações para visitas agendadas no campus
 
@@ -23,6 +23,7 @@ Neste laboratório, você acessará seu ambiente, criará um banco de dados do M
 - R3 – Agendar, registrar e gerenciar as visitas
 
 Por fim, você importará dados de amostra para o Microsoft Dataverse.
+
 
 ## <a name="high-level-lab-steps"></a>Macroetapas do laboratório
 
@@ -40,9 +41,11 @@ Para preparar seus ambientes de aprendizagem, você irá:
 
 - Convenções de nomenclatura – digite os nomes atentamente.
 
+
 ## <a name="exercise-1-create-new-table"></a>Exercício 1: Criar tabela
 
 **Objetivo:** Neste exercício, você criará a tabela personalizada de Visitas.
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>Tarefa \#1: Criar a tabela Visita e Colunas
 
@@ -170,7 +173,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 3. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-4. Clique no botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. A opção Clique no OneDrive estará pronta quando aparecer na tela.)
+4. Clique no botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Clique em **Seu OneDrive está pronto** quando a opção aparecer na tela.
 
 5. Clique em **Carregar** no menu superior e selecione **Arquivos**.
 
@@ -210,14 +213,14 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 15. No **Mapeamento de Colunas**. Mapeie as Colunas para as colunas de destino correspondentes.
 
-| Colunas de destino| Valores de origem |
-| - | - |
-| crxxx_ActualEnd| término real |
-| crxxx_ActualStart| início real |
-| crxxx_Code| code |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| fim agendado |
-| crxxx_ScheduledStart| início agendado |
+| Colunas de destino  | Valores de origem   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | término real      |
+| crxxx_ActualStart    | início real    |
+| crxxx_Code           | code            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | fim agendado   |
+| crxxx_ScheduledStart | início agendado |
 
 16. Clique em **Próximo**.
 
