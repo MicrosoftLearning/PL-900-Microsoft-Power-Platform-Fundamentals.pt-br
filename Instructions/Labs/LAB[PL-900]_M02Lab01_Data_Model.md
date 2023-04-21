@@ -4,9 +4,9 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>Laboratório 1: Modelagem de dados
+# Laboratório 1: Modelagem de dados
 
-## <a name="scenario"></a>Cenário
+## Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
@@ -25,29 +25,29 @@ Neste laboratório, você acessará seu ambiente, criará um banco de dados do M
 Por fim, você importará dados de amostra para o Microsoft Dataverse.
 
 
-## <a name="high-level-lab-steps"></a>Macroetapas do laboratório
+## Macroetapas do laboratório
 
 Para preparar seus ambientes de aprendizagem, você irá:
 
 - Consulte o [documento de modelagem de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) para ver a descrição dos metadados (tabelas e relacionamentos). Você pode pressionar CTRL+clique ou clicar com o botão direito do mouse no link para abrir o documento de modelagem de dados em uma nova janela.
-- Criar a tabela de Visitas
-- importar dados de Visita usando uma planilha do Excel
+- Criar a tabela Visita
+- Importar dados de visitas usando uma planilha do Excel
 
-## <a name="prerequisites"></a>Pré-requisitos
+## Pré-requisitos
 
 - Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 
-## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
+## Considerações antes de começar
 
 - Convenções de nomenclatura – digite os nomes atentamente.
 
 
-## <a name="exercise-1-create-new-table"></a>Exercício 1: Criar tabela
+## Exercício 1: Criar tabela
 
 **Objetivo:** Neste exercício, você criará a tabela personalizada de Visitas.
 
 
-### <a name="task-1-create-visit-table-and-columns"></a>Tarefa \#1: Criar a tabela Visita e Colunas
+### Tarefa \#1: Criar a tabela Visita e Colunas
 
 A tabela de **Visitas** conterá informações sobre as visitas ao campus, incluindo o visitante, horários agendados e horários reais de cada visita.
 
@@ -161,11 +161,11 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
     - Clique em **Save** (Salvar).
 
-## <a name="exercise-2-import-data"></a>Exercício 2: Importar dados
+## Exercício 2: Importar dados
 
 **Objetivo:** Neste exercício, você importará dados de amostra para o banco de dados do Dataverse.
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>Tarefa \#1.1: Carregar o arquivo do Excel no OneDrive
+### Tarefa \#1.1: Carregar o arquivo do Excel no OneDrive
 
 1. Você deve ter o arquivo **Visits.xlsx** armazenado em sua máquina virtual em **C:/LabFiles**. Baixe [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
 
@@ -181,7 +181,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
  **Observação:** esse arquivo está localizado na pasta **Todos os Arquivos** no computador.
  
-### <a name="task-12-create-a-dataflow"></a>Tarefa \#1.2: Criar um fluxo de dados
+### Tarefa \#1.2: Criar um fluxo de dados
 
 1. Se ainda não tiver feito isso, entre em [https://make.powerapps.com](https://make.powerapps.com/).
 
@@ -230,7 +230,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 **Observação:** Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.
 
-### <a name="task-3-verify-data-import"></a>Tarefa \#3: Verificar a importação de dados
+### Tarefa \#3: Verificar a importação de dados
 
 1. Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar a tabela **Visita** novamente.
 
