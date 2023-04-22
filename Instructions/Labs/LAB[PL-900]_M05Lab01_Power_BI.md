@@ -4,9 +4,9 @@ lab:
   module: 'Module 5: Get Started with Power BI'
 ---
 
-## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Laboratório 5: Como compilar um dashboard simples
+## Laboratório 5: Como compilar um dashboard simples
 
-## <a name="scenario"></a>Cenário
+## Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
@@ -16,7 +16,7 @@ Ao longo deste curso, você vai criar aplicativos e fazer automações para perm
 
 Neste laboratório você criará um painel e relatório do Power BI que mostra dados sobre as visitas ao campus.
 
-## <a name="high-level-lab-steps"></a>Macroetapas do laboratório
+## Macroetapas do laboratório
 
 Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
@@ -24,43 +24,46 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 -   Usar uma linguagem de consulta natural ao usuário para criar visualizações adicionais
 
-## <a name="prerequisites"></a>Pré-requisitos
+## Pré-requisitos
 
 - Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 - Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
 
-## <a name="things-to-consider-before-you-begin"></a>Considerações antes de começar
+## Considerações antes de começar
 
 -   Quem é o público-alvo do relatório?
 -   Como o público-alvo usará o relatório? Qual é o dispositivo usual? Qual é o local?
 -   Existem dados suficientes para visualizar o painel?
 -   Quais são as características que você pode usar para analisar os dados sobre as visitas?
 
-## <a name="exercise-1-create-power-bi-report"></a>Exercício 1: criar um relatório do Power BI
+## Exercício 1: criar um relatório do Power BI
 
 **Objetivo:** neste exercício, você criará um relatório do Power BI com base nos dados da planilha do Excel que aproveitamos em um exercício anterior.
 
-### <a name="task-1-prepare-power-bi-service"></a>Tarefa \#1: Preparar o serviço do Power BI
+### Tarefa \#1: Preparar o serviço do Power BI
 
-1.  Baixe o [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salve no computador.
+1.  É necessário ter um arquivo visits.pbix armazenado na máquina virtual em C:/LabFiles. Baixe [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salve-o no computador, se ainda não tiver feito isso.
 
-2.  Navegue até <https://app.powerbi.com/> e entre se necessário.
+2.  Abra uma nova guia, acesse <https://app.powerbi.com/> e faça logon, se necessário.
 
-3.  No canto inferior esquerdo da tela, selecione **Obter dados**
+3.  Selecione **Meu workspace** na navegação à esquerda.
 
-4.  Selecione o botão **Obter** em **Arquivos**, na seção **Criar conteúdo**.
+5.  Selecione **Carregar** e **Procurar**.
 
-5.  Selecione **Arquivo Local**.
+6.  Localize e selecione o arquivo **visits.pbix** que você baixou anteriormente. 
 
-6.  Localize e selecione o arquivo **visits.pbix** que você baixou anteriormente.
+7.  Uma vez concluído o carregamento de dados, selecione o relatório de **visitas**.
 
-7.  Depois de carregar os dados, expanda **Meu workspace** e selecione o relatório de **visitas** (o Tipo está definido para **Relatório**).
+    Observe que o Tipo está configurado como **Relatório**, além disso, não selecione o “Conjunto de dados”.
 
-8.  Clique em **Editar**. Se o item de menu **Editar** não estiver visível, clique em **...** e selecione **Editar**.
+8.  Selecione **Editar**. 
+
+    Se o item de menu **Editar** não estiver visível, selecione as reticências **...** e clique em **Editar**.
 
 Você concluiu a configuração do serviço do Power BI para usar em seus laboratórios.
 
-### <a name="task-2-create-chart-and-time-visualizations"></a>Tarefa \#2: criar gráficos e visualizações de tempo
+
+### Tarefa \#2: criar gráficos e visualizações de tempo
 
 1.  Pressione o ícone de **Gráfico de pizza** no painel **Visualizações** para inserir um gráfico.
 
@@ -90,9 +93,9 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 11. Salve o trabalho em andamento pressionando **Salvar**.
 
-## <a name="exercise-2-create-power-bi-dashboard"></a>Exercício 2: criar um painel do Power BI
+## Exercício 2: criar um painel do Power BI
 
-### <a name="task-1-create-power-bi-dashboard"></a>Tarefa \#1: criar um painel do Power BI
+### Tarefa \#1: criar um painel do Power BI
 
 1.  Abra o relatório criado na tarefa anterior.
 
@@ -106,7 +109,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 6.  Teste a interatividade dos gráficos de pizza e barras exibidos.
 
-### <a name="task-2-add-visualizations-using-natural-language"></a>Tarefa \#2: adicionar visualizações usando linguagem natural
+### Tarefa \#2: adicionar visualizações usando linguagem natural
 
 1.  No painel **Gerenciamento do campus**, selecione a barra **Faça uma pergunta sobre os dados** no topo.
 
