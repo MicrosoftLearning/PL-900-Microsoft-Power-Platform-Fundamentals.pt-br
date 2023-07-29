@@ -6,6 +6,8 @@ lab:
 
 # Laboratório 1: Modelagem de dados
 
+**Locatários do WWL – Termos de Uso** Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da aula e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
+
 ## Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
@@ -14,226 +16,227 @@ A administração do campus quer modernizar o sistema de registro de visitantes,
 
 Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-Neste laboratório, você acessará seu ambiente, criará um banco de dados do Microsoft Dataverse. Você também criará um modelo de dados para oferecer suporte aos seguintes requisitos:
+Neste laboratório, você criará um modelo de dados para oferecer suporte aos seguintes requisitos:
 
-- R1 – Rastrear informações para visitas agendadas no campus
+- R1 – Rastrear informações para visitas agendadas no campus.
 
-- R2 – Registrar informações básicas para identificar e monitorar os visitantes
+- R2 – Registrar informações básicas para identificar e monitorar os visitantes.
 
-- R3 – Agendar, registrar e gerenciar as visitas
+- R3 – Agendar, registrar e gerenciar as visitas.
 
 Por fim, você importará dados de amostra para o Microsoft Dataverse.
 
-
-## Macroetapas do laboratório
+Macroetapas do laboratório
 
 Para preparar seus ambientes de aprendizagem, você irá:
 
-- Consulte o [documento de modelagem de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) para ver a descrição dos metadados (tabelas e relacionamentos). Você pode pressionar CTRL+clique ou clicar com o botão direito do mouse no link para abrir o documento de modelagem de dados em uma nova janela.
+- Consulte o [documento de modelagem de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) para ver a descrição dos metadados (tabelas e relacionamentos). Você pode pressionar Ctrl + clique ou clicar com o botão direito do mouse no link para abrir o documento de modelagem de dados em uma nova janela.
 - Criar a tabela Visita
 - Importar dados de visitas usando uma planilha do Excel
+
 
 ## Pré-requisitos
 
 - Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 
-## Considerações antes de começar
+Considerações antes de começar
 
 - Convenções de nomenclatura – digite os nomes atentamente.
 
-
-## Exercício 1: Criar tabela
+Exercício 1: Criar tabela
 
 **Objetivo:** Neste exercício, você criará a tabela personalizada de Visitas.
 
-
-### Tarefa \#1: Criar a tabela Visita e Colunas
+Tarefa 1: Criar a tabela Visita e Colunas
 
 A tabela de **Visitas** conterá informações sobre as visitas ao campus, incluindo o visitante, horários agendados e horários reais de cada visita.
 
 Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilmente inserido e interpretado por um visitante quando solicitado durante o processo de check-in da visita.
 
-> Usamos o comportamento **Independente de fuso horário** para registrar informações de data e hora porque o horário de uma visita é sempre local em relação à localização do edifício e não deve mudar quando visualizado de um fuso horário diferente.
+1.  Entre em <https://make.powerapps.com> (se ainda não tiver entrado) 
 
-1. Entre em [https://make.powerapps.com](https://make.powerapps.com/) (se ainda não tiver entrado)
+1.  No menu **Ambiente** no canto superior direito, verifique se o ambiente **Prática** está selecionado. 
 
-1. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+1.  Na navegação à esquerda, selecione **Tabelas**.
 
-1. Usando a navegação à esquerda, expanda o **Dataverse** e selecione **Tabelas**.
+1.  Selecione **+ Nova tabela** e escolha **+ Nova tabela**. 
 
-1. Clique em **+ Nova tabela**.
+1.  Para **Nome de exibição**, insira `Visit`
 
-1. Digite **Visita** no **Nome de exibição**.
+1.  Clique em **Salvar**. 
 
-1. Clique em **Salvar**.
+1.  Na seção **Esquema**, selecione **Colunas**. 
 
-1. Na seção **Esquema**, selecione **Colunas**.
+# Criar a coluna Início agendado
 
-1. Criar a coluna Início agendado
+1.  Selecione **+ Nova coluna**. 
 
-    - Selecione **+ Nova coluna**.
+1.  Para **Nome de exibição**, insira `Scheduled Start`. 
 
-    - Digite **Início agendado** como **Nome de exibição**.
+1.  Selecione **Data e hora** como **Tipo de dados**. 
 
-    - Selecione **Data e hora** como **Tipo de dados**.
+1.  Altere **Obrigatório** para **Requisito de negócios**. 
 
-    - Em **Obrigatório**, selecione **Negócio obrigatório**.
+1.  Expanda **Opções avançadas**. 
 
-    - Expanda **Opções avançadas**.
+1.  No **Ajuste de fuso horário**, selecione **Fuso horário independente**. 
 
-    - No **Ajuste de fuso horário**, selecione **Fuso horário independente**.
+    > **Observação:** Usamos o comportamento **Independente de fuso horário** para registrar informações de data e hora porque o horário de uma visita é sempre local em relação à localização do edifício e não deve mudar quando visualizado de um fuso horário diferente. 
 
-    - Clique em **Save** (Salvar).
+1.  Clique em **Salvar**. 
 
-1. Criar coluna Término agendado
+# Criar coluna Término agendado
 
-    - Clique em **+ Nova coluna**.
+1.  Selecione **+ Nova coluna**. 
 
-    - Digite **Término agendado** para o **Nome de exibição**.
+1.  Para **Nome de exibição**, insira `Scheduled End`.
 
-    - Selecione **Data e hora** como **Tipo de dados**.
+1.  Selecione **Data e hora** como **Tipo de dados**.
 
-    - Em **Obrigatório**, selecione **Negócio obrigatório**.
+1.  Em **Obrigatório**, selecione **Negócio obrigatório**.
 
-    - Expanda **Opções avançadas**.
+1.  Expanda **Opções avançadas**.
 
-    - No **Ajuste de fuso horário**, selecione **Fuso horário independente**.
+1.  No **Ajuste de fuso horário**, selecione **Fuso horário independente**.
 
-    - Clique em **Save** (Salvar).
+1.  Clique em **Salvar**. 
 
-1. Criar coluna Início real
+# Criar coluna Início real
 
-    - Clique em **+ Nova coluna**.
+1.  Selecione **+ Nova coluna**. 
 
-    - Digite **Início real** para o **Nome de exibição**.
+1.  Para **Nome de exibição**, insira `Actual Start`.
 
-    - Selecione **Data e hora** como **Tipo de dados**.
+1.  Selecione **Data e hora** como **Tipo de dados**.
 
-    - Em **Obrigatório**, deixe marcado como **Opcional**.
+1.  Em **Obrigatório**, deixe marcado como **Opcional**.
 
-    - Expanda **Opções avançadas**.
+1.  Expanda **Opções avançadas**.
 
-    - No **Ajuste de fuso horário**, selecione **Fuso horário independente**.
+1.  No **Ajuste de fuso horário**, selecione **Fuso horário independente**. 
 
-    - Clique em **Save** (Salvar).
+1.  Clique em **Salvar**. 
 
-1. Criar coluna Término real
+# Criar coluna Término real
 
-    - Clique em **+ Nova coluna**.
+1.  Selecione **+ Nova coluna**.
 
-    - Digite **Término real** para o **Nome de exibição**.
+1.  Digite **Término real** para o **Nome de exibição**.
 
-    - Selecione **Data e hora** como **Tipo de dados**.
+1.  Selecione **Data e hora** como **Tipo de dados**.
 
-    - Em **Obrigatório**, deixe marcado como **Opcional**.
+1.  Em **Obrigatório**, deixe marcado como **Opcional**.
 
-    - Expanda **Opções avançadas**.
+1.  Expanda **Opções avançadas**.
 
-    - No **Ajuste de fuso horário**, selecione **Fuso horário independente**.
+1.  No **Ajuste de fuso horário**, selecione **Fuso horário independente**.
 
-    - Clique em **Save** (Salvar).
+1.  Clique em **Salvar**.
 
-1. Criar a coluna Código
+# Criar a coluna Código
 
-    - Clique em **+ Nova coluna**.
+1.  Selecione **+ Nova coluna**.
 
-    - Digite **Código** para o **Nome de exibição**.
+1.  Para **Nome de exibição**, insira `Code`.
 
-    - Selecione **Numeração automática** como o **Tipo de dados**.
+1.  Selecione **Numeração automática** como o **Tipo de dados**.
 
-    - Selecione **Número prefixado de data** no campo **Tipo de numeração automática**.
+1.  Selecione **Número prefixado de data** no campo **Tipo de numeração automática**.
 
-    - Clique em **Save** (Salvar).
+1.  Clique em **Salvar**. 
 
-1. Criar coluna de pesquisa de Visitante
+# Criar coluna de pesquisa de Visitante
 
-    - Clique em **+ Nova coluna**.
+1.  Selecione **+ Nova coluna**.
 
-    - Digite **Visitante** para o **Nome de exibição**.
+1.  Para **Nome de exibição**, insira `Visitor`.
 
-    - Selecione **Pesquisar** para **Tipo de dados**.
+1.  Selecione **Pesquisar** para **Tipo de dados**. 
 
-    - Selecione **Contato** para a **Tabela relacionada**.
+1.  Selecione **Contato** para a **Tabela relacionada**. 
 
-    - Expanda **Opções avançadas**.
+1.  Expanda **Opções avançadas**. 
 
-    - Insira **identificação_visitante** em **Nome da relação**.
+1.  Insira `visitor_id` em **Nome da relação**. 
 
-    - Clique em **Save** (Salvar).
+1.  Clique em **Salvar**.
 
-## Exercício 2: Importar dados
+
+Exercício 2: Importar dados
 
 **Objetivo:** Neste exercício, você importará dados de amostra para o banco de dados do Dataverse.
 
-### Tarefa \#1.1: Carregar o arquivo do Excel no OneDrive
+### Tarefa \#1: Carregar o arquivo do Excel no OneDrive
 
-1. Você deve ter o arquivo **Visits.xlsx** armazenado em sua máquina virtual em **C:/LabFiles**. Baixe [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
+1.  Você deve ter o arquivo **Visits.xlsx** armazenado em sua máquina virtual em **C:/LabFiles**. Baixe [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
 
-2. Se ainda não tiver feito isso, entre em [https://make.powerapps.com](https://make.powerapps.com/).
+2.  Se ainda não tiver feito isso, entre em [https://make.powerapps.com](https://make.powerapps.com/). 
 
-3. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+3.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-4. Clique no botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Clique em **Seu OneDrive está pronto** quando a opção aparecer na tela.
+4.  Selecione o botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Clique em **Seu OneDrive está pronto** quando a opção aparecer na tela.
 
-5. Clique em **Carregar** no menu superior e selecione **Arquivos**.
+5.  Selecione **Carregar** no menu superior e selecione **Arquivos**.
 
-6. Localize e selecione o arquivo **Visits.xlsx** e clique em **Abrir**.
+6.  Localize e selecione o arquivo **Visits.xlsx** e selecione **Abrir**.
 
- **Observação:** esse arquivo está localizado na pasta **Todos os Arquivos** no computador.
- 
-### Tarefa \#1.2: Criar um fluxo de dados
+    > **Observação:** esse arquivo está localizado na pasta **Todos os Arquivos** no computador.
 
-1. Se ainda não tiver feito isso, entre em [https://make.powerapps.com](https://make.powerapps.com/).
 
-2. No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+### Tarefa 2: Criar um fluxo de dados
 
-3. Usando a navegação à esquerda, expanda o **Dataverse** e selecione **Tabelas**.
+1.  Entre em <https://make.powerapps.com> (se ainda não tiver entrado) 
 
-4. Localize e abra a tabela **Visitar** criada no exercício anterior.
+2.  No menu **Ambiente** no canto superior direito, verifique se o ambiente **Prática** está selecionado. 
 
-5. Usando o menu na parte superior, selecione a seta suspensa ao lado de **Importar** e clique em **Importar dados**.
+3.  Na navegação à esquerda, selecione **Tabelas**. 
 
-6. Na caixa de diálogo **Escolher fonte de dados**, selecione **Pasta de trabalho do Excel**.
+4.  Abra a tabela **Visitar** criada no exercício anterior. 
 
-7. Selecione a opção **Vincular ao Arquivo**. Clique em **Procurar no OneDrive**. Se solicitado, entre com suas credenciais do Microsoft 365.
+5.  Usando o menu na parte superior, selecione **Importar** > Importar dados**.
 
-8. Escolha o arquivo **Visits.xlsx** que foi carregado no OneDrive e clique em **Selecionar**.
+6.  Na caixa de diálogo **Escolher fonte de dados**, selecione **Pasta de trabalho do Excel**.
 
-9. Clique em **Próximo**.
+7.  Selecione a opção **Vincular ao Arquivo**. Selecione **Procurar no OneDrive**. Se solicitado, entre com suas credenciais do Microsoft 365. Configure o navegador para sempre permitir pop-ups. 
 
-10. Em **Escolher Dados**, marque a caixa ao lado da pasta de trabalho **Visitas** do Excel.
+8.  Selecione o arquivo **Visits.xlsx**, que foi carregado no OneDrive na tarefa anterior. 
 
-11. Clique em **Próximo**. Não saia desta página.
+9.  Selecione **Avançar**. 
 
-12. Clique em **Próximo**.
+10. Em **Escolher Dados**, marque a caixa ao lado da pasta de trabalho **Visitas** do Excel. 
 
-13. Na seção **Mapear tabelas**, selecione **Carregar em tabela existente** nas **Configurações de carregamento**.
+11. Selecione **Avançar**. Não saia desta página.
 
-14. No menu suspenso **Tabela de destino**, selecione o nome da tabela que começa com **crXXX_visit** (em que XXX é um conjunto aleatório de letras e números)
+12. Selecione **Avançar**. 
+
+13. Na seção **Mapear tabelas**, em **Configurações de carregamento**, selecione **Carregar em tabela existente**. 
+
+14. No menu suspenso **Tabela de destino**, selecione a tabela **crXXX_Visit** (em que XXX é um conjunto aleatório de letras e números)
 
 15. No **Mapeamento de Colunas**. Mapeie as Colunas para as colunas de destino correspondentes.
 
-| Colunas de destino  | Valores de origem   |
-|:---------------------|:----------------|
-| crxxx_ActualEnd      | término real      |
-| crxxx_ActualStart    | início real    |
-| crxxx_Code           | code            |
-| crxxx_Name           | name            |
-| crxxx_ScheduledEnd   | fim agendado   |
-| crxxx_ScheduledStart | início agendado |
+    | Colunas de destino  | Valores de origem   |
+    |:---------------------|:----------------|
+    | crxxx_ActualEnd      | término real      |
+    | crxxx_ActualStart    | início real    |
+    | crxxx_Code           | code            |
+    | crxxx_Name           | name            |
+    | crxxx_ScheduledEnd   | fim agendado   |
+    | crxxx_ScheduledStart | início agendado |
 
-16. Clique em **Próximo**.
+16. Selecione **Avançar**. 
 
-17. Selecione **Atualizar manualmente**.
+17. Selecione **Atualizar manualmente**. 
 
-18. Clique em **Publicar**.
+18. Selecione **Publicar**. 
 
-**Observação:** Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.
+    > **Observação:** Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.
 
-### Tarefa \#3: Verificar a importação de dados
 
-1. Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar a tabela **Visita** novamente.
+Tarefa 3: Verificar importação de dados
 
-2. Verifique se você vê os dados importados na seção **Colunas e dados de visita**.
+1.  Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar **Tabelas** e abra a tabela **Visita**.
+
+2.  Verifique se você vê os dados importados na seção **Colunas e dados de visita**.
 
 Parabéns, você criou com sucesso uma nova tabela e importou dados.
