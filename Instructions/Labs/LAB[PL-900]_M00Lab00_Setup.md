@@ -25,28 +25,20 @@ Tarefa 1 – Adquirir o locatário de teste do Microsoft Power Platform
 
 1.  Copie as **Credenciais do Microsoft 365** do Authorized Lab Hoster. 
 
-1.  Navegue até <https://powerapps.microsoft.com> e clique em **Iniciar gratuitamente**.
+1.  Navegue até <https://powerapps.microsoft.com> e selecione **Iniciar gratuitamente**.
 
 1.  Em **Vamos começar**, insira o endereço de email fornecido pelo Hoster de Laboratório Autorizado e selecione **Iniciar sua avaliação gratuita**. 
 
 1.  Se encontrar um prompt informando que você tem uma conta Microsoft existente. Selecione **Entrar**. 
 
-1.  Digite a senha fornecida pelo Authorized Lab Hoster e selecione **Entrar**.
+1.  Digite a senha fornecida pelo Authorized Lab Hoster e selecione **Entrar**. 
 
 1.  Selecione **Sim** para permanecer conectado. 
-
-1.  Não altere o país. 
-
-1.  Em **Número de telefone**, insira `0123456789` e selecione **Enviar**. 
-
-1.  Na tela de confirmação, selecione **Introdução**. 
-
-1.  Se você vir um prompt para inserir detalhes de contato, clique em **X** para fechar a janela pop-up. 
 
 
 Tarefa 2 – Criar ambiente
 
-1.  Navegue para <https://admin.powerplatform.microsoft.com> e faça logon com suas credenciais do Microsoft 365 se for solicitado. 
+1.  Navegue até <https://admin.powerplatform.microsoft.com> e faça logon com suas credenciais do Microsoft 365 se precisar. 
 
 1.  Se você vir um pop-up de boas-vindas, selecione **Introdução**. 
 
@@ -60,14 +52,13 @@ Tarefa 2 – Criar ambiente
 
     1. Deixe todas as outras seleções como padrão e selecione **Avançar**. 
 
-    1. Clique no botão **+ Selecionar** no título **Grupo de segurança**.
+    1. Abaixo do título **Grupo de segurança**, use o botão **+ Selecionar**.
 
-    1. Marque a caixa de seleção do item **Nenhum** no título **Abrir acesso** e selecione **Concluído**.
+    1. Marque o item **Nenhum** na a caixa de seleção abaixo do título **Abrir acesso** e selecione **Concluído**.
 
-    1. Deixe o restante das opções com os valores padrão e selecione **OK**.
+    1. Deixe o restante das opções com os valores padrão e selecione **OK**. 
 
 1.  Seu ambiente de **Prática** agora deve aparecer na lista de Ambientes. 
 
     > O ambiente pode levar alguns minutos para ser provisionado. Se necessário, atualize a página.
-
 
