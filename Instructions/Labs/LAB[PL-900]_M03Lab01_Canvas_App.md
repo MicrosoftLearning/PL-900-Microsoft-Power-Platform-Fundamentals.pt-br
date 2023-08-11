@@ -46,7 +46,7 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-3.  Se necessário, selecione o ícone **Página Inicial** no lado esquerdo da tela. Na seção **Iniciar em**, selecione **Dataverse**.
+3.  Selecione **+ Criar** no painel de navegação à esquerda da tela. Na seção **Iniciar em**, selecione **Dataverse**.
 
 4.  Selecione a conexão do Dataverse.
 
@@ -54,22 +54,23 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
     > - Selecione **+Nova Conexão**
     > - Localize o **Microsoft Dataverse**
     > - Escolha **Criar**
+    > - **Entre** e selecione **Permitir acesso**
 
 5.  Localize e selecione a tabela **Visitas** criada no laboratório anterior.
 
 6.  Selecione o botão **Conectar** no canto inferior direito.
 
-7.  Após o aplicativo ser criado, na tela Boas-vindas ao Power Apps Studio, selecione a caixa **Não mostrar isso novamente** e selecione **Ignorar**.
+7.  Após a criação do aplicativo, na tela Boas-vindas ao Power Apps Studio, escolha **Não mostrar isso novamente** e selecione **Ignorar**.
 
-8.  Após a criação ser concluída, ele deve ser semelhante à imagem abaixo.
+8.  Depois que a criação for concluída, o aplicativo de tela será parecido com a imagem abaixo:
 
     ![Aplicativo de tela criado com base nos dados de Visita.](media/2-canvas-app-from-data.png)
 
-9. No designer de aplicativo, selecione o botão **visualizar aplicativo** (ícone Executar) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5 no teclado.)* Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
+9.  No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5).* Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
 
 10. Feche a visualização do aplicativo clicando em **X** no canto superior direito da tela.
 
-Parabéns, você criou com êxito um Power App usando uma tabela do Dataverse. A próxima etapa do processo é personalizar o aplicativo para que ele corresponda à identidade visual da faculdade. A próxima série de etapas ajudará você a fazer personalizações extra no aplicativo.
+Parabéns, você criou com êxito um Power App usando uma tabela do Dataverse. A próxima etapa do processo será personalizar o aplicativo para que ele corresponda à identidade visual do Bellows College. A próxima série de etapas ajudará você a fazer personalizações extra no aplicativo.
 
 
 ### Tarefa \#2: Modificar e criar um tema para o aplicativo recém-criado
@@ -80,29 +81,29 @@ Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três t
 
 1.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para `Bellows College Visits`
 
-1.  Nas propriedades, altere o **Tamanho da fonte** para **24**. 
+1.  Na guia **Propriedades**, altere o **Tamanho da fonte** para **24**. 
 
-1.  Clique no fundo em branco da tela para ver o texto atualizado na tela de navegação. 
+1.  Selecione o fundo em branco da tela para ver o texto atualizado na tela de navegação. 
 
-1.  Usando o modo de exibição de árvore na navegação esquerda, selecione **DetailScreen1**. 
+1.  Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **DetailScreen1**. 
 
 1.  Selecione o rótulo **Visitas** na tela.
 
-1.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para `Visit Details`
+1.  No lado direito da tela, na guia **Propriedades**, atualize a propriedade de controle **Texto** para `Visit Details`
 
 1.  Clique no fundo em branco da tela para ver o texto atualizado na tela Detalhes.
 
-1.  Usando o modo de exibição de árvore esquerdo, selecione **EditScreen1** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
+1.  Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **EditScreen1** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
 
 1.  Selecione o rótulo **Visitas** na tela.
 
-1.  No lado direito da tela, na guia Propriedades, substitua o texto na propriedade de controle **Texto** por `Edit Details`
+1.  No lado direito da tela, na guia **Propriedades**, substitua o texto da propriedade de controle **Texto** por `Edit Details`
 
 1.  Clique no fundo em branco da tela para ver o texto atualizado na tela Editar.
 
-1. Usando o modo de exibição de árvore na navegação esquerda, selecione **BrowseScreen1**.
+1.  Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **BrowseScreen1**.
 
-1. Na barra de ferramentas de comando, selecione o botão **Tema** e, na lista exibida, selecione a cor do tema **Vermelho**.
+1.  Na barra de ferramentas de comando, selecione o botão **Tema** e, na lista exibida, selecione a cor do tema **Vermelho**.
 
 
 ### Tarefa \#3: Testar o aplicativo de Visitas
@@ -111,11 +112,9 @@ Nesta tarefa, você testará seu novo aplicativo.
 
 1.  Com seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** e, na seção **Geral**, atualize o nome do aplicativo para `Visits App`, selecione o **X** para fechar a tela de configurações e selecione **Salvar**.
 
-2.  Selecione a seta **voltar** para retornar ao seu aplicativo.
+2.  Usando a navegação à esquerda, selecione **BrowseScreen1**.
 
-3.  Usando a navegação à esquerda, selecione **BrowseScreen1**.
-
-4.  No designer de aplicativo, selecione o botão **visualizar aplicativo** (ícone Executar) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5 no teclado.)*
+3.  No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5).*
 
 4.  Quando o aplicativo for aberto, no campo **Pesquisar Itens**, insira o texto `Maria`
      *(observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).*
@@ -129,5 +128,4 @@ Nesta tarefa, você testará seu novo aplicativo.
 8.  No canto superior direito da tela, selecione o ícone **X** para fechar o modo de pré-visualização e retornar ao editor do aplicativo de tela.
 
 Parabéns! Você criou e configurou seu primeiro aplicativo de tela.
-
 
