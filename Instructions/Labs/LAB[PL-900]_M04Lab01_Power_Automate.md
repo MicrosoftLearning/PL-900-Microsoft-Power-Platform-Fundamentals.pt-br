@@ -37,7 +37,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 ### Tarefa \#1: Criar um fluxo
 
-1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
+1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário se reautenticar: selecione **Entrar** e siga as instruções, se necessário.
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
@@ -45,13 +45,13 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 4.  Se solicitado, selecione **Começar**.
 
-5.  Clique em **Novo fluxo** e selecione **Fluxo de nuvem automatizado**.
+5.  Escolha **+ Novo fluxo** e selecione **Fluxo de nuvem automatizado**.
 
-6.  Insira "Notificação de Visita" em **Nome do fluxo**.
+6.  Insira `Visit Notification` em **Nome do fluxo**.
 
-7.  Em **Escolher o gatilho do fluxo**, pesquise por **Dataverse**.
+7.  Em **Escolher o gatilho do fluxo**, procure `Dataverse`
 
-8.  Selecione o gatilho **Quando uma linha for adicionada, modificada ou excluída** e, em seguida, clique em **Criar**.
+8.  Escolha o gatilho **Quando uma linha for adicionada, modificada ou excluída** e selecione **Criar**.
 
 9.  Preencha as condições de gatilho do fluxo:
 
@@ -61,56 +61,60 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
     3.  Selecione **Organização** em **Escopo**
 
-    4.  Na etapa de ativação, clique nas reticências ( **...** ) e clique em **Renomear**. Renomeie esse gatilho **"Quando uma visita é criada"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
+    4.  Na etapa de gatilho, selecione as reticências ( **…** ) e escolha **Renomear**. Renomeie a etapa de gatilho como `When a Visit is added` 
+
+        Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
+
 
 ### Tarefa \#2: Criar uma etapa para obter a linha de visitantes
 
-1.  Selecione **+ Nova Etapa**. Esta etapa é necessária para recuperar as informações dos visitantes, inclusive o endereço de email.
+1.  Selecione **+ Nova Etapa**. Essa etapa vai recuperar as informações do Visitante, incluindo o endereço de email.
 
-2.  Pesquise por **Dataverse**.
+2.  Pesquise por `Dataverse`
 
 3.  Selecione a ação **Obter uma linha por ID**.
 
 4.  Selecione **Contatos** em **Nome da tabela**
 
-5.  Selecione o campo **ID da Linha**. Observe que uma janela para selecionar conteúdo dinâmico ou expressões será exibida.
+5.  Selecione o campo **ID da Linha**. Observe que será exibida uma janela para selecionar **Conteúdo dinâmico** ou **Expressões**.
 
-6.  No campo **ID de linha**, selecione **Visitante (Valor)** na Lista de conteúdo dinâmico. Nesta etapa, busque o contato da linha de Visita que foi criada para acionar esse fluxo. Como o endereço de email faz parte da tabela de Contato, você precisará dessas informações para enviar o email ao visitante.
+6.  No campo **ID da linha**, selecione **Visitante (Valor)** na lista **Conteúdo dinâmico**. Nesta etapa, busque o contato da linha de Visita que foi criada para acionar esse fluxo. Como o endereço de email faz parte da tabela de Contato, você precisará dessas informações para enviar o email ao visitante.
 
-7.  Neste momento, clique nas reticências ( **...** ) e clique em **Renomear**.
-        Renomeie esta ação **"Criar visitante"** . Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
+7.  Na ação **Obter uma linha por ID**, selecione as reticências ( **…** ) e escolha **Renomear**. Renomeie essa ação como `Get the Visitor`
+ 
+    Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
+
 
 ### Tarefa \#3: Criar uma etapa para enviar um email ao visitante
 
-1.  Clique em **+ Nova etapa**. É nessa a etapa que um email será enviado para o visitante.
+1.  Selecione **+ Nova Etapa**. É nessa a etapa que um email será enviado para o visitante.
 
-2.  Pesquise por *email*, selecione o conector do **Office 365 Outlook** e a ação **Enviar um email (V2)** .
+2.  Procure `mail` e selecione a ação **Enviar um email (V2)** no conector do **Office 365 Outlook**.
 
-3.  Se precisar aceitar termos e condições para usar esta ação, clique em **Aceitar**.
+3.  Caso precise aceitar os termos e as condições para usar essa ação, selecione **Aceitar**.
 
 4.  Selecione **Adicionar conteúdo dinâmico** no campo **Para**. 
     
 5.  Selecione **Email** na lista de conteúdo dinâmico.
-        > Notice that it is beneath the **Get the visitor** header. This means you
-        are selecting the Email that is related to the Visitor that you looked
-        up in the previous step.
 
-6.  Insira **Sua visita agendada ao Bellows College** no campo **Assunto**.
+    > Observe que está abaixo do cabeçalho **Criar visitante**. Isso significa que você está selecionando o email relacionado ao Visitante que foi consultado na etapa anterior.
 
-7.  Insira o seguinte texto no **Corpo do email**:
+7.  No campo **Assunto**, insira `Your scheduled visit to Bellows College`
 
->   O conteúdo dinâmico precisa ser inserido onde os campos são nomeados entre colchetes. É recomendado copiar e colar todo o texto primeiro e, em seguida, adicionar o conteúdo dinâmico nos locais corretos.
+8.  Insira o seguinte texto no **Corpo do email**:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   Dear {First Name},
+    > O conteúdo dinâmico precisa ser inserido onde os campos são nomeados entre colchetes. É recomendado copiar e colar todo o texto primeiro e, em seguida, adicionar o conteúdo dinâmico nos locais corretos.
 
-   You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Dear {First Name},
 
-   Best regards,
+    You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-   Campus Administration
-   Bellows College
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Best regards,
+
+    Campus Administration
+    Bellows College
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 8.  Realce o texto **{First Name}** . Substitua-o pelo campo **Nome** da etapa **Obter o visitante**.
 
@@ -118,11 +122,12 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 10.  Realce o texto **{Scheduled End}** . Substitua-o pelo campo **Final do agendamento** na etapa **Quando uma visita será adicionada**.
 
-11.  Clique em **Salvar**.
+11.  Selecione **Salvar**.
 
 Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parecido com o seguinte:
 
 ![Exemplo de etapas de fluxo.](media/4-Flow.png)
+
 
 ### Tarefa \#4: Validar e testar o fluxo
 
@@ -130,21 +135,21 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-3.  Clique em **Aplicativos** e selecione o aplicativo baseado em modelo **Administração de campus Bellows** criado anteriormente.
+3.  Escolha **Aplicativos** e abra o aplicativo baseado em modelo **Administração de Campus do Bellows** criado anteriormente.
 
 3.  Deixando essa guia do navegador aberta, navegue de volta para a guia anterior de seu fluxo.
 
-4.  Na barra de comandos, clique em **Testar**. Selecione **Manualmente** e clique em **Testar**.
+4.  Na barra de comandos, escolha **Teste**. Selecione **Manualmente** e **Testar**.
 
 5.  Navegue até a guia do navegador com seu aplicativo baseado em modelo aberto. 
 
-6.  Usando a navegação à esquerda, selecione **Visitas**
+6.  Usando a navegação de mapa do site à esquerda, selecione **Visitas**.
 
-6. Pressione o botão **+ Novo** para adicionar um novo registro de **Visita**.
+6.  Escolha o botão **+ Novo** para adicionar um novo registro de **Visita**.
 
-7. Preencha o registro da Visita da seguinte forma:
+7.  Preencha o registro da Visita da seguinte forma:
 
-    -   **Nome:** Visit de teste
+    -   **Nome:** `Test Visit`
 
     -   **Visitante:** John Doe
 
@@ -152,12 +157,15 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
     -   **Término agendado:** Amanhã às 9h
 
-8. Selecione o botão **Salvar e Fechar**.
+8.  Selecione o botão **Salvar e Fechar**.
 
-9. Navegue até a guia do navegador com o fluxo de teste em execução. Após um momento, você deverá ver o fluxo em execução. É aqui que você pode detectar quaisquer problemas no fluxo ou confirmar se ele foi executado com êxito.
+9.  Vá até a guia do navegador em que o fluxo de teste está em execução. Após um momento, você deverá ver o fluxo em execução. É aqui que você pode detectar quaisquer problemas no fluxo ou confirmar se ele foi executado com êxito.
 
-Após um pequeno atraso, você deverá ver um email em sua caixa de entrada, uma vez que preencheu o email de John Doe com seu email pessoal. Observe que ele pode ir para sua pasta de lixo eletrônico.
+    Após um pequeno atraso, você deverá ver um email em sua caixa de entrada, uma vez que preencheu o email de John Doe com seu email pessoal. Observe que ele pode ir para sua pasta de lixo eletrônico.
 
-## Desafios
 
-- Brincar com a formatação no email. Como você pode torná-lo mais profissional?
+## Desafio
+
+- Experimente a formatação no email. Como você pode torná-lo mais profissional?
+
+

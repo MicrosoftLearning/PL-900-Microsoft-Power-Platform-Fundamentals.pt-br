@@ -174,7 +174,7 @@ Exercício 2: Importar dados
 
 3.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
-4.  Selecione o botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Clique em **Seu OneDrive está pronto** quando a opção aparecer na tela.
+4.  Selecione o botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Selecione **O OneDrive está pronto** quando a opção for exibida na tela.
 
 5.  Selecione **Carregar** no menu superior e selecione **Arquivos**.
 
@@ -193,7 +193,7 @@ Exercício 2: Importar dados
 
 4.  Abra a tabela **Visitar** criada no exercício anterior. 
 
-5.  Usando o menu na parte superior, selecione **Importar** > Importar dados**.
+5.  Usando o menu na parte superior, selecione **Importar** > **Importar dados**.
 
 6.  Na caixa de diálogo **Escolher fonte de dados**, selecione **Pasta de trabalho do Excel**.
 
@@ -203,7 +203,7 @@ Exercício 2: Importar dados
 
 9.  Selecione **Avançar**. 
 
-10. Em **Escolher Dados**, marque a caixa ao lado da pasta de trabalho **Visitas** do Excel. 
+10. Na tela**Power Query** > **Escolher dados**, marque a pasta de trabalho **Visitas** do Excel. 
 
 11. Selecione **Avançar**. Não saia desta página.
 
@@ -213,7 +213,7 @@ Exercício 2: Importar dados
 
 14. No menu suspenso **Tabela de destino**, selecione a tabela **crXXX_Visit** (em que XXX é um conjunto aleatório de letras e números)
 
-15. No **Mapeamento de Colunas**. Mapeie as Colunas para as colunas de destino correspondentes.
+15. Na seção **Mapeamento de Colunas**, mapeie as colunas para as colunas de destino correspondentes:
 
     | Colunas de destino  | Valores de origem   |
     |:---------------------|:----------------|
@@ -240,3 +240,4 @@ Tarefa 3: Verificar importação de dados
 2.  Verifique se você vê os dados importados na seção **Colunas e dados de visita**.
 
 Parabéns, você criou com sucesso uma nova tabela e importou dados.
+
