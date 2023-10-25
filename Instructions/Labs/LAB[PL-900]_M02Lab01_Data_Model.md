@@ -43,11 +43,12 @@ Considerações antes de começar
 
 - Convenções de nomenclatura – digite os nomes atentamente.
 
-Exercício 1: Criar tabela
+
+# Exercício 1: Criar tabela
 
 **Objetivo:** Neste exercício, você criará a tabela personalizada de Visitas.
 
-Tarefa 1: Criar a tabela Visita e Colunas
+## Tarefa 1: Criar a tabela Visita e Colunas
 
 A tabela de **Visitas** conterá informações sobre as visitas ao campus, incluindo o visitante, horários agendados e horários reais de cada visita.
 
@@ -59,7 +60,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Na navegação à esquerda, selecione **Tabelas**.
 
-1.  Selecione **+ Nova tabela** e escolha **+ Nova tabela**. 
+1.  Selecione **+ Nova tabela** e escolha **Definir propriedades avançadas**. 
 
 1.  Para **Nome de exibição**, insira `Visit`
 
@@ -67,7 +68,8 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Na seção **Esquema**, selecione **Colunas**. 
 
-# Criar a coluna Início agendado
+
+## Criar a coluna Início agendado
 
 1.  Selecione **+ Nova coluna**. 
 
@@ -85,7 +87,8 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Clique em **Salvar**. 
 
-# Criar coluna Término agendado
+
+## Criar coluna Término agendado
 
 1.  Selecione **+ Nova coluna**. 
 
@@ -101,7 +104,8 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Clique em **Salvar**. 
 
-# Criar coluna Início real
+
+## Criar coluna Início real
 
 1.  Selecione **+ Nova coluna**. 
 
@@ -117,11 +121,12 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Clique em **Salvar**. 
 
-# Criar coluna Término real
+
+## Criar coluna Término real
 
 1.  Selecione **+ Nova coluna**.
 
-1.  Digite **Término real** para o **Nome de exibição**.
+1.  Para **Nome de exibição**, insira `Actual End`.
 
 1.  Selecione **Data e hora** como **Tipo de dados**.
 
@@ -133,7 +138,8 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Clique em **Salvar**.
 
-# Criar a coluna Código
+
+## Criar a coluna Código
 
 1.  Selecione **+ Nova coluna**.
 
@@ -145,13 +151,14 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Clique em **Salvar**. 
 
-# Criar coluna de pesquisa de Visitante
+
+## Criar coluna de pesquisa de Visitante
 
 1.  Selecione **+ Nova coluna**.
 
 1.  Para **Nome de exibição**, insira `Visitor`.
 
-1.  Selecione **Pesquisar** para **Tipo de dados**. 
+1.  Selecione **Pesquisa** > **Pesquisa** para **Tipo de dados**. 
 
 1.  Selecione **Contato** para a **Tabela relacionada**. 
 
@@ -162,11 +169,11 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 1.  Clique em **Salvar**.
 
 
-Exercício 2: Importar dados
+# Exercício 2: Importar dados
 
 **Objetivo:** Neste exercício, você importará dados de amostra para o banco de dados do Dataverse.
 
-### Tarefa \#1: Carregar o arquivo do Excel no OneDrive
+## Tarefa \#1: Carregar o arquivo do Excel no OneDrive
 
 1.  Você deve ter o arquivo **Visits.xlsx** armazenado em sua máquina virtual em **C:/LabFiles**. Baixe [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
 
@@ -176,14 +183,14 @@ Exercício 2: Importar dados
 
 4.  Selecione o botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Selecione **O OneDrive está pronto** quando a opção for exibida na tela.
 
-5.  Selecione **Carregar** no menu superior e selecione **Arquivos**.
+5.  Selecione **+Adicionar novo** no menu e selecione **Upload de arquivos**.
 
 6.  Localize e selecione o arquivo **Visits.xlsx** e selecione **Abrir**.
 
-    > **Observação:** esse arquivo está localizado na pasta **Todos os Arquivos** no computador.
+    > **Observação:** o arquivo deve estar localizado na pasta **Área de Trabalho** > **Todos os arquivos** em sua máquina virtual.
 
 
-### Tarefa 2: Criar um fluxo de dados
+## Tarefa 2: Criar um fluxo de dados
 
 1.  Entre em <https://make.powerapps.com> (se ainda não tiver entrado) 
 
@@ -233,7 +240,7 @@ Exercício 2: Importar dados
     > **Observação:** Poderão ser necessários alguns minutos para que os dados sejam importados para a tabela. Não se preocupe se você receber algumas mensagens de erro, isso é normal e não afetará o restante do curso.
 
 
-Tarefa 3: Verificar importação de dados
+## Tarefa \#3: Verificar a importação de dados
 
 1.  Após os dados terem sido importados, use a navegação à esquerda da tela para selecionar **Tabelas** e abra a tabela **Visita**.
 
