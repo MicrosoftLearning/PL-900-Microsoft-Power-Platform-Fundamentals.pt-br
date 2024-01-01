@@ -18,7 +18,7 @@ Ao longo deste curso, você vai criar aplicativos e fazer automações para perm
 
 Neste laboratório, você criará um aplicativo baseado em modelo do Power Apps para permitir que a equipe de apoio gerencie os registros de visitação de todo o campus.
 
-Macroetapas do laboratório
+## Macroetapas do laboratório
 
 Você fará o seguinte para criar o aplicativo baseado em modelo:
 
@@ -36,7 +36,7 @@ Vamos trabalhar com os seguintes componentes:
 
 Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor experiência do usuário.
 
-Pré-requisitos
+## Pré-requisitos
 
 - Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 
@@ -50,13 +50,13 @@ Considerações antes de começar
 
 - Quais personalizações podem ser feitas no mapa do site de um aplicativo baseado em modelo?
 
-Exercício 1: Personalizar exibições e formulários
+## Exercício 1: Personalizar exibições e formulários
 
 **Objetivo:** Neste exercício, você vai personalizar as exibições e os formulários das tabelas personalizadas que serão usadas no aplicativo baseado em modelo.
 
-Tarefa 1: Editar o formulário de visitas
+### Tarefa 1: Editar o formulário de visitas
 
-1.  Entre para <https://make.powerapps.com> se você ainda não tiver entrado.
+1.  Entre em <https://make.powerapps.com> se você ainda não tiver entrado.
 
 2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
@@ -66,7 +66,7 @@ Tarefa 1: Editar o formulário de visitas
 
 4.  Na seção **Experiências de dados**, selecione **Formulários** e abra o formulário **Informações** com o tipo de formulário **Principal**. (**Importante:** selecione o formulário com o tipo de formulário **Principal**). 
 
-    **IMPORTANTE:** Como, por padrão, todos os formulários são denominados Informações, verifique se o formulário selecionado tem um Tipo de formulário **Principal** e não outro. Por padrão, o formulário tem dois campos: Nome e Proprietário.
+> **IMPORTANTE:** Como, por padrão, todos os formulários são denominados Informações, verifique se o formulário selecionado tem um Tipo de formulário **Principal** e não outro. Por padrão, o formulário tem dois campos: Nome e Proprietário.
 
 5.  No lado direito da tela no painel **Propriedades**, selecione o campo **Nome de Exibição** e altere-o para `Main Information`
 
@@ -88,7 +88,7 @@ Tarefa 1: Editar o formulário de visitas
 
 8.  Com o campo **Código** ainda selecionado, marque a caixa de seleção **Somente leitura** no painel Propriedades no lado direito da tela.
 
-9.  Selecione o campo **Proprietário**. No painel Propriedades, altere o **Rótulo** para `Host`
+9.  Selecione o campo **Proprietário**. No painel Propriedades, altere a **Etiqueta** para `Host`
 
 10. Selecione o botão **Salvar e publicar** no canto superior direito e aguarde a conclusão do salvamento e da publicação.
 
@@ -97,7 +97,7 @@ Tarefa 1: Editar o formulário de visitas
 12. Usando a trilha de navegação do canto superior esquerdo (**Tabelas** > **Visita** > **Formulários**). Selecione **Visita** para retornar à tela de propriedades da tabela **Visita**. 
 
 
-Tarefa 2: Editar a exibição Visitas ativas
+### Tarefa 2: Editar a exibição Visitas ativas
 
 Nesta tarefa, vamos modificar a exibição Visitas ativas e criar uma nova exibição para as visitas de hoje.
 
@@ -124,11 +124,11 @@ Nesta tarefa, vamos modificar a exibição Visitas ativas e criar uma nova exibi
 7.  Selecione o botão **Salvar e publicar** no canto superior direito e aguarde a conclusão da publicação.
 
 
-Tarefa 3: Criar uma exibição para as visitas de hoje
+### Tarefa 3: Criar uma exibição para as visitas de hoje
 
 Agora, vamos clonar a exibição e criar uma para as visitas de hoje.
 
-IMPORTANTE: Verifique se você não fechou a exibição Visitas Ativas, pois vamos usá-la para criar o modo de exibição de visitas de hoje.
+> **IMPORTANTE:** verifique se você não fechou a exibição Visitas Ativas, pois vamos usá-la para criar o modo de exibição de visitas de hoje.
 
 1.  Selecione **Salvar como**.
 
@@ -146,22 +146,22 @@ IMPORTANTE: Verifique se você não fechou a exibição Visitas Ativas, pois vam
 
 8.  Inclua os campos **Início real** e **Fim real** à exibição.
 
-    **Observação:** como não filtramos mais no status de exibição, obteremos todas as visitas de hoje incluindo as concluídas. Esses campos ajudarão a diferenciar as visitas concluídas e as visitas em andamento.
+> **OBSERVAÇÃO:** como não filtramos mais no status de exibição, obteremos todas as visitas de hoje incluindo as concluídas. Esses campos ajudarão a diferenciar as visitas concluídas e as visitas em andamento.
 
 9.  Selecione o botão **Salvar e publicar** no canto superior direito e aguarde a conclusão da publicação.
 
 
-Exercício 2: Criar aplicativo baseado em modelo
+## Exercício 2: Criar aplicativo baseado em modelo
 
 **Objetivo:** neste exercício, você criará o aplicativo baseado em modelo, personalizará o mapa do site e testará o aplicativo.
 
 Para simplificar e economizar tempo, não abordaremos algumas das colunas Visita neste laboratório.
 
-Tarefa 1: Criar aplicativo
+### Tarefa 1: Criar aplicativo
 
 1.  Entre em <https://make.powerapps.com>, caso ainda não tenha se conectado.
 
-2.  No canto superior direito, selecione o ambiente **Prática [Minhas iniciais]** , se ainda tiver selecionado.
+2.  No canto superior direito, selecione seu ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
 
 3.  Selecione **+ Criar** no painel de navegação à esquerda.
 
@@ -196,7 +196,7 @@ Tarefa 1: Criar aplicativo
 13. Depois de **Salvar**, selecione o botão **Publicar** para publicar as alterações.
 
 
-Tarefa nº 2: Testar app
+### Tarefa nº 2: Testar app
 
 Iniciar o aplicativo
 
@@ -212,7 +212,7 @@ Criar um contato
 
 5.  Informe seu email pessoal como **e-mail**. Isso será usado em um laboratório futuro, em que você receberá um email.
 
-6.  Selecione **Salvar e Fechar**.
+6.  Selecione **Salvar &amp; Fechar**.
 
 7.  Agora, você verá o contato criado na exibição **Meus Contatos Ativos**.
 
@@ -232,7 +232,7 @@ Criar uma visita
 
     4. **Término Agendado**: selecione a data de amanhã e 15h30 como a hora de término
 
-11. Selecione **Salvar e Fechar**. A visita será criada, e você poderá vê-la na exibição **Visitas Ativas**.
+11. Selecione **Salvar &amp; Fechar**. A visita será criada, e você poderá vê-la na exibição **Visitas Ativas**.
 
 12. Altere a exibição para **Visitas de Hoje** usando o menu suspenso ao lado de **Visitas Ativas**. Você não verá mais a nova visita na exibição, pois ela foi agendada para amanhã.
 

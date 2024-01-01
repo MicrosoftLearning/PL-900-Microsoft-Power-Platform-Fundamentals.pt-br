@@ -117,7 +117,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1.  No painel **Gerenciamento do campus**, selecione a barra **Faça uma pergunta sobre os dados** no topo.
 
-2.  Digite `buildings by number of visits` na área de P e R (Perguntas e Respostas) Uma gráfico de barras será exibido.
+2.  Entre `buildings by number of visits` na área de perguntas e respostas. Uma gráfico de barras será exibido.
 
 3.  Selecione **Fixar visual**.
 

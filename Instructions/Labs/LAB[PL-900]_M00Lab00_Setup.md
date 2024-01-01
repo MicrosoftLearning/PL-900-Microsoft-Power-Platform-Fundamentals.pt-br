@@ -29,6 +29,8 @@ Tarefa 1 – Adquirir o locatário de teste do Microsoft Power Platform
 
 1.  Em **Vamos começar**, insira o endereço de email fornecido pelo Hoster de Laboratório Autorizado e selecione **Iniciar sua avaliação gratuita**. 
 
+1.  Se aparecer uma página extra com os botões **Comece a criar aplicativos** e **Comece a usar aplicativos** clique em **Comece a usar aplicativos**, não em Comece a criar aplicativos.
+
 1.  Se encontrar um prompt informando que você tem uma conta Microsoft existente. Selecione **Entrar**. 
 
 1.  Digite a senha fornecida pelo Authorized Lab Hoster e selecione **Entrar**. 
