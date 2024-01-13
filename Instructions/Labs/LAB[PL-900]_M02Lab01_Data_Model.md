@@ -43,7 +43,6 @@ Considerações antes de começar
 
 - Convenções de nomenclatura – digite os nomes atentamente.
 
-
 # Exercício 1: Criar tabela
 
 **Objetivo:** Neste exercício, você criará a tabela personalizada de Visitas.

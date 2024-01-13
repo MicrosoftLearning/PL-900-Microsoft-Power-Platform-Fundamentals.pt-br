@@ -87,7 +87,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 ### Tarefa \#3: Criar uma etapa para enviar um email ao visitante
 
-1.  Selecione **+ Nova Etapa**. É nessa a etapa que um email será enviado para o visitante.
+1.  Selecione **+Nova etapa**. É nessa a etapa que um email será enviado para o visitante.
 
 2.  Procure `mail` e selecione a ação **Enviar um email (V2)** no conector do **Office 365 Outlook**.
 
@@ -97,9 +97,9 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
     
 5.  Selecione **Email** na lista de conteúdo dinâmico.
 
-    > Observe que está abaixo do cabeçalho **Criar visitante**. Isso significa que você está selecionando o email relacionado ao Visitante que foi consultado na etapa anterior.
+    > Observe que ele está abaixo do cabeçaçho **Obter o visitante**. Isso significa que você está selecionando o email relacionado ao Visitante que você pesquisou na etapa anterior.
 
-7.  No campo **Assunto**, insira `Your scheduled visit to Bellows College`
+7.  No campo **Assunto**, digite `Your scheduled visit to Bellows College`
 
 8.  Insira o seguinte texto no **Corpo do email**:
 
@@ -149,7 +149,7 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 7.  Preencha o registro da Visita da seguinte forma:
 
-    -   **Nome:** `Test Visit`
+    -   **Nome**: `Test Visit`
 
     -   **Visitante:** John Doe
 
