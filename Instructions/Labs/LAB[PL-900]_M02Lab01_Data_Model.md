@@ -41,7 +41,8 @@ Para preparar seus ambientes de aprendizagem, você irá:
 
 Considerações antes de começar
 
-- Convenções de nomenclatura – digite os nomes atentamente.
+- Convenções de nomenclatura – insira os nomes com cuidado.
+
 
 # Exercício 1: Criar tabela
 
@@ -53,9 +54,9 @@ A tabela de **Visitas** conterá informações sobre as visitas ao campus, inclu
 
 Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilmente inserido e interpretado por um visitante quando solicitado durante o processo de check-in da visita.
 
-1.  Entre em <https://make.powerapps.com> (se ainda não tiver entrado) 
+1.  Entre em `https://make.powerapps.com` (se ainda não tiver entrado)
 
-1.  No menu **Ambiente** no canto superior direito, verifique se o ambiente **Prática** está selecionado. 
+1.  No menu **Ambiente** no canto superior direito, verifique se o ambiente **Dev One** está selecionado. 
 
 1.  Na navegação à esquerda, selecione **Tabelas**.
 
@@ -176,11 +177,11 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 1.  Você deve ter o arquivo **Visits.xlsx** armazenado em sua máquina virtual em **C:/LabFiles**. Baixe [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) se não tiver.
 
-2.  Se ainda não tiver feito isso, entre em [https://make.powerapps.com](https://make.powerapps.com/). 
+2.  Se ainda não tiver feito isso, entre em `https://make.powerapps.com`
 
-3.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+3.  Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
-4.  Selecione o botão de bolacha no canto superior esquerdo para mudar de aplicativo e selecione **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Selecione **O OneDrive está pronto** quando a opção for exibida na tela.
+4.  Selecione o inicializador de aplicativos (botão de bolacha) no canto superior esquerdo para mudar de aplicativo e escolha **OneDrive**. (Pode demorar um pouco para que o OneDrive seja configurado. Selecione **O OneDrive está pronto** quando a opção for exibida na tela.
 
 5.  Selecione **+Adicionar novo** no menu e selecione **Upload de arquivos**.
 
@@ -191,9 +192,9 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 ## Tarefa 2: Criar um fluxo de dados
 
-1.  Entre em <https://make.powerapps.com> (se ainda não tiver entrado) 
+1.  Entre em `https://make.powerapps.com` (se ainda não tiver entrado)
 
-2.  No menu **Ambiente** no canto superior direito, verifique se o ambiente **Prática** está selecionado. 
+2.  No menu **Ambiente** no canto superior direito, verifique se o ambiente **Dev One** está selecionado. 
 
 3.  Na navegação à esquerda, selecione **Tabelas**. 
 
@@ -246,4 +247,5 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 2.  Verifique se você vê os dados importados na seção **Colunas e dados de visita**.
 
 Parabéns, você criou com sucesso uma nova tabela e importou dados.
+
 

@@ -56,9 +56,9 @@ Considerações antes de começar
 
 ### Tarefa 1: Editar o formulário de visitas
 
-1.  Entre em <https://make.powerapps.com> se você ainda não tiver entrado.
+1.  Se você ainda não tiver entrado, entre em `https://make.powerapps.com` 
 
-2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+2.  Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
 3.  Usando o painel de navegação à esquerda, selecione **Tabelas** e abra a tabela **Visita**.
 
@@ -66,7 +66,7 @@ Considerações antes de começar
 
 4.  Na seção **Experiências de dados**, selecione **Formulários** e abra o formulário **Informações** com o tipo de formulário **Principal**. (**Importante:** selecione o formulário com o tipo de formulário **Principal**). 
 
-> **IMPORTANTE:** Como, por padrão, todos os formulários são denominados Informações, verifique se o formulário selecionado tem um Tipo de formulário **Principal** e não outro. Por padrão, o formulário tem dois campos: Nome e Proprietário.
+    > **IMPORTANTE:** Como, por padrão, todos os formulários são denominados Informações, verifique se o formulário selecionado tem um Tipo de formulário **Principal** e não outro. Por padrão, o formulário tem dois campos: Nome e Proprietário.
 
 5.  No lado direito da tela no painel **Propriedades**, selecione o campo **Nome de Exibição** e altere-o para `Main Information`
 
@@ -159,9 +159,9 @@ Para simplificar e economizar tempo, não abordaremos algumas das colunas Visita
 
 ### Tarefa 1: Criar aplicativo
 
-1.  Entre em <https://make.powerapps.com>, caso ainda não tenha se conectado.
+1.  Se você ainda não tiver entrado, entre em `https://make.powerapps.com` 
 
-2.  No canto superior direito, selecione seu ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+2.  Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
 3.  Selecione **+ Criar** no painel de navegação à esquerda.
 
@@ -193,7 +193,7 @@ Para simplificar e economizar tempo, não abordaremos algumas das colunas Visita
 
 12. Selecione **Salvar** espere as alterações serem salvas.
 
-13. Depois de **Salvar**, selecione o botão **Publicar** para publicar as alterações.
+13. Depois de **Salvar**, selecione o botão **Publicar** para publicar as alterações. Aguarde a conclusão da publicação.
 
 
 ### Tarefa nº 2: Testar app
