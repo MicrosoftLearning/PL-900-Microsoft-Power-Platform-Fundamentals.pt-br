@@ -42,13 +42,15 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 ### Tarefa \#1: Criar o aplicativo Visitas
 
-1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
+1.  Navegue até `https://make.powerapps.com`
 
-2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+2.  Talvez seja necessário autenticar novamente – selecione **Entrar** e siga as instruções, se necessário.
 
-3.  Selecione **+ Criar** no painel de navegação à esquerda da tela. Na seção **Iniciar em**, selecione **Dataverse**.
+3.  Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
-4.  Selecione a conexão do Dataverse.
+4.  Selecione **+ Criar** no painel de navegação à esquerda da tela. Na seção **Iniciar em**, selecione **Dataverse**.
+
+5.  Selecione a conexão do Dataverse.
 
     > **Observação:** *se não houver uma conexão do Dataverse:*
     > - Selecione **+Nova Conexão**
@@ -56,19 +58,19 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
     > - Escolha **Criar**
     > - **Entre** e selecione **Permitir acesso**
 
-5.  Localize e selecione a tabela **Visitas** criada no laboratório anterior.
+6.  Localize e selecione a tabela **Visitas** criada no laboratório anterior.
 
-6.  Selecione o botão **Conectar** no canto inferior direito.
+7.  Selecione o botão **Conectar** no canto inferior direito.
 
-7.  Após a criação do aplicativo, na tela Boas-vindas ao Power Apps Studio, escolha **Não mostrar isso novamente** e selecione **Ignorar**.
+8.  Após a criação do aplicativo, na tela Boas-vindas ao Power Apps Studio, escolha **Não mostrar isso novamente** e selecione **Ignorar**.
 
-8.  Depois que a criação for concluída, o aplicativo de tela será parecido com a imagem abaixo:
+9.  Depois que a criação for concluída, o aplicativo de tela será parecido com a imagem abaixo:
 
     ![Aplicativo de tela criado com base nos dados de Visita.](media/2-canvas-app-from-data.png)
 
-9.  No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5).* Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
+10.  No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5).* Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
 
-10. Feche a visualização do aplicativo clicando em **X** no canto superior direito da tela.
+11. Feche a visualização do aplicativo clicando em **X** no canto superior direito da tela.
 
 Parabéns, você criou com êxito um Power App usando uma tabela do Dataverse. A próxima etapa do processo será personalizar o aplicativo para que ele corresponda à identidade visual do Bellows College. A próxima série de etapas ajudará você a fazer personalizações extra no aplicativo.
 
