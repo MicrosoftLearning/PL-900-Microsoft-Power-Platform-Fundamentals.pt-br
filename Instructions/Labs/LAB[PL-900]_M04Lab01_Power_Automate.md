@@ -37,23 +37,25 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 ### Tarefa \#1: Criar um fluxo
 
-1.  Navegue até <https://make.powerapps.com>. Talvez seja necessário se reautenticar: selecione **Entrar** e siga as instruções, se necessário.
+1.  Navegue até `https://make.powerapps.com`
 
-2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+2.  Talvez seja necessário se reautenticar: selecione **Entrar** e siga as instruções, se necessário.
 
-3.  Na barra de navegação à esquerda, selecione **Fluxos**.
+3.  Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
-4.  Se solicitado, selecione **Começar**.
+4.  Na barra de navegação à esquerda, selecione **Fluxos**.
 
-5.  Escolha **+ Novo fluxo** e selecione **Fluxo de nuvem automatizado**.
+5.  Se solicitado, selecione **Começar**.
 
-6.  Insira `Visit Notification` em **Nome do fluxo**.
+6.  Escolha **+ Novo fluxo** e selecione **Fluxo de nuvem automatizado**.
 
-7.  Em **Escolher o gatilho do fluxo**, procure `Dataverse`
+7.  Insira `Visit Notification` em **Nome do fluxo**.
 
-8.  Escolha o gatilho **Quando uma linha for adicionada, modificada ou excluída** e selecione **Criar**.
+8.  Em **Escolher o gatilho do fluxo**, procure `Dataverse`
 
-9.  Preencha as condições de gatilho do fluxo:
+9.  Escolha o gatilho **Quando uma linha for adicionada, modificada ou excluída** e selecione **Criar**.
+
+10.  Preencha as condições de gatilho do fluxo:
 
     1.  Selecionar **Adicionado** para **Alterar tipo**
 
@@ -131,9 +133,9 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parec
 
 ### Tarefa \#4: Validar e testar o fluxo
 
-1.  Abra uma nova guia no navegador e navegue para <https://make.powerapps.com>.
+1.  Abra uma nova guia no navegador e navegue até `https://make.powerapps.com`
 
-2.  No canto superior direito, selecione o ambiente **Prática [minhas iniciais]** se ainda não tiver selecionado.
+2.  Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
 3.  Escolha **Aplicativos** e abra o aplicativo baseado em modelo **Administração de Campus do Bellows** criado anteriormente.
 

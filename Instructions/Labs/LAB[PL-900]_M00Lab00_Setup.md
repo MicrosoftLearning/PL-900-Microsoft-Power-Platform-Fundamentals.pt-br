@@ -21,46 +21,21 @@ Neste laboratório do Módulo 0, você adquirirá uma avaliação do Power Platf
 
 ## Exercício 1 – Configuração
 
-Tarefa 1 – Adquirir o locatário de teste do Microsoft Power Platform
+Tarefa 1 – Verificar o locatário de teste do Microsoft Power Platform
 
-1.  Copie as **Credenciais do Microsoft 365** do Authorized Lab Hoster. 
+1.  Verifique se você tem suas **credenciais do Microsoft 365** do host de laboratório autorizado disponíveis. 
 
-1.  Navegue até <https://powerapps.microsoft.com> e selecione **Iniciar gratuitamente**.
+2.  Em uma nova guia do navegador, navegue até `https://make.powerapps.com`
 
-1.  Em **Vamos começar**, insira o endereço de email fornecido pelo Hoster de Laboratório Autorizado e selecione **Iniciar sua avaliação gratuita**. 
+3.  Digite a `email address` fornecida pelo host de laboratório autorizado. 
 
-1.  Se aparecer uma página extra com os botões **Comece a criar aplicativos** e **Comece a usar aplicativos** clique em **Comece a usar aplicativos**, não em Comece a criar aplicativos.
+4.  Selecione **Entrar**. 
 
-1.  Se encontrar um prompt informando que você tem uma conta Microsoft existente. Selecione **Entrar**. 
+5.  Digite a `password` fornecida pelo host de laboratório autorizado. 
 
-1.  Digite a senha fornecida pelo Authorized Lab Hoster e selecione **Entrar**. 
+6.  Selecione **Sim** para permanecer conectado.
 
-1.  Selecione **Sim** para permanecer conectado. 
+7.  Se solicitado, insira `0123456789` para **Número de telefone** e selecione **Enviar**.
 
-
-Tarefa 2 – Criar ambiente
-
-1.  Navegue até <https://admin.powerplatform.microsoft.com> e faça logon com suas credenciais do Microsoft 365 se precisar. 
-
-1.  Se você vir um pop-up de boas-vindas, selecione **Introdução**. 
-
-1.  Selecione **Ambientes** e **+ Novo**.
-
-    1. Para **Nome**, insira **Prática [Minhas Iniciais]** (por exemplo: Prática AJ).
-
-    1. Em **Tipo**, escolha **Avaliação** (não selecione a opção *Avaliação (baseado em assinatura)* ).
-
-    1. Altere a o botão de alternância **Adicionar um armazenamento de dados do Dataverse?** para **Sim**. 
-
-    1. Deixe todas as outras seleções como padrão e selecione **Avançar**. 
-
-    1. Abaixo do título **Grupo de segurança**, use o botão **+ Selecionar**.
-
-    1. Marque o item **Nenhum** na a caixa de seleção abaixo do título **Abrir acesso** e selecione **Concluído**.
-
-    1. Deixe o restante das opções com os valores padrão e selecione **OK**. 
-
-1.  Seu ambiente de **Prática** agora deve aparecer na lista de Ambientes. 
-
-    > O ambiente pode levar alguns minutos para ser provisionado. Se necessário, atualize a página.
+8.  **Atualize** a guia e verifique se o ambiente **Dev One** está selecionado em **Ambiente** no canto superior direito. 
 

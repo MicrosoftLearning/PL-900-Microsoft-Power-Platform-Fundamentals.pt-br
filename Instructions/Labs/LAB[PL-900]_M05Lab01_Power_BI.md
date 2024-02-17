@@ -46,7 +46,7 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 1.  Você terá um arquivo visits.pbix armazenado na sua máquina virtual na pasta AllFiles na Área de Trabalho. Baixe [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salve-o no computador, caso ainda não tenha feito isso.
 
-2.  Abra uma nova guia, acesse <https://app.powerbi.com/> e se conecte, se necessário.
+2.  Abra uma nova guia, acesse `https://app.powerbi.com` e se conecte, se necessário.
 
 3.  Selecione **Meu workspace** na navegação à esquerda.
 
@@ -102,7 +102,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1.  Abra o relatório criado na tarefa anterior.
 
-2.  Selecione **Fixar no painel** no menu. Dependendo do layout, talvez você precise selecionar **…** para exibir mais opções.
+2.  Selecione **Fixar no painel** no menu. Dependendo do layout, talvez seja necessário selecionar o menu de reticências **...** para mostrar mais opções.
 
 3.  Selecione **Novo painel** na janela de prompt **Fixar no painel**.
 
@@ -130,3 +130,4 @@ O dashboard **Administração do campus** deve ser exibido contendo três visuai
 Seu painel deve se parecer com o seguinte:
 
 ![](media/5-powerbi-result.png)
+
