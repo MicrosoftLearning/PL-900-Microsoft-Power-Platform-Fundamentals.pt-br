@@ -37,7 +37,7 @@ Para preparar seus ambientes de aprendizagem, você irá:
 
 ## Pré-requisitos
 
-- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Módulo 1 Laboratório 0 – Validação do ambiente de laboratório**
 
 Considerações antes de começar
 
