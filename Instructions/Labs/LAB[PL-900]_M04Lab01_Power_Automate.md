@@ -26,7 +26,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 ## Pré-requisitos
 
-- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Módulo 1 Laboratório 0: Validação do ambiente de laboratório**
 - Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
 - Conclusão do **Laboratório 3 do Módulo 2 – Como criar um aplicativo controlado por modelo**
 - Contato de Davi Barros criado com um endereço de email pessoal preenchido.
