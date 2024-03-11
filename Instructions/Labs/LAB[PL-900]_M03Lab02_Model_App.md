@@ -38,7 +38,7 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
 ## Pré-requisitos
 
-- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Módulo 1, laboratório 0: Validação do ambiente de laboratório**
 
 - Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
 
