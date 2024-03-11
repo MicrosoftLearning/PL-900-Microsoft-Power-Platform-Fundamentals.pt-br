@@ -28,7 +28,7 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 ## Pré-requisitos
 
-- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Módulo 1 Laboratório 0: Validação do ambiente de laboratório**
 - Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
 
 ## Considerações antes de começar

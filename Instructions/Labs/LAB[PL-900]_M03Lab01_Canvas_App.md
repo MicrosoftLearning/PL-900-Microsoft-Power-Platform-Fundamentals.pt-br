@@ -31,7 +31,7 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 ## Pré-requisitos
 
-- Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+- Conclusão do **Módulo 1 Laboratório 0: Validação do ambiente de laboratório**
 - Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
 
 
