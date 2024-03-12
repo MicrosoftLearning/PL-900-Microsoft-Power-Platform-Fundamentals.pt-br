@@ -6,15 +6,15 @@ lab:
 
 # Laboratório 2: Como criar um aplicativo de tela
 
-**Locatários do WWL – Termos de Uso** Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da aula e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
+**Locatários do WWL – Termos de Uso** Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da classe e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
 
 ## Cenário
 
-O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
+O Bellows College é uma organização educacional com vários campi e programas. Muitos instrutores e administradores do Bellows College precisam participar de eventos e comprar itens. Historicamente, acompanhar essas despesas tem sido um desafio. 
 
-Atualmente, a administração do campus está usando uma planilha do Excel para acompanhar o registro de visitantes. Eles querem modernizar o sistema de registro de visitantes, em que o controle de acesso aos edifícios é feito pelo pessoal de segurança e todas as visitas precisam ser registradas previamente e gravadas pelos anfitriões.
+A administração do campus gostaria de modernizar o sistema de relatórios de despesas fornecendo aos funcionários uma forma de relatar despesas digitalmente. 
 
-Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
+Ao longo deste curso, você criará aplicativos e executará a automação para permitir que os funcionários do Bellows College gerenciem as despesas. 
 
 
 ## Macroetapas do laboratório
@@ -31,103 +31,100 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 ## Pré-requisitos
 
-- Conclusão do **Módulo 1 Laboratório 0: Validação do ambiente de laboratório**
-- Conclusão do **Laboratório 1 do Módulo 2 – Modelagem de Dados**
+- Conclusão do **Módulo 1 Laboratório 0 – Validação do ambiente de laboratório**
 
+## Exercício 1: Criar um aplicativo de Tela de Relatórios de Despesas
 
-## Exercício 1: Criar aplicativo Tela de Visitas
+### Objetivo: Neste exercício, você criará um aplicativo de tela conectando-se a uma tabela de Relatórios de Despesas.
 
-**Objetivo:** neste exercício, você criará um aplicativo de tela conectando a tabela Visitas criada anteriormente.
+### Tarefa 1: Criar o aplicativo de Relatórios de Despesas
 
+1. Navegue até https://make.powerapps.com
 
-### Tarefa \#1: Criar o aplicativo Visitas
+1. Talvez seja necessário autenticar novamente – selecione **Entrar** e siga as instruções, se necessário.
 
-1.  Navegue até `https://make.powerapps.com`
+1. Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
-2.  Talvez seja necessário autenticar novamente – selecione **Entrar** e siga as instruções, se necessário.
+1. Selecione **+ Criar** no painel de navegação à esquerda da tela. Na seção **Iniciar em**, selecione **Dataverse**.
 
-3.  Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
+1. Selecione a conexão do Dataverse.
 
-4.  Selecione **+ Criar** no painel de navegação à esquerda da tela. Na seção **Iniciar em**, selecione **Dataverse**.
+    >**Observação**: Se uma conexão do Dataverse não existir:
 
-5.  Selecione a conexão do Dataverse.
+    >   - Selecione **+Nova Conexão**
 
-    > **Observação:** *se não houver uma conexão do Dataverse:*
-    > - Selecione **+Nova Conexão**
-    > - Localize o **Microsoft Dataverse**
-    > - Escolha **Criar**
-    > - **Entre** e selecione **Permitir acesso**
+    >   - Localize o **Microsoft Dataverse**
 
-6.  Localize e selecione a tabela **Visitas** criada no laboratório anterior.
+    >   - Escolha **Criar**
 
-7.  Selecione o botão **Conectar** no canto inferior direito.
+    >   - **Entre** e selecione **Permitir acesso**
 
-8.  Após a criação do aplicativo, na tela Boas-vindas ao Power Apps Studio, escolha **Não mostrar isso novamente** e selecione **Ignorar**.
+1. Localize e selecione a tabela **Relatórios de despesas**.
 
-9.  Depois que a criação for concluída, o aplicativo de tela será parecido com a imagem abaixo:
+1. Selecione o botão **Conectar** no canto inferior direito.
 
-    ![Aplicativo de tela criado com base nos dados de Visita.](media/2-canvas-app-from-data.png)
+1. Após a criação do aplicativo, na tela Boas-vindas ao Power Apps Studio, escolha **Não mostrar isso novamente** e selecione **Ignorar**.
 
-10.  No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5).* Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
+1. No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. (Você também pode visualizar o aplicativo pressionando F5). Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
 
-11. Feche a visualização do aplicativo clicando em **X** no canto superior direito da tela.
+1. Feche a visualização do aplicativo clicando em **X** no canto superior direito da tela.
 
-Parabéns, você criou com êxito um Power App usando uma tabela do Dataverse. A próxima etapa do processo será personalizar o aplicativo para que ele corresponda à identidade visual do Bellows College. A próxima série de etapas ajudará você a fazer personalizações extra no aplicativo.
+Parabéns, você criou com êxito um Power App usando uma tabela do Dataverse. A próxima etapa no processo é adaptar o aplicativo para corresponder à identidade visual de suas organizações. A próxima série de etapas ajudará você a fazer personalizações extra no aplicativo.
 
+### Tarefa 2: Modificar e criar um tema para o aplicativo recém-criado
 
-### Tarefa \#2: Modificar e criar um tema para o aplicativo recém-criado
+Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três telas do aplicativo (Procurar, Detalhes e Editar) e alterará o tema do aplicativo.
 
-Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três telas do aplicativo (Procurar, Detalhes e Editar) e alterará o tema do aplicativo. 
+1. Você está na tela Procurar. Selecione o rótulo **Relatórios de despesas** na tela.
 
-1.  Você está na tela Procurar. Selecione o rótulo **Visitas** na tela.
+1. No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para Meus relatórios de despesas
 
-1.  No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para `Bellows College Visits`
+1. Na guia **Propriedades**, altere o **Tamanho da fonte** para **24**.
 
-1.  Na guia **Propriedades**, altere o **Tamanho da fonte** para **24**. 
+1. Selecione o fundo em branco da tela para ver o texto atualizado na tela de navegação.
 
-1.  Selecione o fundo em branco da tela para ver o texto atualizado na tela de navegação. 
+1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **DetailScreen1**.
 
-1.  Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **DetailScreen1**. 
+1. Selecione o rótulo **Relatórios de despesas** na tela.
 
-1.  Selecione o rótulo **Visitas** na tela.
+1. No lado direito da tela, na guia **Propriedades**, atualize a propriedade de controle **Texto** para Detalhes do relatório
 
-1.  No lado direito da tela, na guia **Propriedades**, atualize a propriedade de controle **Texto** para `Visit Details`
+1. Clique no fundo em branco da tela para ver o texto atualizado na tela Detalhes.
 
-1.  Clique no fundo em branco da tela para ver o texto atualizado na tela Detalhes.
+1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **EditScreen1** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
 
-1.  Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **EditScreen1** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
+1. Selecione o rótulo **Relatórios de despesas** na tela.
 
-1.  Selecione o rótulo **Visitas** na tela.
+1. No lado direito da tela, na guia **Propriedades**, substitua o texto na propriedade de controle **Texto** por Editar detalhes
 
-1.  No lado direito da tela, na guia **Propriedades**, substitua o texto da propriedade de controle **Texto** por `Edit Details`
+1. Clique no fundo em branco da tela para ver o texto atualizado na tela Editar.
 
-1.  Clique no fundo em branco da tela para ver o texto atualizado na tela Editar.
+1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **BrowseScreen1**.
 
-1.  Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **BrowseScreen1**.
+1. Na barra de ferramentas de comando, selecione o botão **Tema** e, na lista exibida, selecione a cor do tema **Vermelho**.
 
-1.  Na barra de ferramentas de comando, selecione o botão **Tema** e, na lista exibida, selecione a cor do tema **Vermelho**.
-
-
-### Tarefa \#3: Testar o aplicativo de Visitas
+### Tarefa 3: Testar o seu aplicativo de relatórios de despesas
 
 Nesta tarefa, você testará seu novo aplicativo.
 
-1.  Com seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** e, na seção **Geral**, atualize o nome do aplicativo para `Visits App`, selecione o **X** para fechar a tela de configurações e selecione **Salvar**.
+1. Com o seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** (talvez seja necessário selecionar … para o Ícone de Configuração a ser exibido), na seção **Geral**, atualize o nome do aplicativo para o Aplicativo de visitas, selecione o **X** para fechar a tela de configurações e, em seguida, selecione **Salvar**.
 
-2.  Usando a navegação à esquerda, selecione **BrowseScreen1**.
+1. Usando a navegação à esquerda, selecione **BrowseScreen1**.
 
-3.  No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. *(Você também pode visualizar o aplicativo pressionando F5).*
+1. No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. (Você também pode visualizar o aplicativo pressionando F5).
 
-4.  Quando o aplicativo for aberto, no campo **Pesquisar Itens**, insira o texto `Maria`
-     *(observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).*
+1. Depois que o aplicativo for aberto, no campo **Pesquisar itens**, insira o texto Viagem (observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).
 
-5.  Assim que o registro **Contoso Suites** para **Clara Barbosa** for exibido, selecione uma linha do navegador e abra a tela Detalhes para essa visita. (**Observação**: *se mais de um registro de Maria Campbell do Contoso Suites for exibido, selecione qualquer um deles.* )
+1. Depois que o registro **Viagem para a Power Platform Conference** for exibido, selecione uma linha para navegar e abrir a tela Detalhes dessa Despesa.
+ 
+    >**Observação**: Se mais de um registro da viagem para a Power Platform Conference for exibido, selecione qualquer um deles.
 
-6.  Para editar o registro, selecione o **Ícone de lápis** no canto superior direito do aplicativo.
+1. Para editar o registro, selecione o **Ícone de lápis** no canto superior direito do aplicativo.
 
-7.  Você pode editar o **Nome da Visita** aqui e selecionar o ícone de **Marca de seleção** no canto superior direito para salvar a alteração.
+1. Você pode editar o **Nome do relatório** aqui e selecionar o ícone **Marca de seleção** na parte superior direita para salvar a alteração.
 
-8.  No canto superior direito da tela, selecione o ícone **X** para fechar o modo de pré-visualização e retornar ao editor do aplicativo de tela.
+1. No canto superior direito da tela, selecione o ícone **X** para fechar o modo de pré-visualização e retornar ao editor do aplicativo de tela.
 
 Parabéns! Você criou e configurou seu primeiro aplicativo de tela.
 
+ 
