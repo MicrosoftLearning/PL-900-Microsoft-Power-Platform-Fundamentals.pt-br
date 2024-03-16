@@ -6,7 +6,7 @@ lab:
 
 # Laboratório de bônus: Criar um aplicativo de tela usando o Copilot
 
-**Locatários do WWL – Termos de Uso** Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da aula e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
+**Locatários do WWL – Termos de Uso** Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da classe e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
 
 ## Cenário
 
@@ -76,6 +76,6 @@ Inicialmente, um campo como **Motivação** foi formatado com um tipo de dados d
 
 17. Após a criação do aplicativo, na tela **Bem-vindo(a) ao Power Apps Studio**, escolha **Não mostrar isso novamente** e selecione **Ignorar**. 
 
-![](media/bonus-lab-copilot-01.png)
+![Captura de tela do aplicativo que acabou de ser criado](media/bonus-lab-copilot-01.png)
 
 Parabéns, você usou Copilot para criar um aplicativo. 
