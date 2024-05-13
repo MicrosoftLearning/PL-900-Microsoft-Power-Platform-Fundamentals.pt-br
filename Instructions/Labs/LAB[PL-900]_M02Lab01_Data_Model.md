@@ -16,14 +16,6 @@ A administração do campus gostaria de modernizar o sistema de relatórios de d
 
 Ao longo deste curso, você criará aplicativos e realizará automação para permitir que os funcionários do Bellows College gerenciem as despesas.
 
-Neste laboratório, você criará um modelo de dados para oferecer suporte aos seguintes requisitos:
-
-- R1 – Rastrear informações para visitas agendadas no campus.
-
-- R2 – Registrar informações básicas para identificar e monitorar os visitantes.
-
-- R3 – Agendar, registrar e gerenciar as visitas.
-
 Por fim, você importará dados de amostra para o Microsoft Dataverse.
 
 ## Macroetapas do laboratório
@@ -80,7 +72,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Em **Ajuste do fuso horário**, selecione **Somente data**.
 
-    >**Observação:** Usamos o comportamento **Somente Data** para registrar as informações de data, pois a data da visita não deve ser alterada quando visualizada em um fuso horário diferente.
+    >**Observação:** Usamos o comportamento **Somente data** para registrar informações de data, porque a data das despesas não deve mudar quando visualizada em um fuso horário diferente.
 
 1. Selecione **Salvar**.
 
