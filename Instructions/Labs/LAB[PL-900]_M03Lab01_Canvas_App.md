@@ -6,11 +6,11 @@ lab:
 
 # Laboratório 2: Como criar um aplicativo de tela
 
-**Locatários do WWL – Termos de Uso** Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o fim da classe e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
+**Locatários do WWL – Termos de Uso** Se você estiver recebendo um locatário como parte de uma entrega de treinamento com instrutor, observe que o locatário é disponibilizado com a finalidade de dar suporte aos laboratórios práticos no treinamento com instrutor. Os locatários não devem ser compartilhados ou usados para fins fora dos laboratórios práticos. O locatário usado neste curso é um locatário de avaliação e não pode ser usado ou acessado após o término da aula e não está qualificado para extensão. Os locatários não podem ser convertidos em uma assinatura paga. Os locatários obtidos como parte deste curso permanecem a propriedade da Microsoft Corporation e reservamos o direito de obter acesso e a qualquer momento. 
 
 ## Cenário
 
-O Bellows College é uma organização educacional com vários campi e programas. Muitos instrutores e administradores do Bellows College precisam participar de eventos e comprar itens. Historicamente, acompanhar essas despesas tem sido um desafio. 
+O Bellows College é uma organização educacional com vários campi e programas. Muitos instrutores e administradores do Bellows College precisam participar de eventos e comprar itens. Historicamente, o controle dessas despesas tem sido um desafio. 
 
 A administração do campus gostaria de modernizar o sistema de relatórios de despesas fornecendo aos funcionários uma forma de relatar despesas digitalmente. 
 
@@ -21,9 +21,9 @@ Ao longo deste curso, você criará aplicativos e executará a automação para 
 
 Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
-- Criar um aplicativo de tela com base nos dados na tabela Visita
+- Criar um aplicativo de tela de relatório de despesas 
 
-- Configurar como as visitas são mostradas na tela de navegação
+- Configurar como os relatórios de despesas são mostrados na tela de navegação
 
 - Fazer algumas alterações básicas no aplicativo
 
@@ -107,7 +107,7 @@ Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três t
 
 Nesta tarefa, você testará seu novo aplicativo.
 
-1. Com o seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** (talvez seja necessário selecionar … para o Ícone de Configuração a ser exibido), na seção **Geral**, atualize o nome do aplicativo para o Aplicativo de visitas, selecione o **X** para fechar a tela de configurações e, em seguida, selecione **Salvar**.
+1. Com o seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** (talvez seja necessário selecionar … para o Ícone de Configuração a ser exibido), na seção **Geral**, atualize o nome do aplicativo para o Aplicativo de Relatório de Despesas, selecione o **X** para fechar a tela de configurações e, em seguida, selecione **Salvar**.
 
 1. Usando a navegação à esquerda, selecione **BrowseScreen1**.
 
