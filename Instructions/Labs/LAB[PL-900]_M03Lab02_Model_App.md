@@ -10,13 +10,11 @@ lab:
 
 ## Cenário
 
-O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
+O Bellows College é uma organização educacional com vários campi e programas. Muitos instrutores e administradores do Bellows College precisam participar de eventos e comprar itens. Historicamente, o controle dessas despesas tem sido um desafio.
 
-A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
+A administração do campus gostaria de modernizar o sistema de relatórios de despesas fornecendo aos funcionários uma forma de relatar despesas digitalmente.
 
-Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
-
-Neste laboratório, você criará um aplicativo baseado em modelo do Power Apps para permitir que a equipe de apoio gerencie os registros de visitação de todo o campus.
+Ao longo deste curso, você criará aplicativos e executará a automação para permitir que os funcionários do Bellows College gerenciem as despesas.
 
 ## Macroetapas do laboratório
 
@@ -88,11 +86,11 @@ O cabeçalho é a área superior direita do formulário. Pode ser necessário re
 
 1. Se a exibição Edição foi aberta em uma nova guia ou janela do navegador, feche-a. Caso contrário, selecione **🡠 Voltar** no canto superior esquerdo da tela. Agora você deve voltar à tabela Formulários do **Relatório de Despesas**.
 
-1. Usando a barra de rolagem no canto superior esquerdo (**Tabelas** > **Relatório de Despesas** > **Formulários**). Selecione **Relatório de Despesas** para retornar à tela de propriedades da Tabela **Visita**.
+1. Usando a barra de rolagem no canto superior esquerdo (**Tabelas** > **Relatório de Despesas** > **Formulários**). Selecione **Relatório de Despesas** para retornar à tela de propriedades da Tabela do **Relatório de Despesas**.
 
-## Tarefa 2: Editar a exibição Visitas ativas
+## Tarefa 2: Editar exibição de Relatórios de Despesas Ativas
 
-Nesta tarefa, modificaremos o modo de exibição padrão dos Relatórios de Despesas Ativos e criaremos um novo modo de exibição para as visitas de hoje.
+Nesta tarefa, modificaremos o modo de exibição padrão dos Relatórios de Despesas Ativas e criaremos uma nova exibição para os relatórios de despesas com vencimento hoje.
 
 1. Na seção **Experiências de dados**, selecione **Exibições** e abra a exibição **Relatórios de Despesas Ativas**.
 
@@ -210,15 +208,15 @@ Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório
 
 1. Insira os campos da seguinte maneira:
 
-    - **Nome do Relatório**: Novo relatório do teste
+    - **Nome do relatório**: novo Relatório de Teste
 
     - **Finalidade do Relatório**: selecione **Conferência**
 
     - **Data de conclusão do relatório**: Selecione a data de hoje
 
-1. Selecione **Salvar &amp; Fechar**. A visita será criada, e você poderá vê-la na exibição **Visitas Ativas**.
+1. Selecione **Salvar &amp; Fechar**. Isso criará o novo Relatório de Teste e você poderá vê-lo na exibição **Relatórios de Despesas Ativas **.
 
-1. Altere o modo de exibição para **Relatórios de Despesas com Vencimento Hoje** usando o menu suspenso ao lado de **Visitas Ativas**. 
+1. Altere o modo de exibição para **Relatórios de Despesas com Vencimento Hoje** usando o menu suspenso ao lado de **Relatórios de Despesas Ativas**. 
 
 1. Você poderá adicionar mais alguns registros de teste.
 
