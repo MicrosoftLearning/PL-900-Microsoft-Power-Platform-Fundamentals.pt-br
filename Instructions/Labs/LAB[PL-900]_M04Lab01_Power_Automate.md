@@ -141,8 +141,6 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve se parece
 
     - **Nome do Relatório:** Relatório de Teste
 
-    - **Valor Total do Relatório:** USD 750,00
-
     - **Data de conclusão do relatório: ** Amanhã 
 
 1. Selecione o botão **Salvar e Fechar**.
