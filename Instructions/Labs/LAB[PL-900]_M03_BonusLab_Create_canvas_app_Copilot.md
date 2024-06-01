@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Laboratório de bônus: Criar um aplicativo de tela usando o Copilot'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Laboratório de bônus: Criar um aplicativo de tela usando o Copilot

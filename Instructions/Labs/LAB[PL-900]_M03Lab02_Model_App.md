@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Laboratório 3: Como criar um aplicativo baseado em modelo'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Laboratório 3: Como criar um aplicativo baseado em modelo

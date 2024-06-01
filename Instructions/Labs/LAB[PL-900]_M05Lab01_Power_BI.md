@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Laboratório 5: Como compilar um dashboard simples'
-  module: 'Module 5: Get Started with Power BI'
+  module: 'Module 5: Describe the capabilities of Microsoft Power BI'
 ---
 
 ## Laboratório 5: Como compilar um dashboard simples

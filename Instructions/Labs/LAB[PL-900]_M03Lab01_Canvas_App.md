@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Laboratório 2: Como criar um aplicativo de tela'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Laboratório 2: Como criar um aplicativo de tela
