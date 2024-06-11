@@ -1,7 +1,7 @@
 ---
 lab:
   title: '‘Laboratório 4: Saiba como construir uma solução automatizada'
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # ‘Laboratório 4: Saiba como construir uma solução automatizada
@@ -66,7 +66,7 @@ Essa é uma boa prática, para que você e outros editores de fluxo possam enten
 
 ### Tarefa 2: Criar uma etapa para obter a linha do relatório de despesas
 
-1. Selecione **+ Nova Etapa**. Essa etapa vai recuperar as informações do Visitante, incluindo o endereço de email.
+1. Selecione **+Nova etapa**. Esta etapa recuperará as informações do Relatório de despesas, incluindo o endereço de email.
 
 1. Pesquisar Dataverse
 
@@ -82,9 +82,9 @@ Essa é uma boa prática, para que você e outros editores de fluxo possam enten
 
 Essa é uma boa prática, para que você e outros editores de fluxo possam entender a finalidade da etapa sem precisar se aprofundar nos detalhes.
 
-### Tarefa 3: Criar uma etapa para enviar um email ao visitante
+### Tarefa 3: Criar uma etapa para enviar um email para confirmar o envio de um relatório de despesas
 
-1. Selecione **+ Nova Etapa**. É nessa a etapa que um email será enviado para o visitante.
+1. Selecione **+Nova etapa**. Esta é a etapa que enviará um email para a pessoa que enviou um relatório de despesas.
 
 1. Pesquise emails, selecione a ação **Enviar um email (V2)** no conector do **Office 365 Outlook**.
 
@@ -109,9 +109,9 @@ O conteúdo dinâmico precisa ser inserido onde os campos são nomeados entre co
 
 1. Realce o texto **{First Name}** . Substitua-o pelo campo **Nome** da etapa **Obter proprietário**.
 
-1. Destaque o texto **{Report Total Amount}**. Substitua-o pelo campo **Valor Total do Relatório** da etapa **Quando uma visita for adicionada**.
+1. Destaque o texto **{Report Total Amount}**. Substitua pelo campo **Valor Total do Relatório** da etapa **Quando um relatório de despesas for enviado**.
 
-1. Realce o texto **{Report Due Date}**. Substitua-o pelo campo **Data de conclusão do relatório** da etapa **Quando uma visita for adicionada**.
+1. Realce o texto **{Report Due Date}**. Substitua pelo campo **Data de Vencimento do Relatório** da etapa **Quando um relatório de despesas é enviado**.
 
 1. Selecione **Salvar**.
 
@@ -140,8 +140,6 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve se parece
 1. Preencha o registro **Relatório de Despesas** da seguinte forma:
 
     - **Nome do Relatório:** Relatório de Teste
-
-    - **Valor Total do Relatório:** USD 750,00
 
     - **Data de conclusão do relatório: ** Amanhã 
 
