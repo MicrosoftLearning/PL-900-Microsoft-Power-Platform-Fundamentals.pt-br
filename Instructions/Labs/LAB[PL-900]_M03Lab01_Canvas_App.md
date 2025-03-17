@@ -39,7 +39,7 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 ### Tarefa 1: Criar o aplicativo de Relatórios de Despesas
 
-1. Navegue até https://make.powerapps.com
+1. Navegue até `https://make.powerapps.com`
 
 1. Talvez seja necessário autenticar novamente – selecione **Entrar** e siga as instruções, se necessário.
 
@@ -59,7 +59,7 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
     >   - **Entre** e selecione **Permitir acesso**
 
-1. Localize e selecione a tabela **Relatórios de despesas**.
+1. Localize e selecione a tabela **Relatórios de Despesas**.
 
 1. Selecione o botão **Conectar** no canto inferior direito.
 

@@ -40,7 +40,7 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 3. Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
-4. Na caixa **Descreva o aplicativo que você deseja criar**, insira o texto a seguir. Crie um aplicativo que registra visitas a um campus universitário. 
+4. Na caixa **Use palavras cotidianas para descrever o que seu aplicativo deve coletar, rastrear, listar ou gerenciar.**, insira o seguinte texto. `Create an application that logs visits to a college campus`. 
 
 5. Selecione o botão **Ir**.
 
@@ -48,34 +48,45 @@ O Copilot começará a criar uma estrutura de tabela para dar suporte ao aplicat
 
 > **IMPORTANTE:** Ao usar a IA gerativa, nem sempre você obterá os mesmos resultados exatos. É possível que sua tabela não corresponda exatamente à tabela criada para outro aluno. 
 
-6. Na caixa **Descreva o que alterar**, insira o texto: Adicione duas colunas, Hora de entrada e Hora de saída. Ambos devem ser campos de data e hora.  
+6. No lado direito, selecione a estrutura da tabela na janela do Copilot e, em seguida, selecione **Opções de tabela**.
 
-7. Selecione o ícone **Avançar** ou pressione **Enter**. 
+7. Selecione a opção **Uma tabela** e, em seguida, selecione **Aplicar**.
+ 
+    ![Captura de tela da estrutura da tabela recém-criada](media/bonus-lab-tablestr.png)
 
-8. Role para o lado da tabela e verifique se as colunas **Hora de entrada** e **Hora de saída** foram criadas. 
+
+> Para ver a estrutura da tabela, escolha a tabela e clique no botão **Exibir dados** 
+
+8. Na caixa **O que você gostaria de fazer em seguida?**, insira o texto: Adicione duas colunas, Hora de entrada e Hora de saída na tabela. Ambos devem ser campos de data e hora. 
+
+9. Selecione o ícone **Avançar** ou pressione **Enter**. 
+
+10. Role para o lado da tabela e verifique se as colunas **Hora de entrada** e **Hora de saída** foram criadas. 
 
 Como estamos registrando os horários de entrada e de saída dos visitantes, não precisamos mais de outros campos de data de visita. 
 
-9. Localize o campo **Data da Visita** (ou campo equivalente) e, na caixa **Descreva o que alterar**, insira o texto Remover o Campo de Data da Visita. 
+11. Localize o campo **Data da Visita** (ou campo equivalente) e, na caixa **O que você quer fazer em seguida?**, insira o texto: Remover o Campo de Data da Visita (ou campo equivalente). 
 
-10. Selecione o botão **Ir**. 
+>Se necessário, atualize o nome do campo a ser removido do nome da tabela relevante.
 
-11. Remova quaisquer campos de data adicionais que possam estar presentes além de **Hora de entrada** e **Hora de saída**. 
+12. Selecione o botão **Ir**. 
+
+13. Remova quaisquer campos de data adicionais que possam estar presentes além de **Hora de entrada** e **Hora de saída**. 
 
 Inicialmente, um campo como **Motivação** foi formatado com um tipo de dados de texto e adicionado. Vamos fazer o Copilot alterá-lo para um menu suspenso (Múltipla escolha). 
 
-12. Na caixa **Descreva o que alterar**, insira o seguinte texto: Altere o campo Motivação para um menu de escolha com as seguintes opções: Tour pelo campus, Feira de carreiras, Reunião com professor, Aconselhamento estudantil, Outros. 
-
-13. Selecione o botão **Ir**. 
-
-14. Como também queremos capturar o número do prédio, na caixa **Descreva o que alterar**, insira: Adicione uma coluna para o número do prédio. 
+14. Na caixa **O que você quer fazer em seguida?**, insira o seguinte texto: Altere o campo Motivação para um menu de escolha com as seguintes opções: Tour pelo campus, Feira de carreiras, Reunião com professor, Aconselhamento estudantil, Outros. 
 
 15. Selecione o botão **Ir**. 
 
-16. Depois que você estiver contente com sua tabela, selecione o botão **Criar aplicativo**. 
+16. Como também queremos capturar o número do prédio, na caixa **O que você quer fazer em seguida?**, insira: Adicione uma coluna para o prédio. 
 
-17. Após a criação do aplicativo, na tela **Bem-vindo(a) ao Power Apps Studio**, escolha **Não mostrar isso novamente** e selecione **Ignorar**. 
+17. Selecione o botão **Ir**. 
 
-![Captura de tela do aplicativo que acabou de ser criado](media/bonus-lab-copilot-01.png)
+18. Quando estiver contente com a tabela, clique no botão **Salvar e abrir aplicativo**. 
+
+19. Se necessário, na tela **Concluiu o trabalho?**, clique em **Não perguntar novamente** e clique no botão **Salvar e abrir aplicativo**. 
+
+![Captura de tela do aplicativo que acabou de ser criado](media/bonus-lab-copilot-02.png)
 
 Parabéns, você usou Copilot para criar um aplicativo. 

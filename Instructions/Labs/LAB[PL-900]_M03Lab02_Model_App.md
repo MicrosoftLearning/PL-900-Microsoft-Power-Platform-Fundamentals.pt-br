@@ -20,11 +20,11 @@ Ao longo deste curso, você criará aplicativos e executará a automação para 
 
 Você fará o seguinte para criar o aplicativo baseado em modelo:
 
-- Crie um novo aplicativo orientado por modelos chamado Gerenciamento de Despesas do Bellows
+- Criar um novo aplicativo baseado em modelo chamado Gerenciamento de Despesas do Bellows.
 
-- Editar a navegação do aplicativo para fazer referência às tabelas necessárias
+- Editar a navegação do aplicativo para fazer referência às tabelas necessárias.
 
-- Personalize os formulários e as exibições das tabelas necessárias para o aplicativo
+- Personalizar os formulários e as exibições das tabelas necessárias para o aplicativo.
 
 Vamos trabalhar com os seguintes componentes:
 
@@ -50,7 +50,7 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
 **Objetivo:** Neste exercício, você vai personalizar as exibições e os formulários das tabelas personalizadas que serão usadas no aplicativo baseado em modelo.
 
-### Tarefa 1: Editar o Formulário do Relatório de Despesas
+### Tarefa 1: editar o Formulário do Relatório de Despesas
 
 1. Se você ainda não tiver entrado, entre em https://make.powerapps.com
 
@@ -58,7 +58,7 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
 1. Usando a navegação à esquerda, selecione **Tabelas** e abra a tabela **Relatório de Despesas**.
 
-Se não vir a tabela Relatório de despesas, verifique se está no ambiente correto (Etapa 2).
+    >Se não vir a tabela Relatório de despesas, verifique se está no ambiente correto (Etapa 2).
 
 1. Na seção **Experiências de dados**, selecione **Formulários** e abra o formulário **Informações** com o tipo de formulário **Principal**. (**Importante:** selecione o formulário com o tipo de formulário **Principal**).
 
@@ -78,9 +78,9 @@ Se não vir a tabela Relatório de despesas, verifique se está no ambiente corr
 
 1. Arraste a coluna **Razão do Status** e solte-a no cabeçalho do formulário.
 
-O cabeçalho é a área superior direita do formulário. Pode ser necessário recolher o painel Propriedades do lado direito da tela para ver o campo no formulário.
+    >O cabeçalho é a área superior direita do formulário. Pode ser necessário recolher o painel Propriedades do lado direito da tela para ver o campo no formulário.
 
-1. Selecione o campo **Proprietário**. No painel Propriedades, altere o **Rótulo** para Solicitante
+1. Selecione o campo **Proprietário**. No painel Propriedades, altere o **Rótulo** para Solicitante.
 
 1. Selecione o botão **Salvar e publicar** no canto superior direito e aguarde a conclusão do salvamento e da publicação.
 
@@ -88,7 +88,7 @@ O cabeçalho é a área superior direita do formulário. Pode ser necessário re
 
 1. Usando a barra de rolagem no canto superior esquerdo (**Tabelas** > **Relatório de Despesas** > **Formulários**). Selecione **Relatório de Despesas** para retornar à tela de propriedades da Tabela do **Relatório de Despesas**.
 
-## Tarefa 2: Editar exibição de Relatórios de Despesas Ativas
+## Tarefa 2: editar a exibição de Relatórios de Despesas Ativas
 
 Nesta tarefa, modificaremos o modo de exibição padrão dos Relatórios de Despesas Ativas e criaremos uma nova exibição para os relatórios de despesas com vencimento hoje.
 
@@ -100,19 +100,19 @@ Nesta tarefa, modificaremos o modo de exibição padrão dos Relatórios de Desp
 
     - **Data de conclusão do relatório**
 
-    - **Total do Relatório**
+    - **Valor Total do Relatório**
 
 1. Selecione o menu suspenso na coluna **Criado em** e escolha **Remover**. O campo **Criado em** será removido da exibição.
 
 1. Redimensione as larguras das colunas como desejar para ajustar os dados.
 
-1. Em **Classificar por ...** selecione o X para remover o **Nome** e, em vez disso, selecione **Valor Total do Relatório**.
+1. Em **Classificar por ...** clique no X para remover o **Nome do relatório** e, em vez disso, selecione **Valor Total do Relatório**.
 
-1. Selecione **Valor Total do Relatório** para alterar a ordem de classificação para **Do Maior para o Menor**.
+1. Selecione **Valor Total do Relatório** para alterar a ordem de classificação para **Do maior para o menor**.
 
 1. Selecione o botão **Salvar e publicar** no canto superior direito e aguarde a conclusão da publicação.
 
-### Tarefa 3: Criar novo modo de exibição para os Relatórios com vencimento hoje
+### Tarefa 3: criar um novo modo de exibição para os Relatórios com vencimento hoje
 
 Agora, vamos clonar a exibição para criar uma nova exibição para os relatórios com vencimento hoje.
 
@@ -136,13 +136,13 @@ Agora, vamos clonar a exibição para criar uma nova exibição para os relatór
 
 1. Selecione o botão **Salvar e publicar** no canto superior direito e aguarde a conclusão da publicação.
 
-## Exercício 2: Criar aplicativo baseado em modelo
+## Exercício 2: criar o aplicativo baseado em modelo
 
 **Objetivo:** neste exercício, você criará o aplicativo baseado em modelo, personalizará o mapa do site e testará o aplicativo.
 
 Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório de Despesas neste laboratório.
 
-### Tarefa 1: Criar aplicativo
+### Tarefa 1: criar o aplicativo
 
 1. Se você ainda não tiver entrado, entre em https://make.powerapps.com
 
@@ -156,11 +156,11 @@ Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório
 
     - Em **Aplicativo em branco baseado no Dataverse**, selecione **Criar**.
 
-    - Insira o Gerenciamento de Despesas para **Nome** e selecione **Criar**.
+    - Insira `Employee Expense Management` em **Nome** e escolha **Criar**.
 
-1. Quando o novo aplicativo baseado em modelo for carregado, selecione o botão **+ Adicionar Página**.
+1. Quando o novo aplicativo baseado em modelo for carregado, selecione o botão **+ Adicionar página**.
 
-1. Na tela **Adicionar Página**, escolha **Tabela do Dataverse** e selecione o botão **Avançar**.
+1. Na tela **Adicionar página**, escolha **Tabela do Dataverse**.
 
 1. Escolha as seguintes tabelas:
 
@@ -174,13 +174,13 @@ Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório
 
 1. No painel de navegação, selecione **Novo Grupo** abaixo do item Navegação. Talvez seja necessário expandir o menu à esquerda.
 
-1. No lado direito da tela, na seção **Opções de exibição**, altere a propriedade **Título** para Relatórios
+1. No lado direito da tela, na seção **Opções de exibição**, altere a propriedade **Título** para Relatórios.
 
 1. Selecione **Salvar** espere as alterações serem salvas.
 
 1. Depois de **Salvar**, selecione o botão **Publicar** para publicar as alterações. Aguarde a conclusão da publicação.
 
-## Tarefa nº 2: Testar app
+## Tarefa 2: testar o aplicativo
 
 **Iniciar o aplicativo**
 
@@ -192,7 +192,7 @@ Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório
 
 1. Escolha **+ Novo** na barra de comandos.
 
-1. Insira o **Primeiro Nome** como John e o **Último Nome** como Doe
+1. Insira **Nome** como `John` e **Sobrenome** como `Doe`.
 
 1. Informe seu email pessoal como **e-mail**. Isso será usado em um laboratório futuro, em que você receberá um email.
 
@@ -208,11 +208,11 @@ Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório
 
 1. Insira os campos da seguinte maneira:
 
-    - **Nome do relatório**: novo Relatório de Teste
+    - **Nome do relatório**: `New Test Report`
 
     - **Finalidade do Relatório**: selecione **Conferência**
 
-    - **Data de conclusão do relatório**: Selecione a data de hoje
+    - **Data de conclusão do relatório**: Selecione a data de hoje.
 
 1. Selecione **Salvar &amp; Fechar**. Isso criará o novo Relatório de Teste e você poderá vê-lo na exibição **Relatórios de Despesas Ativas **.
 
