@@ -22,8 +22,6 @@ Por fim, você importará dados de amostra para o Microsoft Dataverse.
 
 Para preparar seus ambientes de aprendizagem, você irá:
 
-- Consulte o [documento de modelagem de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png) para ver a descrição dos metadados (tabelas e relacionamentos). Você pode pressionar Ctrl + clique ou clicar com o botão direito do mouse no link para abrir o documento de modelagem de dados em uma nova janela.
-
 - Criar a tabela Despesas
 
 - Adicionar alguns dados de amostra. 
@@ -50,11 +48,11 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Na navegação à esquerda, selecione **Tabelas**.
 
-1. Selecione **+ Nova tabela** e escolha **Definir propriedades avançadas**.
+1. Selecione **+ Nova tabela** e selecione **Tabela (propriedades avançadas)** no menu suspenso.
 
-1. Para **Nome de exibição**, insira Despesas
+1. Para **Nome de exibição**, insira `Expense`
 
-1. Selecione **Salvar**.
+1. Clique em **Salvar**.
 
 1. Na seção **Esquema**, selecione **Colunas**.
 
@@ -62,7 +60,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Selecione **+ Nova coluna**.
 
-1. Insira a Data da Despesa para o **Nome de exibição**.
+1. Para **Nome de exibição**, insira `Expense Date`.
 
 1. Selecione **Somente data** para **Tipo de dados**.
 
@@ -80,7 +78,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Selecione **+ Nova coluna**.
 
-1. Insira o Tipo de Despesa para o **Nome de exibição**.
+1. Para **Nome de exibição**, insira `Expense Type`.
 
 1. Selecione **Escolha** para **Tipo de dados**.
 
@@ -98,7 +96,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Selecione **+ Nova coluna**.
 
-1. Insira a Finalidade da Despesa para **Nome de exibição**.
+1. Para **Nome de exibição**, insira `Expense Purpose`.
 
 1. Selecione **Escolha** para **Tipo de dados**.
 
@@ -108,7 +106,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. No campo **Sincronizar esta opção com**, selecione **Finalidade da Despesa**.
 
-1. Defina o campo **Padrão** como **Nenhum**.
+1. Defina o campo **Escolha padrão** como **Nenhuma**.
 
 1. Selecione **Salvar**.
 
@@ -116,7 +114,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Selecione **+ Nova coluna**.
 
-1. Insira a Descrição do Item para o **Nome de exibição**.
+1. Para **Nome de exibição**, insira `Item Description`.
 
 1. Selecione **Várias linhas de texto &gt; Texto simples** para **Tipo de dados**.
 
@@ -126,7 +124,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Selecione **+ Nova coluna**.
 
-1. Insira o Valor da Despesa no **Nome de exibição**.
+1. Para **Nome de exibição**, insira `Expense Amount`.
 
 1. Selecione **Moeda** para **Tipo de dados**.
 
@@ -167,7 +165,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Selecione a **Seta** ao lado de **Editar**. No menu que aparecerá, selecione **Editar em nova guia**.
 
-1. Na coluna **Nome**, insira **John Doe**.
+1. Na coluna **Nome**, insira `John Doe`.
 
 1. Na coluna **Data da Despesa**, insira **xxx**.
 
@@ -175,7 +173,7 @@ A tabela **Despesas** conterá informações sobre despesas individuais que um f
 
 1. Na coluna **Tipo de Despesa**, selecione **Viagem**.
 
-1. Na coluna **Valor da Despesa**, insira **750,00**.
+1. Na coluna **Valor da Despesa**, insira `750.00`.
 
 1. Na coluna **Descrição do Item**, insira uma breve descrição.
 

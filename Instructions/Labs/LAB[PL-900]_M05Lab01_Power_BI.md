@@ -46,7 +46,7 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 1. Você terá um arquivo visits.pbix armazenado na sua máquina virtual na pasta AllFiles na Área de Trabalho. Baixe [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) e salve-o no computador, caso ainda não tenha feito isso.
 
-1. Abra uma nova guia, acesse https://app.powerbi.com e se conecte, se necessário.
+1. Abra uma nova guia, acesse `https://app.powerbi.com` e se conecte, se necessário.
 
 1. Selecione **Meu workspace** na navegação à esquerda.
 
@@ -56,7 +56,7 @@ Vamos seguir as etapas abaixo para projetar e criar um dashboard do Power BI:
 
 1. Uma vez concluído o carregamento de dados, selecione o relatório de **visitas**.
 
-    >**Observação:** o Tipo está definido como **Relatório**. Não selecione o Conjunto de dados.
+    >**Observação:** o Tipo está definido como **Relatório**. Não selecione o Modelo Semântico.
 
 1. Selecione **Editar**.
 
@@ -68,7 +68,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1. Escolha o ícone de **Gráfico de pizza** no painel **Visualizações** para inserir um gráfico.
 
-1. Expanda **bc_Visit** no painel **Campos**. Arraste o campo **Prédio** e solte-o dentro da caixa **Legenda**.
+1. Expanda **bc_Visit** no painel **Dados**. Arraste o campo **Prédio** e solte-o dentro da caixa **Legenda**.
 
 1. Arraste o campo **Visita** e solte-o na caixa **Valores**.
 
@@ -76,7 +76,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1. Clique no relatório, fora do gráfico de pizza, para desmarcá-lo e selecione o ícone do **Gráfico de colunas empilhadas** no painel **Visualizações**.
 
-1. Expanda **bc_Visit** no painel **Campos** caso ele ainda não esteja expandido. Arraste o campo **Visita** e solte-o na caixa **Eixo y**.
+1. Expanda **bc_Visit** no painel **Dados** caso ele ainda não esteja expandido. Arraste o campo **Visita** e solte-o na caixa **Eixo y**.
 
 1. Arraste o campo **Início** e solte-o na caixa **Eixo x**.
 
@@ -104,7 +104,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1. Selecione **Novo painel** na janela de prompt **Fixar no painel**.
 
-1. Insira Gerenciamento do Campus como **Nome do painel** e selecione **Fixar em Tempo Real**.
+1. Insira `Campus Management` como **Nome do dashboard** e selecione **Fixar em tempo real**.
 
 1. Um pop-up informará que o painel foi criado. Selecione **Ir para o dashboard**.
 
@@ -114,7 +114,7 @@ Você concluiu a configuração do serviço do Power BI para usar em seus labora
 
 1. No painel **Gerenciamento do campus**, selecione a barra **Faça uma pergunta sobre os dados** no topo.
 
-1. Digite prédios por número de visitas na área de P e R (Perguntas e Respostas) Uma gráfico de barras será exibido.
+1. Entre `buildings by number of visits` na área de perguntas e respostas. Uma gráfico de barras será exibido.
 
 1. Selecione **Fixar visual**.
 

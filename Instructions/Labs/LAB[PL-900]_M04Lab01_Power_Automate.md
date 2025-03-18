@@ -34,7 +34,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 ### Tarefa 1: Criar um fluxo
 
-1. Navegue até https://make.powerapps.com
+1. Navegue até `https://make.powerapps.com`
 
 1. Talvez seja necessário se reautenticar: selecione **Entrar** e siga as instruções, se necessário.
 
@@ -46,7 +46,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 1. Escolha **+ Novo fluxo** e selecione **Fluxo de nuvem automatizado**.
 
-1. Insira a Notificação de Despesas para **Nome do fluxo**.
+1. Insira `Expense Notification` em **Nome do fluxo**.
 
 1. Em **Escolha o gatilho do seu fluxo**, pesquise por Dataverse
 
@@ -92,7 +92,7 @@ Essa é uma boa prática, para que você e outros editores de fluxo possam enten
 
 1. Selecione o campo **Para** e insira seu endereço de email pessoal. (Há muitas maneiras de preencher dinamicamente um endereço de email, mas, para este exercício, vamos atribuí-lo manualmente).  
 
-1. No campo **Assunto**, insira Seu relatório de despesas foi enviado
+1. No campo **Assunto**, digite `Your expense report was submitted`
 
 1. Insira o seguinte texto no **Corpo do email**:
 
@@ -109,9 +109,9 @@ O conteúdo dinâmico precisa ser inserido onde os campos são nomeados entre co
 
 1. Realce o texto **{First Name}** . Substitua-o pelo campo **Nome** da etapa **Obter proprietário**.
 
-1. Destaque o texto **{Report Total Amount}**. Substitua pelo campo **Valor Total do Relatório** da etapa **Quando um relatório de despesas for enviado**.
+1. Destaque o texto **{Report Total Amount}**. Substitua pelo campo **Valor Total do Relatório** na etapa **Quando um Relatório de Despesas for adicionado**.
 
-1. Realce o texto **{Report Due Date}**. Substitua pelo campo **Data de Vencimento do Relatório** da etapa **Quando um relatório de despesas é enviado**.
+1. Realce o texto **{Report Due Date}**. Substitua pelo campo **Data de conclusão do relatório** na etapa **Quando um relatório de despesas for adicionado**.
 
 1. Selecione **Salvar**.
 
@@ -141,7 +141,9 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve se parece
 
     - **Nome do Relatório:** Relatório de Teste
 
-    - **Data de conclusão do relatório: ** Amanhã 
+    - **Objetivo do Relatório:** Conferência
+
+    - **Data de conclusão do relatório:** Amanhã
 
 1. Selecione o botão **Salvar e Fechar**.
 
