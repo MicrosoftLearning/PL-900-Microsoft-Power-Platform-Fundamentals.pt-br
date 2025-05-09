@@ -78,7 +78,7 @@ Essa é uma boa prática, para que você e outros editores de fluxo possam enten
 
 1. No campo **ID da Linha**, selecione **Proprietário (Valor)** na lista **Conteúdo dinâmico**. Nesta etapa, você está procurando o Proprietário da linha do Relatório de Despesas que foi criada para disparar esse fluxo. 
 
-1. Na ação **Obter uma linha por ID**, selecione as reticências ( **…** ) e escolha **Renomear**. Renomeie essa ação para Obter o proprietário
+1. Na ação **Obter uma linha por ID**, selecione as reticências ( **…** ) e escolha **Renomear**. Renomeie essa ação como `Get the Owner`.
 
 Essa é uma boa prática, para que você e outros editores de fluxo possam entender a finalidade da etapa sem precisar se aprofundar nos detalhes.
 
@@ -121,7 +121,7 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve se parece
 
 ### Tarefa 4: Validar e testar o fluxo
 
-1. Abra uma nova guia no navegador e navegue até https://make.powerapps.com
+1. Abra uma nova guia no navegador e navegue até `https://make.powerapps.com`.
 
 1. Selecione o ambiente **Dev One** no canto superior direito, se ainda não estiver selecionado.
 
@@ -139,7 +139,7 @@ Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve se parece
 
 1. Preencha o registro **Relatório de Despesas** da seguinte forma:
 
-    - **Nome do Relatório:** Relatório de Teste
+    - **Nome do relatório**: `Test Report`
 
     - **Objetivo do Relatório:** Conferência
 

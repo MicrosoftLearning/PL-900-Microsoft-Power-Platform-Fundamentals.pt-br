@@ -20,7 +20,7 @@ Ao longo deste curso, você criará aplicativos e executará a automação para 
 
 Você fará o seguinte para criar o aplicativo baseado em modelo:
 
-- Criar um novo aplicativo baseado em modelo chamado Gerenciamento de Despesas do Bellows.
+- Criar um novo aplicativo baseado em modelo chamado Gerenciamento de Despesas do Funcionário.
 
 - Editar a navegação do aplicativo para fazer referência às tabelas necessárias.
 
@@ -64,7 +64,7 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
     >**IMPORTANTE:** Como, por padrão, todos os formulários são denominados Informações, verifique se o formulário selecionado tem um Tipo de formulário **Principal** e não outro. Por padrão, o formulário tem dois campos: Nome e Proprietário.
 
-1. No lado direito da tela, no painel **Propriedades**, selecione o campo **Nome de exibição** e altere-o para Informações do Relatório
+1. No lado direito da tela no painel **Propriedades**, selecione o campo **Nome de exibição** e altere-o para `Report Information`.
 
 1. Selecione **Colunas da tabela** no painel de navegação à esquerda e adicione os seguintes campos abaixo do campo **Proprietário** arrastando as colunas para o formulário ou simplesmente clicando nos nomes das colunas:
 
@@ -80,7 +80,7 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
     >O cabeçalho é a área superior direita do formulário. Pode ser necessário recolher o painel Propriedades do lado direito da tela para ver o campo no formulário.
 
-1. Selecione o campo **Proprietário**. No painel Propriedades, altere o **Rótulo** para Solicitante.
+1. Selecione o campo **Proprietário**. No painel Propriedades, altere o **Rótulo** para `Requestor`.
 
 1. Selecione o botão **Salvar e publicar** no canto superior direito e aguarde a conclusão do salvamento e da publicação.
 
@@ -120,7 +120,7 @@ Agora, vamos clonar a exibição para criar uma nova exibição para os relatór
 
 1. Selecione **Salvar como**.
 
-1. Altere o **Nome** para os Relatórios de despesas com vencimento hoje e selecione **Salvar**.
+1. Altere o **Nome** para `Expense Reports Due Today` e selecione **Salvar**.
 
 1. Escolha **Editar filtros** no painel Propriedades.
 
@@ -148,15 +148,13 @@ Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório
 
 1. Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
-1. Selecione **+ Criar** no painel de navegação à esquerda.
+1. Selecione **Soluções** na navegação à esquerda.
 
-1. Criar o aplicativo baseado em modelo:
+1. Abra a Solução de **gerenciamento de Despesas**.
 
-    - Escolha **Aplicativo em branco** na seção **Iniciar em** da tela **Criar seu aplicativo**.
+1. Selecione **+Novo**, **APLICATIVO** e **Aplicativo baseado em modelo**.
 
-    - Em **Aplicativo em branco baseado no Dataverse**, selecione **Criar**.
-
-    - Insira `Employee Expense Management` em **Nome** e escolha **Criar**.
+1. Insira `Employee Expense Management` em **Nome** e escolha **Criar**.
 
 1. Quando o novo aplicativo baseado em modelo for carregado, selecione o botão **+ Adicionar página**.
 
@@ -174,7 +172,7 @@ Para simplificar e ganhar tempo, não abordaremos todas as colunas do Relatório
 
 1. No painel de navegação, selecione **Novo Grupo** abaixo do item Navegação. Talvez seja necessário expandir o menu à esquerda.
 
-1. No lado direito da tela, na seção **Opções de exibição**, altere a propriedade **Título** para Relatórios.
+1. No lado direito da tela, na seção **Opções de exibição**, altere a propriedade **Título** para `Reports`.
 
 1. Selecione **Salvar** espere as alterações serem salvas.
 

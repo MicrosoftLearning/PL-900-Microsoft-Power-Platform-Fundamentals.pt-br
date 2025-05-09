@@ -45,25 +45,11 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 1. Selecione o ambiente **Dev One** na parte superior direita, se ele ainda não estiver selecionado.
 
-1. Selecione **+ Criar** no painel de navegação à esquerda da tela. Na seção **Iniciar em**, selecione **Dataverse**.
+1. Selecione **Aplicativos** no painel de navegação à esquerda da tela. Selecione **+ Novo aplicativo** e, em seguida, **Iniciar com um modelo de aplicativo**.
 
-1. Selecione a conexão do Dataverse.
+1. Em **Aplicativos móveis centrados em dados**, selecione **Do Dataverse**.
 
-    >**Observação**: Se uma conexão do Dataverse não existir:
-
-    >   - Selecione **+Nova Conexão**
-
-    >   - Localize o **Microsoft Dataverse**
-
-    >   - Escolha **Criar**
-
-    >   - **Entre** e selecione **Permitir acesso**
-
-1. Localize e selecione a tabela **Relatórios de Despesas**.
-
-1. Selecione o botão **Conectar** no canto inferior direito.
-
-1. Após a criação do aplicativo, na tela Boas-vindas ao Power Apps Studio, escolha **Não mostrar isso novamente** e selecione **Ignorar**.
+1. Selecione a tabela de **Relatórios de Despesas** na página **Selecionar os dados do Dataverse para a página do seu aplicativo** e selecione **Criar aplicativo**.
 
 1. No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. (Você também pode visualizar o aplicativo pressionando F5). Dê uma olhada no aplicativo e veja como ele se comporta na configuração inicial pelo usuário.
 
@@ -77,29 +63,29 @@ Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três t
 
 1. Você está na tela Procurar. Selecione o rótulo **Relatórios de despesas** na tela.
 
-1. No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para Meus relatórios de despesas
+1. No lado direito da tela, na guia Propriedades, atualize a propriedade de controle **Texto** para `My Expense Reports`.
 
 1. Na guia **Propriedades**, altere o **Tamanho da fonte** para **24**.
 
 1. Selecione o fundo em branco da tela para ver o texto atualizado na tela de navegação.
 
-1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **DetailScreen1**.
+1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **DetailScreen**.
 
 1. Selecione o rótulo **Relatórios de despesas** na tela.
 
-1. No lado direito da tela, na guia **Propriedades**, atualize a propriedade de controle **Texto** para Detalhes do relatório
+1. No lado direito da tela, na guia **Propriedades**, atualize a propriedade de controle **Texto** para `Report Details`.
 
 1. Clique no fundo em branco da tela para ver o texto atualizado na tela Detalhes.
 
-1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **EditScreen1** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
+1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **EditScreen** (talvez seja necessário rolar a tela para ver isso no modo de exibição de árvore).
 
 1. Selecione o rótulo **Relatórios de despesas** na tela.
 
-1. No lado direito da tela, na guia **Propriedades**, substitua o texto na propriedade de controle **Texto** por Editar detalhes
+1. No lado direito da tela, na guia **Propriedades**, substitua o texto da propriedade de controle **Texto** por `Edit Details`.
 
 1. Clique no fundo em branco da tela para ver o texto atualizado na tela Editar.
 
-1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **BrowseScreen1**.
+1. Usando o **Modo de exibição de árvore** no painel de navegação à esquerda, selecione **BrowseScreen**.
 
 1. Na barra de ferramentas de comando, selecione o botão **Tema** e, na lista exibida, selecione a cor do tema **Vermelho**.
 
@@ -107,13 +93,13 @@ Nesta tarefa, você personalizará o texto do cabeçalho em cada uma das três t
 
 Nesta tarefa, você testará seu novo aplicativo.
 
-1. Com o seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** (talvez seja necessário selecionar … para o Ícone de Configuração a ser exibido), na seção **Geral**, atualize o nome do aplicativo para o Aplicativo de Relatório de Despesas, selecione o **X** para fechar a tela de configurações e, em seguida, selecione **Salvar**.
+1. Com o seu aplicativo aberto no Designer de Aplicativos, selecione **Configurações** (talvez seja necessário selecionar … para o Ícone de Configuração ser exibido), na seção **Geral**, atualize o nome do aplicativo para `Expense Report App`, clique no **X** para fechar a tela de configurações e selecione **Salvar**.
 
-1. Usando a navegação à esquerda, selecione **BrowseScreen1**.
+1. Usando a navegação à esquerda, selecione **BrowseScreen**.
 
 1. No designer de aplicativo, selecione o botão **Visualizar aplicativo** (ícone Reproduzir) na barra de comandos. (Você também pode visualizar o aplicativo pressionando F5).
 
-1. Depois que o aplicativo for aberto, no campo **Pesquisar itens**, insira o texto Viagem (observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).
+1. Quando o aplicativo abrir, no campo **Pesquisar Itens**, insira o texto `Trip` (observe como os itens na galeria são filtrados com base no que é digitado no campo de pesquisa).
 
 1. Depois que o registro **Viagem para a Power Platform Conference** for exibido, selecione uma linha para navegar e abrir a tela Detalhes dessa Despesa.
  
