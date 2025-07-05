@@ -1,4 +1,4 @@
-# PL-900: Power Platform Fundamentals
+# PL-900: Introdução ao Microsoft Power Platform
 
 - **[Faça o download do manual mais recente do aluno e do conteúdo AllFiles](https://learningdownloadcenter.microsoft.com/)**
 - **Você é um MCT?** Dê uma olhada no nosso [Guia de usuário do GitHub para MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
