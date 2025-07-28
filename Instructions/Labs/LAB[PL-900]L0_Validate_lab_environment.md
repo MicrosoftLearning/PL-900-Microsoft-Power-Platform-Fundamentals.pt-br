@@ -61,10 +61,10 @@ A aplicação das atualizações mais recentes ao navegador evita problemas no p
 ## Exercício 2: Baixar imagens
 
 1. Abra uma janela do navegador em seu locatário e insira https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles.
-2. Você verá as imagens na captura de tela.
+1. Você verá as imagens na captura de tela.
 
-![Arquivos de imagem.](media/images.png)
+    ![Arquivos de imagem.](media/images.png)
 
-3. Abra cada imagem separadamente e baixe selecionando o ícone **Baixar**.
+1. Abra cada imagem separadamente e baixe selecionando o ícone **Baixar**.
 
-![Imagem do botão de download.](media/download-image.png)
+    ![Imagem do botão de download.](media/download-image.png)
